@@ -15,10 +15,6 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<!--
-	<script src=$javascript_folder"/scroll.js"></script>
- -->
-
 	<script>
 		$(document).ready(function(){
 			$('a[href^="#"]').on('click',function (e) {
@@ -100,7 +96,6 @@ $theme.include($body_top_include)
 		</header>
 
 	<div id="content">
-<!-- 		<nav id="breadcrumbs">#breadcrumbs()</nav> -->
 
 		#if ($selectable)
 			$theme.include($content_include)
