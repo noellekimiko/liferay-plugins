@@ -20,6 +20,10 @@ $navigationHeight:41px;
 		max-width: 1154px;
 	}
 
+	.tooltip {
+		display: none;
+	}
+
 	/* ---------- Banner ---------- */
 
 	.banner-large {
