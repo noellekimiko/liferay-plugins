@@ -14,9 +14,11 @@
 	$theme.include($top_head_include)
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <!--
 	<script src=$javascript_folder"/scroll.js"></script>
  -->
+
 	<script>
 		$(document).ready(function(){
 			$('a[href^="#"]').on('click',function (e) {
@@ -48,24 +50,17 @@ $theme.include($body_top_include)
 	#if ($is_first_parent)
 		<header class="banner-large" id="banner" role="banner">
 			<div id="heading">
-				<h1 class="site-title">
-					<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-					</a>
+				#if ($show_site_name)
+					<h1 class="site-title">
+						<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+							<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+						</a>
 
-					#set ($show_site_name_supported = $getterUtil.getBoolean($theme_settings.getProperty("show-site-name-supported"), true))
-
-					#set ($show_site_name_default = $getterUtil.getBoolean($theme_settings.getProperty("show-site-name-default"), $show_site_name_supported))
-
-					#set ($show_site_name = $getterUtil.getBoolean($layout.layoutSet.getSettingsProperty("showSiteName"), $show_site_name_default))
-
-					#if ($show_site_name)
 						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
 							$site_name
 						</span>
-					#end
-
-				</h1>
+					</h1>
+				#end
 
 				<h1 class="page-title">
 					<span>$the_title</span>
@@ -80,17 +75,17 @@ $theme.include($body_top_include)
 	#else
 		<header class="banner-small" id="banner" role="banner">
 			<div id="heading">
-				<h1 class="site-title">
-					<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-					</a>
+				#if ($show_site_name)
+					<h1 class="site-title">
+						<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+							<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+						</a>
 
-					#if ($show_site_name)
 						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
 							$site_name
 						</span>
-					#end
-				</h1>
+					</h1>
+				#end
 
 				<h2 class="page-title">
 					<span>$the_title</span>
@@ -98,6 +93,7 @@ $theme.include($body_top_include)
 			</div>
 
 	#end
+
 			#if ($has_navigation || $is_signed_in)
 				#parse ("$full_templates_path/navigation.vm")
 			#end
@@ -122,7 +118,7 @@ $theme.include($body_top_include)
         <div id="footer-left">
         	<h3> $site_name </h3>
 
-			#if($theme.getSetting("display-slogan-footer") == true)
+			#if($theme.getSetting("display-slogan-footer"))
 			    <p class="footer-slogan">
 			    	$theme.getSetting("slogan")
 				</p>
