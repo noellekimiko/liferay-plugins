@@ -36,6 +36,11 @@ $navigationHeight:41px;
 				font-size: 70px;
 				line-height: 70px;
 
+			    animation-name: dropHeader;
+			    animation-iteration-count: once;
+			    animation-timing-function: ease-in;
+			    animation-duration: 0.3s;
+
 				-moz-animation-name: dropHeader;
 			    -moz-animation-iteration-count: once;
 			    -moz-animation-timing-function: ease-in;
@@ -45,11 +50,6 @@ $navigationHeight:41px;
 			    -webkit-animation-iteration-count: once;
 			    -webkit-animation-timing-function: ease-in;
 			    -webkit-animation-duration: 0.3s;
-
-			    animation-name: dropHeader;
-			    animation-iteration-count: once;
-			    animation-timing-function: ease-in;
-			    animation-duration: 0.3s;
 			}
 		}
 	}
@@ -215,48 +215,43 @@ $navigationHeight:41px;
 				border: 0;
 				box-shadow: none;
 
-				.nav-account-controls,
-				.nav-add-controls {
-					background: #e9e9e9;
-					border-radius: 5px;
-					float: right;
-				}
-
 				.nav-collapse.open {
 					position: absolute;
 					top: 50px;
 					z-index: 2;
 				}
-
-				#_145_navAccountControlsNavbarCollapse {
-					right: 55px;
-				}
-
-				#_145_navAddControlsNavbarCollapse {
-					right: 0;
-				}
 			}
 		}
 
-		.signed-out .portlet-dockbar {
-			.navbar-inner {
-				#_145_navAddControlsNavbarBtn {
-					display: none;
-				}
+		.nav-account-controls, .nav-add-controls {
+			background: #e9e9e9;
+			border-radius: 5px;
+			float: right;
+		}
+
+		.signed-in {
+			#_145_navAccountControlsNavbarBtn {
+				padding: 2px;
+			}
+
+			.user-avatar-image {
+				height: 30px;
+				width: 31px;
 			}
 		}
 
-		.signed-in .portlet-dockbar {
-			.navbar-inner {
-				#_145_navAccountControlsNavbarBtn {
-					padding: 2px;
-
-					.user-avatar-image {
-						height: 30px;
-						width: 31px;
-					}
-				}
+		.signed-out {
+			#_145_navAddControlsNavbarBtn {
+				display: none;
 			}
+		}
+
+		#_145_navAccountControlsNavbarCollapse {
+			right: 55px;
+		}
+
+		#_145_navAddControlsNavbarCollapse {
+			right: 0;
 		}
 
 		/* ---------- Navigation ---------- */
