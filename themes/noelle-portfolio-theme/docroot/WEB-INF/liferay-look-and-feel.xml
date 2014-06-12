@@ -15,6 +15,7 @@
                     type="textarea"
                     value=""
 		    />
+
 		    <setting
                     configurable="true"
                     key="display-slogan-footer"
@@ -35,6 +36,7 @@
                     type="checkbox"
                     value="true"
             />
+
             <setting
                     configurable="true"
                     key="show-site-name-supported"
