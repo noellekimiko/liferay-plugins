@@ -29,13 +29,6 @@
                     value="false"
 			/>
 
-<!-- 			<setting
-                    configurable="true"
-                    key="bullet-style"
-                    options="arrows,dots,classic,modern"
-                    value="dots"
-    		/> -->
-
             <setting
                     configurable="true"
                     key="show-site-name-default"
