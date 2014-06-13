@@ -1,8 +1,21 @@
 body.original {
 	background-color: #447;
-	color: #7B7B7B;
+	color: #282828;
+	font-family: Open Sans, sans-serif;
 }
 
 .original a {
-	color: #bbd;
+	color: #428BCA;
+}
+
+.original h1, .original h2, .original h3, .original h4, .original h5, .original h6 {
+	font-family: Raleway, sans-serif;
+}
+
+.original footer {
+	color: #7B7B7B;
+
+	a {
+		color: #AAA;
+	}
 }
