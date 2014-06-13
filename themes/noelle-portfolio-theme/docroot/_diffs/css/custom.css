@@ -275,7 +275,7 @@ $dockbarWidth:67px;
 			top: 0;
 
 			.navbar-inner {
-				background: url(../images/custom/nav_bg.png) repeat;
+				background: rgba(0, 0, 0, 0.6);
 				border: none;
 				box-shadow: none;
 				display: none;
@@ -289,7 +289,7 @@ $dockbarWidth:67px;
 
 						a {
 							box-shadow: none;
-							color: $darkFontColor;
+							color: #999999;
 							text-shadow: none;
 						}
 
