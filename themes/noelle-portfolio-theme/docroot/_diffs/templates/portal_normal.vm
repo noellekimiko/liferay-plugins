@@ -32,6 +32,21 @@
 		});
 	</script>
 
+	<script>
+		$(document).ready(function() {
+			var str = $('.curved-text').html();
+			var curved = '';
+			for (var i = 0, len = str.length; i < len; i++) {
+				curved += '<span class="char';
+				curved += i;
+				curved += '">';
+				curved += str[i];
+				curved += '</span>';
+			}
+			$('.curved-text').html(curved);
+		});
+	</script>
+
 </head>
 
 <body class="$css_class">
@@ -59,7 +74,7 @@ $theme.include($body_top_include)
 				#end
 
 				<h1 class="page-title">
-					<span>$the_title</span>
+					<span class="curved-text">$the_title</span>
 				</h1>
 
 				<h2 class="link-to-content">
