@@ -110,7 +110,7 @@ $theme.include($body_top_include)
 
 	<footer id="footer" role="contentinfo">
 
-        <div id="footer-left">
+        <div class="footer-left">
         	<h3> $site_name </h3>
 
 			#if($theme.getSetting("display-slogan-footer"))
@@ -120,8 +120,8 @@ $theme.include($body_top_include)
 			#end
 		</div>
 
-		#if($has_navigation)
-			<div id="footer-right">
+		#if($has_navigation and ($theme.getSetting("display-navigation-footer") == true))
+			<div class="footer-right">
 				<h3>Site Pages</h3>
 				<ul>
 					#foreach ($nav_item in $nav_items)
