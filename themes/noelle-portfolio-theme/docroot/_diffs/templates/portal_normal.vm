@@ -9,7 +9,7 @@
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
-	<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic" type="text/css" media="all">
 
 	$theme.include($top_head_include)
 
