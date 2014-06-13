@@ -2,6 +2,7 @@
 @import url(color_schemes/light.css);
 @import url(color_schemes/original.css);
 @import "mixins";
+@import "compass/css3/transform";
 
 /* ---------- Variables ---------- */
 
@@ -34,7 +35,7 @@ $dockbarWidth:67px;
 		.page-title {
 			span {
 				font-size: 70px;
-				line-height: 70px;
+				line-height: 1px;
 
 			    animation-name: dropHeader;
 			    animation-iteration-count: once;
@@ -508,4 +509,25 @@ $dockbarWidth:67px;
     100% {
         transform: translateY(0);
     }
+}
+
+.page-title .curved-text {
+	@include transform(rotate(300deg));
+
+	position: relative;
+
+	span {
+		height: 700px;
+		padding: 0 50%;
+		position: absolute;
+		top: 0;
+		width: 10px;
+
+	}
+
+	@for $i from 1 through 100 {
+		.char#{$i} {
+			@include transform(rotate($i * 12 + deg));
+		}
+	}
 }
