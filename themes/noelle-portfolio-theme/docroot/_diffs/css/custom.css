@@ -5,10 +5,9 @@
 /* ---------- Variables ---------- */
 
 $bannerHeight: 771px;
-$navHeight: 46px;
-$smallBannerHeight: 257px;
+$bannerHeightSmall: 257px;
+$darkFontColor:#BBD;
 $dockbarWidth:67px;
-$navigationHeight:41px;
 
 /* ---------- Base styles ---------- */
 
@@ -56,7 +55,7 @@ $navigationHeight:41px;
 
 	.banner-small {
 		background: url(../images/custom/small-banner.jpg) no-repeat;
-		height: $smallBannerHeight;
+		height: $bannerHeightSmall;
 		position: relative;
 	}
 
@@ -256,7 +255,7 @@ $navigationHeight:41px;
 
 		/* ---------- Navigation ---------- */
 
-		#navigation {
+		.site-navigation {
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -272,26 +271,37 @@ $navigationHeight:41px;
 					height: auto;
 
 					li {
-						> a {
-							background: transparent;
+						background: transparent;
+
+						a {
 							box-shadow: none;
-							color: #FFF;
+							color: $darkFontColor;
 							text-shadow: none;
 						}
 
 						:hover {
-							background: #888;
-							color: #00aaff;
-							/*a {
-								color: #00aaff;
-							}*/
+							color: #000;
 						}
 					}
 				}
 			}
+
+			.dropdown-menu, .dropdown-submenu {
+				> li {
+					> a {
+						:hover, :focus {
+							background: transparent;
+						}
+					}
+				}
+
+				:hover, :focus {
+					background: transparent;
+				}
+			}
 		}
 
-		#navigation.open {
+		.site-navigation.open {
 			.navbar-inner {
 				display: block;
 			}
@@ -319,8 +329,8 @@ $navigationHeight:41px;
 
 				ul.nav-account-controls {
 					background: #FFF;
-					position: relative;
 					margin: 0;
+					position: relative;
 					z-index: 4;
 
 					li {
