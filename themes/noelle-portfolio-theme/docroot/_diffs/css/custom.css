@@ -418,7 +418,7 @@ $dockbarWidth:67px;
 
 		#navigation {
 			.navbar-inner {
-				background: url(../images/custom/nav_bg.png) repeat-x 0 -1px;
+				background: rgba(0, 0, 0, 0.6);
 				border: 0;
 				border-radius: 0;
 				float: left;
@@ -428,7 +428,9 @@ $dockbarWidth:67px;
 				z-index: 3;
 
 				a {
-					color: #999;
+					color: #999999;
+					line-height: 20px;
+					padding: 15px 10px;
 					text-decoration: none;
 					text-shadow: none;
 
@@ -438,7 +440,7 @@ $dockbarWidth:67px;
 				}
 
 				.dropdown-menu {
-					background: url(../images/custom/nav_bg.png);
+					background: rgba(0, 0, 0, 0.6);
 					border-radius: 0;
 					margin: 0 auto;
 
