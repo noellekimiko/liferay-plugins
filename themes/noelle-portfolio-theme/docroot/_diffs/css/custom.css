@@ -389,7 +389,7 @@ $dockbarWidth:67px;
 
 		/* ---------- Navigation ---------- */
 
-		#navigation {
+		.site-navigation {
 			.navbar-inner {
 				background: rgba(0, 0, 0, 0.6);
 				border: 0;
@@ -400,34 +400,55 @@ $dockbarWidth:67px;
 				width: auto;
 				z-index: 3;
 
-				a {
-					color: #999999;
-					line-height: 20px;
-					padding: 10px 10px;
-					text-decoration: none;
-					text-shadow: none;
+				li {
+					> a {
+						background: transparent;
+						box-shadow: none;
+						color: #999999;
+						line-height: 20px;
+						padding: 10px 10px;
+						text-decoration: none;
+						text-shadow: none;
 
-					&:hover {
+						&:hover {
+							color: #FFF;
+						}
+					}
+
+					> .dropdown-menu {
+						background: rgba(0, 0, 0, 0.6);
+						border-radius: 0;
+						margin: 0 auto;
+
+						&:after,
+						&:before {
+							border: 0;
+							display: none;
+						}
+					}
+
+				}
+
+				li.dropdown.active,
+				li.dropdown.hover,
+				li.dropdown.open,
+				li.dropdown.open.active {
+					> .dropdown-toggle {
+						background: transparent;
 						color: #FFF;
 					}
 				}
 
-				.dropdown-menu {
-					background: rgba(0, 0, 0, 0.6);
-					border-radius: 0;
-					margin: 0 auto;
-
-					&:after,
-					&:before {
-						border: 0;
-						display: none;
-					}
+				.active a:hover, .selected a {
+					background: transparent;
+					box-shadow: none;
+					color: #FFF;
 				}
 
-				.lfr-nav-item,
-				.selected a,
-				.hover a {
+				.active a, .active a:focus, .hover a, .lfr-nav-item  {
 					background: transparent;
+					box-shadow: none;
+					color: #999999;
 				}
 			}
 		}
