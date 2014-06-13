@@ -1,5 +1,6 @@
 @import url(color_schemes/dark.css);
 @import url(color_schemes/light.css);
+@import url(color_schemes/original.css);
 @import "mixins";
 
 /* ---------- Variables ---------- */
@@ -112,8 +113,12 @@ $dockbarWidth:67px;
 	/* ---------- Footer ---------- */
 
 	footer {
-		background: #000;
+		background: #222;
 		padding: 10px 20px;
+
+		a {
+			color: #AAA;
+		}
 
 		h3 {
 			color: #FFF;
@@ -136,6 +141,7 @@ $dockbarWidth:67px;
 		}
 
 		a:hover {
+			color: #FFF;
 			text-decoration: none;
 		}
 	}
@@ -143,6 +149,11 @@ $dockbarWidth:67px;
 	.powered-by {
 		clear: both;
 		text-align: right;
+
+		a:hover {
+			color: #FFF;
+			text-decoration: none;
+		}
 	}
 	/* ---------- Portlet Styling ---------- */
 
