@@ -111,10 +111,9 @@ $dockbarWidth:67px;
 
 	/* ---------- Footer ---------- */
 
-	#footer {
+	footer {
 		background: #000;
 		padding: 10px 20px;
-		overflow: hidden;
 
 		h3 {
 			color: #FFF;
@@ -122,18 +121,22 @@ $dockbarWidth:67px;
 		}
 	}
 
-	#footer-left {
+	.footer-left {
 		float: left;
 		width: 60%;
 	}
 
-	#footer-right {
+	.footer-right {
 		float: right;
-		width: 30%;
 		padding-left: 5%;
+		width: 30%;
 
 		ul {
 			list-style: none;
+		}
+
+		a:hover {
+			text-decoration: none;
 		}
 	}
 
