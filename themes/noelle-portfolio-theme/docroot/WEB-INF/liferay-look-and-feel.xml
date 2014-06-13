@@ -9,20 +9,6 @@
     <theme id="noelle-portfolio" name="Noelle Portfolio">
         <settings>
 
-            <setting
-                    configurable="true"
-                    key="slogan"
-                    type="textarea"
-                    value=""
-		    />
-
-		    <setting
-                    configurable="true"
-                    key="display-slogan-footer"
-                    type="checkbox"
-                    value="true"
-            />
-
 		    <setting
                     configurable="true"
                     key="portlet-setup-show-borders-default"
@@ -40,6 +26,27 @@
             <setting
                     configurable="true"
                     key="show-site-name-supported"
+                    type="checkbox"
+                    value="true"
+            />
+
+            <setting
+                    configurable="true"
+                    key="slogan"
+                    type="textarea"
+                    value=""
+            />
+
+            <setting
+                    configurable="true"
+                    key="display-slogan-footer"
+                    type="checkbox"
+                    value="true"
+            />
+
+            <setting
+                    configurable="true"
+                    key="display-navigation-footer"
                     type="checkbox"
                     value="true"
             />
