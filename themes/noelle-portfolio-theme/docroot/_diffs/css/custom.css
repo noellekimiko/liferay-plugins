@@ -16,13 +16,19 @@ $dockbarWidth:67px;
 .aui {
 
 	#wrapper {
-		margin: 0 auto 20px;
+		margin: -40px auto 0;
 		padding: 0;
 		max-width: 1154px;
 	}
 
 	.tooltip {
 		display: none;
+	}
+
+	/* ---------- Dockbar ---------- */
+
+	.dockbar {
+		left: auto;
 	}
 
 	/* ---------- Banner ---------- */
@@ -99,9 +105,17 @@ $dockbarWidth:67px;
 	.site-title {
 		color: #FFF;
 		display: inline-block;
-		margin: 30px 0;
+		margin: 100px 0;
 		padding: 5px 10px;
 	}
+
+	/* ---------- Navigation ---------- */
+
+	.dockbar.navbar-static-top {
+		position: fixed;
+		z-index: 10;
+	}
+
 
 	/* ---------- Content ---------- */
 
@@ -165,7 +179,8 @@ $dockbarWidth:67px;
 .aui {
 	#wrapper {
 		@include respond-to(phone, tablet) {
-			padding: 0;
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 
@@ -223,6 +238,8 @@ $dockbarWidth:67px;
 		/* ---------- Dockbar ---------- */
 
 		.portlet-dockbar {
+			left: 0;
+
 			.navbar-inner {
 				background: transparent;
 				border: 0;
@@ -272,7 +289,7 @@ $dockbarWidth:67px;
 		.site-navigation {
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: 90px;
 
 			.navbar-inner {
 				background: rgba(0, 0, 0, 0.6);
@@ -328,8 +345,8 @@ $dockbarWidth:67px;
 
 		/* ---------- Base Styles ---------- */
 
-		.signed-in #wrapper {
-			padding: 0 $dockbarWidth;
+		#wrapper {
+			padding-top: 0;
 		}
 
 		/* ---------- Dockbar ---------- */
@@ -350,7 +367,7 @@ $dockbarWidth:67px;
 			}
 
 			.nav-add-controls {
-				left: 10px;
+				left: 80%;
 				position: absolute;
 				top: 60px;
 				z-index: 1;
@@ -397,7 +414,7 @@ $dockbarWidth:67px;
 				float: left;
 				position: fixed;
 				top: 0;
-				width: auto;
+				width: 100%;
 				z-index: 3;
 
 				li {
