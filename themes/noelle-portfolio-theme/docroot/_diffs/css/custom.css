@@ -281,9 +281,9 @@ $dockbarWidth:67px;
 		/* ---------- Navigation ---------- */
 
 		.site-navigation {
-			position: absolute;
+			position: fixed;
 			right: 0;
-			top: 90px;
+			top: 50px;
 
 			.navbar-inner {
 				background: rgba(0, 0, 0, 0.6);
@@ -351,6 +351,10 @@ $dockbarWidth:67px;
 		/* ---------- Dockbar ---------- */
 
 		.portlet-dockbar {
+			.dockbar {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+			}
+
 			.navbar-inner {
 				background: rgba(0, 0, 0, 0.6);
 				border: 0;
@@ -361,7 +365,6 @@ $dockbarWidth:67px;
 			.nav-account-controls {
 				background: #FFF;
 				margin: 0;
-				position: relative;
 			}
 
 			.nav-add-controls {
@@ -402,6 +405,30 @@ $dockbarWidth:67px;
 			}
 		}
 
+		.lfr-has-add-content {
+			.nav-add-controls {
+				left: 360px;
+			}
+		}
+
+		.lfr-has-device-preview {
+			.nav-add-controls {
+				left: 230px;
+			}
+		}
+
+		.lfr-has-edit-layout {
+			.nav-add-controls {
+				left: 470px;
+			}
+		}
+
+		.lfr-has-add-content, .lfr-has-device-preview, .lfr-has-edit-layout {
+			.nav-account-controls {
+				display: none;
+			}
+		}
+
 		/* ---------- Navigation ---------- */
 
 		.site-navigation {
@@ -409,6 +436,7 @@ $dockbarWidth:67px;
 				background: transparent;
 				border: 0;
 				border-radius: 0;
+				box-shadow: none;
 				float: left;
 				position: fixed;
 				top: 0;
