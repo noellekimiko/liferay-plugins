@@ -78,7 +78,7 @@ $dockbarWidth:67px;
 		}
 
 		:hover {
-			background: rgba (0, 0, 0, 0.6);
+			background: rgba (0, 0, 0, 0.85);
 		}
 	}
 
@@ -244,7 +244,7 @@ $dockbarWidth:67px;
 			left: 0;
 
 			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
+				background: rgba(0, 0, 0, 0.85);
 				border: 0;
 				box-shadow: none;
 
@@ -295,7 +295,7 @@ $dockbarWidth:67px;
 			top: 50px;
 
 			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
+				background: rgba(0, 0, 0, 0.85);
 				border: none;
 				box-shadow: none;
 				display: none;
@@ -361,11 +361,11 @@ $dockbarWidth:67px;
 
 		.portlet-dockbar {
 			.dockbar {
-				border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.85);
 			}
 
 			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
+				background: rgba(0, 0, 0, 0.85);
 				border: 0;
 				box-shadow: none;
 				padding: 0;
@@ -402,7 +402,7 @@ $dockbarWidth:67px;
 				}
 
 				.nav-item-label {
-					background: rgba(0, 0, 0, 0.6);
+					background: rgba(0, 0, 0, 0.85);
 					border-radius: 5px;
 					color: #FFF;
 					display: none;
@@ -468,7 +468,7 @@ $dockbarWidth:67px;
 					}
 
 					> .dropdown-menu {
-						background: rgba(0, 0, 0, 0.6);
+						background: rgba(0, 0, 0, 0.85);
 						border-radius: 0;
 						margin: 0 auto;
 
