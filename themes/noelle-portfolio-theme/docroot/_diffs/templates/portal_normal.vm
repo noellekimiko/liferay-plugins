@@ -50,9 +50,13 @@ $theme.include($body_top_include)
 				#end
 
 				<h1 class="page-title">
-					<span>
-						$the_title
-					</span>
+
+					<a class="link-to-homepage" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+						<span>
+							$the_title
+						</span>
+					</a>
+
 				</h1>
 
 				<script>
