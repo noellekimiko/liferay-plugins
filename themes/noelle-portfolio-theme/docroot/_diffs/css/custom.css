@@ -165,6 +165,15 @@ $dockbarWidth:67px;
 	}
 	/* ---------- Portlet Styling ---------- */
 
+	.portlet-title {
+		font-size: 32px;
+	}
+
+	.portlet-content {
+		border-bottom: 5px solid #EEE;
+		margin-bottom: 40px;
+		padding-bottom: 30px;
+	}
 
 }
 
