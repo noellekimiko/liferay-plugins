@@ -16,35 +16,11 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<script>
-		$(document).ready(function(){
-			$('a[href^="#"]').on('click',function (e) {
-			    e.preventDefault();
-
-			    var target = this.hash,
-			    $target = $(target);
-
-			    $('html, body').stop().animate({
-			        'scrollTop': $target.offset().top
-			    }, 900, 'swing', function () {
-			        window.location.hash = target;
-			    });
-			});
-		});
+		#include ("$full_templates_path/../js/scroll.js")
 	</script>
 
 	<script>
-		$(document).ready(function() {
-			var str = $('.curved-text').html();
-			var curved = '';
-			for (var i = 0, len = str.length; i < len; i++) {
-				curved += '<span class="char';
-				curved += i;
-				curved += '">';
-				curved += str[i];
-				curved += '</span>';
-			}
-			$('.curved-text').html(curved);
-		});
+		#include ("$full_templates_path/../js/curvedtext.js")
 	</script>
 
 </head>
