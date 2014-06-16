@@ -20,7 +20,7 @@
 	</script>
 
 	<script>
-		#include ("$full_templates_path/../js/curvedtext.js")
+		#include ("$full_templates_path/../js/arctext.js")
 	</script>
 
 </head>
@@ -50,8 +50,14 @@ $theme.include($body_top_include)
 				#end
 
 				<h1 class="page-title">
-					<span class="curved-text">$the_title</span>
+					<span>
+						$the_title
+					</span>
 				</h1>
+
+				<script>
+					$( '.page-title span' ).arctext();
+				</script>
 
 				<h2 class="link-to-content">
 					<a href="#content">See More</a>
