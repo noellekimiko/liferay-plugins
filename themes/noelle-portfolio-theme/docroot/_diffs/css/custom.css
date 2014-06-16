@@ -25,12 +25,6 @@ $dockbarWidth:67px;
 		display: none;
 	}
 
-	/* ---------- Dockbar ---------- */
-
-	.dockbar {
-		left: auto;
-	}
-
 	/* ---------- Banner ---------- */
 
 	.banner-large {
@@ -113,7 +107,7 @@ $dockbarWidth:67px;
 
 	.dockbar.navbar-static-top {
 		position: fixed;
-		z-index: 10;
+		z-index: 3;
 	}
 
 
@@ -241,7 +235,7 @@ $dockbarWidth:67px;
 			left: 0;
 
 			.navbar-inner {
-				background: transparent;
+				background: rgba(0, 0, 0, 0.6);
 				border: 0;
 				box-shadow: none;
 
@@ -349,11 +343,16 @@ $dockbarWidth:67px;
 			padding-top: 0;
 		}
 
+		.signed-in #wrapper {
+			padding-left: $dockbarWidth;
+			padding-right: $dockbarWidth;
+		}
+
 		/* ---------- Dockbar ---------- */
 
 		.portlet-dockbar {
 			.navbar-inner {
-				background: transparent;
+				background: rgba(0, 0, 0, 0.6);
 				border: 0;
 				box-shadow: none;
 				padding: 0;
@@ -363,14 +362,12 @@ $dockbarWidth:67px;
 				background: #FFF;
 				margin: 0;
 				position: relative;
-				z-index: 4;
 			}
 
 			.nav-add-controls {
-				left: 80%;
+				left: 10px;
 				position: absolute;
 				top: 60px;
-				z-index: 1;
 
 				a {
 					white-space: nowrap;
@@ -384,6 +381,7 @@ $dockbarWidth:67px;
 
 				li {
 					background: #FFF;
+					border: 1px solid #999;
 					border-radius: 5px;
 					clear: left;
 					margin: 10px auto;
@@ -408,13 +406,13 @@ $dockbarWidth:67px;
 
 		.site-navigation {
 			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
+				background: transparent;
 				border: 0;
 				border-radius: 0;
 				float: left;
 				position: fixed;
 				top: 0;
-				width: 100%;
+				width: auto;
 				z-index: 3;
 
 				li {
