@@ -120,7 +120,7 @@ $dockbarWidth:67px;
 
 	#content {
 		background: #FFF;
-		padding: 10px 20px;
+		padding: 50px 20px 10px;
 	}
 
 	/* ---------- Footer ---------- */
@@ -253,6 +253,10 @@ $dockbarWidth:67px;
 				border: 0;
 				box-shadow: none;
 
+				.btn-navbar {
+					margin: 7px;
+				}
+
 				.nav-collapse.open {
 					position: absolute;
 					top: 50px;
@@ -379,6 +383,14 @@ $dockbarWidth:67px;
 			.nav-account-controls {
 				background: #FFF;
 				margin: 0;
+
+				li > a {
+					padding: 14px;
+				}
+
+				.sign-in > a {
+					padding-top: 15px;
+				}
 			}
 
 			.nav-add-controls {
@@ -463,7 +475,7 @@ $dockbarWidth:67px;
 						box-shadow: none;
 						color: #999999;
 						line-height: 20px;
-						padding: 10px 10px;
+						padding: 15px 10px;
 						text-decoration: none;
 						text-shadow: none;
 
@@ -474,8 +486,10 @@ $dockbarWidth:67px;
 
 					> .dropdown-menu {
 						background: rgba(0, 0, 0, 0.85);
+						border: 0;
 						border-radius: 0;
 						margin: 0 auto;
+						padding: 0;
 
 						&:after,
 						&:before {
