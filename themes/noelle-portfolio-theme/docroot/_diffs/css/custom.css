@@ -8,7 +8,6 @@
 
 $bannerHeight: 771px;
 $bannerHeightSmall: 257px;
-$darkFontColor:#BBD;
 $dockbarWidth:67px;
 
 /* ---------- Base styles ---------- */
@@ -37,7 +36,7 @@ $dockbarWidth:67px;
 		.page-title {
 			span {
 				color: #FFF;
-				font-size: 70px;
+				font-size: 100px;
 				line-height: 1px;
 
 				animation-name: dropHeader;
@@ -607,8 +606,8 @@ $dockbarWidth:67px;
 				padding: 50px auto;
 
 				span {
-					font-size: 100px;
-					line-height: 100px;
+					font-size: 120px;
+					line-height: 120px;
 				}
 			}
 		}
