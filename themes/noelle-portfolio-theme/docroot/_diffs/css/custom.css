@@ -111,18 +111,26 @@ $dockbarWidth:67px;
 	}
 
 	/* ---------- Dockbar ---------- */
-	.dockbar .navbar-inner .site-administration-menu li a {
-		color: #999;
+
+	.dockbar .navbar-inner .site-administration-menu {
+		li a {
+			color: #999;
+		}
+
+		li a:hover {
+			background: transparent;
+			color: #FFF;
+		}
 	}
 
-	.navbar .nav li.dropdown.open > .dropdown-toggle,
-	.navbar .nav li.dropdown.active > .dropdown-toggle,
-	.navbar .nav li.dropdown.open.active > .dropdown-toggle {
-		background: transparent;
-		color: #FFF;
+	.dropdown-menu {
+		> .active > a, > .active > a:hover, > .active > a:focus, > li > a:hover {
+			background: #FFF;
+			color: #000;
+		}
 	}
 
-	.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+	.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
 		background: transparent;
 		color: #FFF;
 	}
@@ -221,8 +229,6 @@ $dockbarWidth:67px;
 		}
 
 		.banner-large {
-			height: 350px;
-
 			.page-title span {
 				font-size: 40px;
 				line-height: 40px;
@@ -244,8 +250,6 @@ $dockbarWidth:67px;
 		}
 
 		.banner-large {
-			height: 550px;
-
 			.page-title span {
 				font-size: 70px;
 				line-height: 70px;
@@ -294,7 +298,6 @@ $dockbarWidth:67px;
 
 		.nav-account-controls, .nav-add-controls {
 			background: rgba(0, 0, 0, 0.85);
-			border-radius: 5px;
 			float: right;
 		}
 
@@ -338,6 +341,11 @@ $dockbarWidth:67px;
 				padding: 0;
 
 				.nav-collapse {
+					.nav > li > a:hover, .nav > li > a:focus, .dropdown-menu a:hover, .dropdown-menu a:focus {
+						background: transparent;
+						color: #FFF;
+					}
+
 					height: auto;
 
 					li {
@@ -483,11 +491,6 @@ $dockbarWidth:67px;
 
 			&:after, &:before {
 				display: none;
-			}
-
-			.active > a, .active > a:hover, .active > a:focus {
-				background: transparent;
-				color: #FFF;
 			}
 
 			li > a {
