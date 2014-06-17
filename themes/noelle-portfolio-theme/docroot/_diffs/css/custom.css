@@ -29,6 +29,7 @@ $dockbarWidth:67px;
 
 	.banner-large {
 		background: url(../images/custom/banner.jpg) no-repeat;
+		background-position: center;
 		height: $bannerHeight;
 		position: relative;
 		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -59,6 +60,7 @@ $dockbarWidth:67px;
 
 	.banner-small {
 		background: url(../images/custom/small-banner.jpg) no-repeat;
+		background-position: center;
 		height: $bannerHeightSmall;
 		position: relative;
 		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
