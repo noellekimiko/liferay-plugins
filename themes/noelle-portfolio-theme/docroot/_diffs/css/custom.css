@@ -88,7 +88,7 @@ $dockbarWidth:67px;
 	}
 
 	.logo {
-		margin: 0 5px 0 20px;
+		margin: 0 5px 0 0;
 	}
 
 	.page-title {
@@ -106,7 +106,7 @@ $dockbarWidth:67px;
 	.site-title {
 		color: #FFF;
 		display: inline-block;
-		margin-top: 50px;
+		margin: 62px 0 0 $dockbarWidth;
 		padding: 5px 10px;
 	}
 
@@ -396,7 +396,7 @@ $dockbarWidth:67px;
 			padding-top: 0;
 		}
 
-		.signed-in #wrapper {
+		.signed-in #content {
 			padding-left: $dockbarWidth;
 			padding-right: $dockbarWidth;
 		}
