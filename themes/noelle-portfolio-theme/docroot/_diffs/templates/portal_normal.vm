@@ -16,11 +16,11 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<script>
-		#include ("$full_templates_path/../js/scroll.js")
+		#include ("$javascript_folder/scroll.js")
 	</script>
 
 	<script>
-		#include ("$full_templates_path/../js/arctext.js")
+		#include ("$javascript_folder/arctext.js")
 	</script>
 
 </head>
