@@ -444,13 +444,17 @@ $dockbarWidth:67px;
 				}
 
 				li {
-					background: #FFF;
-					border: 1px solid #999;
+					background: rgba(0, 0, 0, 0.85);
 					border-radius: 5px;
 					clear: left;
 					margin: 10px auto;
 					padding: 3px;
 					width: 41px;
+
+					a {
+						color: #999;
+						text-shadow: none;
+					}
 				}
 
 				li > a:focus, li > a:hover {
@@ -484,6 +488,10 @@ $dockbarWidth:67px;
 			.active > a, .active > a:hover, .active > a:focus {
 				background: transparent;
 				color: #FFF;
+			}
+
+			li > a {
+				color: #999;
 			}
 
 			li a:hover, li a:focus {
