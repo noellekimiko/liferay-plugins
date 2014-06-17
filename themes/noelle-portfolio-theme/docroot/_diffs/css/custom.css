@@ -31,13 +31,13 @@ $dockbarWidth:67px;
 		background: url(../images/custom/banner.jpg) no-repeat;
 		height: $bannerHeight;
 		position: relative;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
 		.page-title {
 			span {
 				color: #FFF;
 				font-size: 70px;
 				line-height: 1px;
-				text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
 				animation-name: dropHeader;
 			    animation-iteration-count: once;
@@ -55,13 +55,13 @@ $dockbarWidth:67px;
 			    -webkit-animation-duration: 0.3s;
 			}
 		}
-
 	}
 
 	.banner-small {
 		background: url(../images/custom/small-banner.jpg) no-repeat;
 		height: $bannerHeightSmall;
 		position: relative;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 	}
 
 	.link-to-content {
@@ -80,7 +80,7 @@ $dockbarWidth:67px;
 			}
 		}
 
-		:hover {
+		&:hover {
 			background: rgba (0, 0, 0, 0.85);
 		}
 	}
