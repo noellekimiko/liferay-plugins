@@ -59,12 +59,6 @@
             ${images-path}/color_schemes/${css-class}
         </color-scheme-images-path>
     </color-scheme>
-    <color-scheme id="02" name="Light">
-        <css-class>light</css-class>
-    </color-scheme>
-    <color-scheme id="03" name="Dark">
-        <css-class>dark</css-class>
-    </color-scheme>
 
     </theme>
 
