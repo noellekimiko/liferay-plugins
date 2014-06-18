@@ -365,6 +365,10 @@ $dockbarWidth:67px;
 			right: 0;
 		}
 
+		.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+			font-weight: normal;
+		}
+
 		/* ---------- Navigation ---------- */
 
 		.site-navigation {
