@@ -327,6 +327,10 @@ $dockbarWidth:67px;
 			}
 		}
 
+		.dockbar .user-avatar img {
+			height: auto;
+		}
+
 		.nav-account-controls, .nav-add-controls {
 			background: rgba(0, 0, 0, 0.85);
 			float: right;
