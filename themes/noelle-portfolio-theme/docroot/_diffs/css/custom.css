@@ -66,6 +66,8 @@ $dockbarWidth:67px;
 	}
 
 	.link-to-content {
+		font-family: Open Sans, sans-serif;
+		font-size: 18px;
 		margin: 20px auto;
 		text-align: center;
 
@@ -73,16 +75,12 @@ $dockbarWidth:67px;
 			border: 1px solid #FFF;
 			border-radius: 5px;
 			color: #FFF;
-			font-size: 20px;
-			padding: 5px;
+			padding: 10px 25px;
 
 			&:hover {
+				background: rgba(0, 0, 0, 0.1);
 				text-decoration: none;
 			}
-		}
-
-		&:hover {
-			background: rgba (0, 0, 0, 0.85);
 		}
 	}
 
