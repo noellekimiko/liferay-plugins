@@ -38,20 +38,11 @@ $dockbarWidth:67px;
 				line-height: 1px;
 			}
 
-			animation-name: dropHeader;
-			animation-iteration-count: once;
-			animation-timing-function: ease-in;
-			animation-duration: 0.3s;
+			animation: dropHeader 0.3s ease-in;
 
-			-moz-animation-name: dropHeader;
-			-moz-animation-iteration-count: once;
-			-moz-animation-timing-function: ease-in;
-			-moz-animation-duration: 0.3s;
+			-moz-animation: dropHeader 0.3s ease-in;
 
-			-webkit-animation-name: dropHeader;
-			-webkit-animation-iteration-count: once;
-			-webkit-animation-timing-function: ease-in;
-			-webkit-animation-duration: 0.3s;
+			-webkit-animation: dropHeader 0.3s ease-in;
 		}
 	}
 
