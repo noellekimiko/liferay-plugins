@@ -202,7 +202,11 @@ $dockbarWidth:67px;
 	}
 
 	#column-1:first-child {
+<<<<<<< HEAD
 		padding: 20px 60px 40px;
+=======
+		padding: 20px 60px;
+>>>>>>> 681fac34c0e981ca3ad524fdcd75411502691a70
 		text-align: center;
 
 		h1 {
