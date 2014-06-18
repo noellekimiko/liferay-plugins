@@ -143,7 +143,7 @@ $dockbarWidth:67px;
 
 	.dockbar.navbar-static-top {
 		position: fixed;
-		z-index: 3;
+		z-index: 301;
 	}
 
 	/* ---------- Content ---------- */
@@ -288,7 +288,7 @@ $dockbarWidth:67px;
 				.nav-collapse.open {
 					position: absolute;
 					top: 50px;
-					z-index: 2;
+					z-index: 301;
 				}
 			}
 
@@ -384,6 +384,8 @@ $dockbarWidth:67px;
 		}
 
 		.site-navigation.open {
+			z-index: 301;
+
 			.navbar-inner {
 				display: block;
 			}
@@ -547,7 +549,7 @@ $dockbarWidth:67px;
 				position: fixed;
 				top: 0;
 				width: auto;
-				z-index: 3;
+				z-index: 301;
 
 				li {
 					> a {
