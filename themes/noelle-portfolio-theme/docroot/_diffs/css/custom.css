@@ -98,6 +98,10 @@ $dockbarWidth:67px;
 
 	/* ---------- Dockbar ---------- */
 
+	.dockbar > .navbar-inner {
+		min-height: 49px;
+	}
+
 	.dockbar .navbar-inner .site-administration-menu {
 		li a {
 			color: #999;
