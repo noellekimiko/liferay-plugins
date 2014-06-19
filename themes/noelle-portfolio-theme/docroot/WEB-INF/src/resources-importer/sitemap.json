@@ -46,7 +46,10 @@
 				],
 				[
 					{
-						"portletId": "58",
+						"portletId": "58"
+					},
+					{
+						"portletId": "39",
 						"portletPreferences": {
 							"portletSetupUseCustomTitle": "false"
 						}
@@ -59,6 +62,85 @@
 				"fr_CA": "Bienvenue"
 			},
 			"title": "Welcome"
-		}
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "36"
+					}
+				]
+			],
+
+			"friendlyURL": "/wiki",
+			"layoutTemplateId": "1_column",
+			"nameMap": {
+				"en_US": "Wiki"
+			},
+			"title": "Wiki"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "19"
+					}
+				]
+			],
+
+			"friendlyURL": "/messageboard",
+			"layoutTemplateId": "1_column",
+			"nameMap": {
+				"en_US": "Message Board"
+			},
+			"title": "Message Board"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "47"
+					}
+				],
+				[
+					{
+						"portletId": "58"
+					}
+				]
+			],
+			"friendlyURL": "/portlets",
+			"layoutTemplateId": "2_columns_iii",
+			"layouts": [
+				{
+					"columns": [
+						[
+							{
+								"portletId": "97"
+							}
+						]
+					],
+					"friendlyURL": "/quicknote",
+					"layoutTemplateId": "1_column",
+					"name": "Quick Note",
+					"title": "Quick Note"
+				},
+				{
+					"columns": [
+						[
+							{
+								"portletId": "16"
+							}
+						]
+					],
+					"friendlyURL": "/currencyconverter",
+					"layoutTemplateId": "1_column",
+					"name": "Currency Converter",
+					"title": "Currency Converter"
+				}
+			],
+			"name": "Portlets",
+			"title": "Portlets"
+		},
+
 	]
 }
