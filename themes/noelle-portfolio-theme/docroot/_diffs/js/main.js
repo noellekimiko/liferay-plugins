@@ -4,7 +4,7 @@ AUI().ready(
 	This function gets loaded when all the HTML, not including the portlets, is
 	loaded.
 	*/
-	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal',
+	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal', "aui-carousel",
 	function(A) {
 		var navigation = A.one('#navigation');
 
@@ -22,6 +22,18 @@ AUI().ready(
 
 		if (signIn && signIn.getData('redirect') !== 'true') {
 			signIn.plug(Liferay.SignInModal);
+		}
+
+		var imageCarousel = A.one('#myCarousel');
+
+		if (myCarousel) {
+			new A.Carousel(
+		      {
+		        contentBox: '#myCarousel',
+		        height: 250,
+		        width: 700
+		      }
+		    ).render();
 		}
 	}
 );
