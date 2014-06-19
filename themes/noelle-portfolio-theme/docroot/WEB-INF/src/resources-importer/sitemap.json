@@ -50,10 +50,11 @@
 				],
 				[
 					{
-						"portletId": "58"
-					},
-					{
-						"portletId": "39"
+						"portletId": "58",
+						"portletPreferences": {
+							"portletSetupShowBorders": "true",
+							"portletSetupUseCustomTitle": "false"
+						}
 					}
 				]
 			],
