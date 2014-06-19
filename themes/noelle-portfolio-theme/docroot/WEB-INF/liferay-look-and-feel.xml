@@ -13,7 +13,7 @@
                     configurable="true"
                     key="portlet-setup-show-borders-default"
                     type="checkbox"
-                    value="false"
+                    value="true"
 			/>
 
             <setting
