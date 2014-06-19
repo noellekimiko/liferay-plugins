@@ -99,12 +99,15 @@
 			"columns": [
 				[
 					{
-						"portletId": "47"
+						"portletId": "1_WAR_randombibleverseportlet"
+					},
+					{
+						"portletId": "1_WAR_youtubeportlet"
 					}
 				],
 				[
 					{
-						"portletId": "58"
+						"portletId": "1_WAR_twitterportlet"
 					}
 				]
 			],
