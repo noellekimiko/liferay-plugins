@@ -30,8 +30,8 @@ AUI().ready(
 			new A.Carousel(
 		      {
 		        contentBox: '#myCarousel',
-		        height: 250,
-		        width: 700
+		        height: 300,
+		        width: 400
 		      }
 		    ).render();
 		}
