@@ -24,7 +24,7 @@ AUI().ready(
 			signIn.plug(Liferay.SignInModal);
 		}
 
-		var imageCarousel = A.one('#myCarousel');
+		var myCarousel = A.one('#myCarousel');
 
 		if (myCarousel) {
 			new A.Carousel(
