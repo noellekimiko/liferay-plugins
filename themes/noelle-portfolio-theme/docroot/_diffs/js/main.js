@@ -5,6 +5,7 @@ AUI().ready(
 	loaded.
 	*/
 	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal',
+	'aui-audio',
 	'aui-carousel',
 	'aui-pagination',
 	function(A) {
@@ -24,6 +25,17 @@ AUI().ready(
 
 		if (signIn && signIn.getData('redirect') !== 'true') {
 			signIn.plug(Liferay.SignInModal);
+		}
+
+		var audio = A.one('#myAudio');
+
+		if (audio) {
+			new A.Audio(
+				{
+					boundingBox: '#myAudio',
+					url: '/webdav/template-21175/document_library/somewhere_sunny'
+				}
+			).render();
 		}
 
 		var myCarousel = A.one('#myCarousel');
