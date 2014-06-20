@@ -4,7 +4,9 @@ AUI().ready(
 	This function gets loaded when all the HTML, not including the portlets, is
 	loaded.
 	*/
-	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal', "aui-carousel",
+	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal',
+	'aui-carousel',
+	'aui-pagination',
 	function(A) {
 		var navigation = A.one('#navigation');
 
@@ -34,6 +36,35 @@ AUI().ready(
 		        width: 400
 		      }
 		    ).render();
+		}
+
+		var pagination = A.one('div.pagination');
+
+		if (pagination) {
+
+			var pages = A.all('.pages-content div');
+
+			new A.Pagination(
+				{
+					boundingBox: '#pagination',
+					circular: false,
+					contentBox: '#pagination .pagination-content',
+					on: {
+						changeRequest: function(event) {
+							var instance = this,
+								state = event.state,
+								lastState = event.lastState;
+
+							if (lastState) {
+								pages.item(lastState.page - 1).setStyle('display', 'none');
+							}
+
+							pages.item(state.page - 1).setStyle('display', 'block');
+						}
+					},
+					page: 1
+				}
+			).render();
 		}
 	}
 );
