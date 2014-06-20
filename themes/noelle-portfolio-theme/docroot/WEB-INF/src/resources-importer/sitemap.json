@@ -66,6 +66,17 @@
 		{
 			"columns": [
 				[
+					"Carousel.html"
+				]
+			],
+			"friendlyURL": "/media",
+			"layoutTemplateId": "1_column",
+			"name": "Media",
+			"title": "Media"
+		},
+		{
+			"columns": [
+				[
 					{
 						"portletId": "47"
 					}
@@ -112,17 +123,6 @@
 			],
 			"name": "Community",
 			"title": "Community"
-		},
-		{
-			"columns": [
-				[
-					"Carousel.html"
-				]
-			],
-			"friendlyURL": "/media",
-			"layoutTemplateId": "1_column",
-			"name": "Media",
-			"title": "Media"
 		},
 		{
 			"columns": [
