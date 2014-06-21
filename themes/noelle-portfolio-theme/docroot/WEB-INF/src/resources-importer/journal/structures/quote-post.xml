@@ -1,5 +1,5 @@
 <root available-locales="en_US" default-locale="en_US">
-	<dynamic-element dataType="string" indexType="keyword" name="Quote" readOnly="false" repeatable="false" required="true" showLabel="true" type="textarea" width="large">
+	<dynamic-element dataType="string" indexType="keyword" name="quote" readOnly="false" repeatable="false" required="true" showLabel="true" type="textarea" width="large">
 		<meta-data locale="en_US">
 			<entry name="label">
 				<![CDATA[Quote]]>
@@ -12,7 +12,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="Author" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="medium">
+	<dynamic-element dataType="string" indexType="keyword" name="author" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="medium">
 		<meta-data locale="en_US">
 			<entry name="label">
 				<![CDATA[Author]]>
@@ -25,7 +25,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="Category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
 		<dynamic-element name="travel" type="option" value="value 1">
 			<meta-data locale="en_US">
 				<entry name="label">
