@@ -1,22 +1,8 @@
-
 <root available-locales="en_US" default-locale="en_US">
-	<dynamic-element dataType="string" indexType="keyword" name="Title" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="small">
-		<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="Date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
-			<meta-data locale="en_US">
-				<entry name="label">
-					<![CDATA[Date]]>
-				</entry>
-				<entry name="predefinedValue">
-					<![CDATA[]]>
-				</entry>
-				<entry name="tip">
-					<![CDATA[]]>
-				</entry>
-			</meta-data>
-		</dynamic-element>
+	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="Date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
 		<meta-data locale="en_US">
 			<entry name="label">
-				<![CDATA[Title]]>
+				<![CDATA[Date]]>
 			</entry>
 			<entry name="predefinedValue">
 				<![CDATA[]]>
