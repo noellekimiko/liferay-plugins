@@ -1,5 +1,5 @@
 <root available-locales="en_US" default-locale="en_US">
-	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="Date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
+	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
 		<meta-data locale="en_US">
 			<entry name="label">
 				<![CDATA[Date]]>
@@ -13,10 +13,10 @@
 		</meta-data>
 	</dynamic-element>
 	<dynamic-element dataType="string" indexType="keyword" name="URL" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="small">
-		<dynamic-element dataType="string" indexType="keyword" name="Post" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="large">
+		<dynamic-element dataType="string" indexType="keyword" name="body" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="large">
 			<meta-data locale="en_US">
 				<entry name="label">
-					<![CDATA[Post]]>
+					<![CDATA[Body]]>
 				</entry>
 				<entry name="predefinedValue">
 					<![CDATA[]]>
@@ -38,7 +38,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="Category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
 		<dynamic-element name="travel" type="option" value="value 1">
 			<meta-data locale="en_US">
 				<entry name="label">
