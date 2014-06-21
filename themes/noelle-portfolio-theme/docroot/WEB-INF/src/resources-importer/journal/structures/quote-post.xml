@@ -1,4 +1,3 @@
-
 <root available-locales="en_US" default-locale="en_US">
 	<dynamic-element dataType="string" indexType="keyword" name="Quote" readOnly="false" repeatable="false" required="true" showLabel="true" type="textarea" width="large">
 		<meta-data locale="en_US">
