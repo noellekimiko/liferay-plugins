@@ -1,0 +1,18 @@
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+
+<h6>
+posted
+$dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale)
+in
+<a href="/$category.getData()"> $category.getData() </a>
+</h6>
+<p>
+#if (!$image.getSiblings().isEmpty())
+	#foreach ($cur_image in $image.getSiblings())
+
+	<img alt="Image" src="$cur_image.getData()" />
+
+	#end
+#end
+</p>
+<p>$body.getData()</p>
