@@ -1,11 +1,7 @@
 <#assign renderUrlMax = request["render-url-maximized"]>
 <#assign namespace = request["portlet-namespace"]>
-<#assign readmore = request.parameters?is_hash && getterUtil.getBoolean(request.parameters.read_more, false)>
-<h1>${title.getData()}</h1>
-<h6>${date.getData()}</h6>
-<#if readmore>
+<#assign date_DateObj = dateUtil.newDate(getterUtil.getLong(date.getData()))>
+
+<h6>${dateUtil.getDate(date_DateObj, "dd MMM yyyy - HH:mm:ss", locale)}</h6>
 <p>${body.getData()}</p>
 <p>${category.getData()}</p>
-<#else>
-<a href="${renderUrlMax}&${namespace}read_more=true">Read More</a>
-</#if>
