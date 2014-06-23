@@ -1,3 +1,5 @@
+## ---------- Be sure to add comments to sections of code ---------- ##
+
 #set ($show_site_name_supported = $getterUtil.getBoolean($theme_settings.getProperty("show-site-name-supported"), true))
 
 #set ($show_site_name_default = $getterUtil.getBoolean($theme_settings.getProperty("show-site-name-default"), $show_site_name_supported))

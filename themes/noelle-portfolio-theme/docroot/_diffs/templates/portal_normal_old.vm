@@ -24,7 +24,7 @@ $theme.include($body_top_include)
 #end
 
 #if($theme.getSetting("display-slogan-header") == true)
-    $theme.getSetting("slogan")
+	$theme.getSetting("slogan")
 #end
 
 <div class="container-fluid" id="wrapper">
@@ -72,8 +72,8 @@ $theme.include($body_top_include)
 
 	<footer id="footer" role="contentinfo">
 
-        <p class="powered-by">
-        #language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+		<p class="powered-by">
+			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</p>
 	</footer>
 

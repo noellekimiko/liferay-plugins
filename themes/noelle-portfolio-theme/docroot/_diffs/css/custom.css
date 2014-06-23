@@ -6,16 +6,15 @@
 
 $bannerHeight: 771px;
 $bannerHeightSmall: 257px;
-$dockbarWidth:67px;
+$dockbarWidth: 67px;
 
 /* ---------- Base styles ---------- */
 
 .aui {
-
 	#wrapper {
 		margin: 0 auto;
-		padding: 0;
 		max-width: 1154px;
+		padding: 0;
 	}
 
 	.tooltip {
@@ -29,6 +28,7 @@ $dockbarWidth:67px;
 		background-position: center;
 		height: $bannerHeight;
 		position: relative;
+		//Use Mixin
 		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
 		.page-title {
@@ -38,11 +38,10 @@ $dockbarWidth:67px;
 				line-height: 1px;
 			}
 
-			animation: dropHeader 0.3s ease-in;
-
+			//No need for prefixes?
 			-moz-animation: dropHeader 0.3s ease-in;
-
 			-webkit-animation: dropHeader 0.3s ease-in;
+			animation: dropHeader 0.3s ease-in;
 		}
 	}
 
@@ -55,7 +54,7 @@ $dockbarWidth:67px;
 	}
 
 	.link-to-content {
-		font-family: Open Sans, sans-serif;
+		font-family: Open Sans, Arial, Helvetica, sans-serif;
 		font-size: 18px;
 		margin: 20px auto;
 		text-align: center;
@@ -79,13 +78,13 @@ $dockbarWidth:67px;
 
 	.page-title {
 		color: #FFF;
-		margin-top: 0;
 		margin-bottom: 90px;
+		margin-top: 0;
 		padding-top: 20px;
 		text-align: center;
 
 		span {
-			font-family: Megrim, sans-serif;
+			font-family: Megrim, Arial, Helvetica, sans-serif;
 		}
 	}
 
@@ -121,13 +120,13 @@ $dockbarWidth:67px;
 
 
 	.dropdown-menu {
-		> .active > a, > .active > a:hover, > .active > a:focus, > li > a:hover {
+		> .active > a, > .active > a:focus, > .active > a:hover, > li > a:hover {
 			background: #FFF;
 			color: #000;
 		}
 	}
 
-	.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	.navbar .nav > .active > a, .navbar .nav > .active > a:focus, .navbar .nav > .active > a:hover, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
 		background: transparent;
 		color: #FFF;
 	}
@@ -206,8 +205,8 @@ $dockbarWidth:67px;
 		padding-bottom: 30px;
 	}
 
+	//Browser support?
 	#column-1 .portlet-boundary:first-child {
-
 		padding: 20px 60px 40px;
 		text-align: center;
 
@@ -227,22 +226,22 @@ $dockbarWidth:67px;
 		}
 
 		&:after {
-			width: 40%;
-			margin-left: 30%;
+			border: 0;
+			border-bottom: 3px solid #EEE;
 			content: "";
 			display: block;
 			height: 30px;
-			border: 0;
-			border-bottom: 3px solid #eee;
+			margin-left: 30%;
+			width: 40%;
 		}
 
 		&:before {
-			width: 50%;
-			margin-left: 25%;
+			border-top: 5px solid #EEE;
 			content: "";
 			display: block;
 			height: 20px;
-			border-top: 5px solid #eee;
+			margin-left: 25%;
+			width: 50%;
 		}
 	}
 }
@@ -261,7 +260,6 @@ $dockbarWidth:67px;
 
 	@media (max-width: 480px) {
 
-		/* Remove padding from default */
 		body {
 			padding: 0;
 		}
@@ -282,7 +280,6 @@ $dockbarWidth:67px;
 
 	@media (min-width: 481px) and (max-width: 767px) {
 
-		/* Remove padding from default */
 		body {
 			padding: 0;
 		}
@@ -312,6 +309,7 @@ $dockbarWidth:67px;
 			.navbar-inner {
 				background: rgba(0, 0, 0, 0.85);
 				border: 0;
+				//Use mixin
 				box-shadow: none;
 
 				.btn-navbar {
@@ -344,6 +342,7 @@ $dockbarWidth:67px;
 		}
 
 		.signed-in {
+			// _ not allows are beginning
 			#_145_navAccountControlsNavbarBtn {
 				padding: 2px;
 			}
@@ -387,7 +386,7 @@ $dockbarWidth:67px;
 				padding: 0;
 
 				.nav-collapse {
-					.nav > li > a:hover, .nav > li > a:focus, .dropdown-menu a:hover, .dropdown-menu a:focus {
+					.dropdown-menu a:focus, .dropdown-menu a:hover, .nav > li > a:focus, .nav > li > a:hover {
 						background: transparent;
 						color: #FFF;
 					}
@@ -399,10 +398,11 @@ $dockbarWidth:67px;
 
 						a {
 							box-shadow: none;
-							color: #999999;
+							color: #999;
 							text-shadow: none;
 						}
 
+						//a :hover intentional?
 						:hover {
 							color: #FFF;
 						}
@@ -597,7 +597,7 @@ $dockbarWidth:67px;
 					> a {
 						background: transparent;
 						box-shadow: none;
-						color: #999999;
+						color: #999;
 						line-height: 20px;
 						padding: 15px 10px;
 						text-decoration: none;
@@ -615,18 +615,14 @@ $dockbarWidth:67px;
 						margin: 0 auto;
 						padding: 0;
 
-						&:after,
-						&:before {
+						&:after, &:before {
 							display: none;
 						}
 					}
 
 				}
 
-				li.dropdown.active,
-				li.dropdown.hover,
-				li.dropdown.open,
-				li.dropdown.open.active {
+				li.dropdown.active, li.dropdown.hover, li.dropdown.open, li.dropdown.open.active {
 					> .dropdown-toggle {
 						background: transparent;
 						color: #FFF;
@@ -639,10 +635,10 @@ $dockbarWidth:67px;
 					color: #FFF;
 				}
 
-				.active a, .active a:focus, .hover a, .lfr-nav-item  {
+				.active a, .active a:focus, .hover a, .lfr-nav-item {
 					background: transparent;
 					box-shadow: none;
-					color: #999999;
+					color: #999;
 				}
 			}
 		}
@@ -650,7 +646,6 @@ $dockbarWidth:67px;
 		/* ---------- Banner ---------- */
 
 		.banner-large {
-
 			.page-title {
 				padding: 50px auto;
 
@@ -674,27 +669,31 @@ $dockbarWidth:67px;
 
 /* ---------- Extras ---------- */
 
+//Move all mixins usage down here.
+
+//Use Mixin?
+//Explain keyframes
 @-moz-keyframes dropHeader {
-    0% {
-        -moz-transform: translateY(-40px);
-    }
-    100% {
-        -moz-transform: translateY(0);
-    }
+	0% {
+		-moz-transform: translateY(-40px);
+	}
+	100% {
+		-moz-transform: translateY(0);
+	}
 }
 @-webkit-keyframes dropHeader {
-    0% {
-        -webkit-transform: translateY(-40px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-    }
+	0% {
+		-webkit-transform: translateY(-40px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
 }
 @keyframes dropHeader {
-    0% {
-        transform: translateY(-40px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
