@@ -1,0 +1,23 @@
+body.original {
+	background-color: #FFF;
+	color: #282828;
+	font-family: Open Sans, sans-serif;
+	font-size: 16px;
+}
+
+.original a {
+	color: #428BCA;
+}
+
+.original h1, .original h2, .original h3, .original h4, .original h5, .original h6 {
+	font-family: Raleway, sans-serif;
+}
+
+.original footer {
+	color: #7B7B7B;
+	font-family: Open Sans, sans-serif;
+
+	a {
+		color: #AAA;
+	}
+}
