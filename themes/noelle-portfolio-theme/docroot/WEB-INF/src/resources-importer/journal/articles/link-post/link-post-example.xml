@@ -1,6 +1,6 @@
 <root available-locales="en_US" default-locale="en_US">
 	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
-		<dynamic-content>"6/24/14" </dynamic-content>
+		<dynamic-content> 6/24/14 </dynamic-content>
 	</dynamic-element>
 	<dynamic-element dataType="string" indexType="keyword" name="URL" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="small">
 		<dynamic-content> http://www.liferay.com </dynamic-content>
