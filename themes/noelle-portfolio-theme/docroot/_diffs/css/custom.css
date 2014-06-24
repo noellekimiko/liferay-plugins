@@ -206,7 +206,7 @@ $dockbarWidth:67px;
 		padding-bottom: 30px;
 	}
 
-	#column-1 .portlet-boundary:first-child {
+	.homepage #column-1 .portlet-boundary:first-child {
 
 		padding: 20px 60px 40px;
 
