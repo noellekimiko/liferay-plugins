@@ -188,9 +188,6 @@
 				[
 					{
 						"portletId": "71"
-					},
-					{
-						"portletId": "47"
 					}
 				],
 				[
@@ -243,7 +240,8 @@
 				}
 			],
 			"name": "Categorized Posts",
-			"title": "Categorized Posts"
+			"title": "Categorized Posts",
+			"hidden": "true"
 		}
 	]
 }
