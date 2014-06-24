@@ -29,8 +29,12 @@
 
 </head>
 
-<body class="$css_class">
 
+#if ($is_first_parent)
+	<body class="$css_class homepage">
+#else
+	<body class="$css_class">
+#end
 
 $theme.include($body_top_include)
 
