@@ -1,14 +1,14 @@
 <root available-locales="en_US" default-locale="en_US">
 	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
-		<dynamic-content></dynamic-content>
+		<dynamic-content> 6/24/14 </dynamic-content>
 	</dynamic-element>
 	<dynamic-element dataType="string" indexType="keyword" name="body" readOnly="false" repeatable="false" required="true" showLabel="true" type="textarea" width="large">
-		<dynamic-content></dynamic-content>
+		<dynamic-content> This is a basic blog </dynamic-content>
 	</dynamic-element>
 	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
 		<dynamic-element name="travel" type="option" value="travel"> </dynamic-element>
 		<dynamic-element name="thoughts" type="option" value="thoughts"> </dynamic-element>
 		<dynamic-element name="other" type="option" value="other"> </dynamic-element>
-		<dynamic-content></dynamic-content>
+		<dynamic-content> other </dynamic-content>
 	</dynamic-element>
 </root>
