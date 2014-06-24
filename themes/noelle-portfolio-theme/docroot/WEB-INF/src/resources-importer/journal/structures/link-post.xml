@@ -38,7 +38,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+	<dynamic-element dataType="string" indexType="keyword" multiple="false" name="category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
 		<dynamic-element name="travel" type="option" value="travel">
 			<meta-data locale="en_US">
 				<entry name="label">
