@@ -1,3 +1,10 @@
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+<h6>
+posted
+$dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale)
+in
+<a href="$category.getData()"> $category.getData() </a>
+</h6>
+
 <h1>$quote.getData()</h1>
 <h6>$author.getData()</h6>
-<a href="$category.getData()"> $category.getData() </a>
