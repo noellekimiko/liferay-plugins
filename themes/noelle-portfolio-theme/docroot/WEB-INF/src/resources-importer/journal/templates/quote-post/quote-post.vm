@@ -1,3 +1,3 @@
 <h1>$quote.getData()</h1>
 <h6>$author.getData()</h6>
-<a href="/$category.getData()"> $category.getData() </a>
+<a href="$category.getData()"> $category.getData() </a>
