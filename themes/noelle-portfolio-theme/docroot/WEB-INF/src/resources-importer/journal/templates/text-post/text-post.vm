@@ -3,7 +3,7 @@
 posted
 $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale)
 in
-<a href="/$category.getData()"> $category.getData() </a>
+<a href="$category.getData()"> $category.getData() </a>
 </h6>
 
 <p>$body.getData()</p>
