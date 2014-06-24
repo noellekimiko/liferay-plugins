@@ -19,6 +19,15 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
+							"articleId": "link-post-example.html",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Link Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
 							"articleId": "Welcome.html",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "Welcome",
@@ -174,6 +183,50 @@
 			"name": "Portlets",
 			"title": "Portlets"
 		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "19"
+					}
+				]
+			],
 
+			"friendlyURL": "/travel",
+			"layoutTemplateId": "1_column",
+			"name": "Travel",
+			"title": "Travel",
+			"hidden": "true"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "19"
+					}
+				]
+			],
+
+			"friendlyURL": "/thoughts",
+			"layoutTemplateId": "1_column",
+			"name": "Thoughts",
+			"title": "Thoughts",
+			"hidden": "true"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "19"
+					}
+				]
+			],
+
+			"friendlyURL": "/other",
+			"layoutTemplateId": "1_column",
+			"name": "other",
+			"title": "other",
+			"hidden": "true"
+		}
 	]
 }
