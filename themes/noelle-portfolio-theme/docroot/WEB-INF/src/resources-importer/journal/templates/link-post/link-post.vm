@@ -1,9 +1,17 @@
 #set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+
+#set ($renderUrlMax = $request.get("render-url-maximized"))
+#set ($namespace = $request.get("portlet-namespace"))
+#set ($readmore = $request.get("parameters").get("read_more"))
+#set ($URL = $request.get("URL"))
+#set ($URL = $request.get("category"))
+#set ($URL = $request.get("body"))
+
 <h6>
 posted
 $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale)
 in
 <a href="/$category.getData()"> $category.getData() </a>
-<a href="$URL.getData()"> $URL.getData()</a>
 </h6>
+<a href="$URL.getData()"> $URL.getData()</a>
 <p>$body.getData()</p>
