@@ -67,8 +67,7 @@
 			"columns": [
 				[
 					"Audio.html",
-					"Carousel.html",
-					"Media Carousel.xml",
+					"Travel Carousel.xml",
 					{
 						"portletId": "56",
 						"portletPreferences": {
