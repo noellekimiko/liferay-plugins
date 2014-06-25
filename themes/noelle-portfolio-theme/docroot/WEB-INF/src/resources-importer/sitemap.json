@@ -71,7 +71,7 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
-							"articleId": "image-post-example.xml",
+							"articleId": "Image Post Example.xml",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "Image Post",
 							"portletSetupUseCustomTitle": "true"
@@ -80,7 +80,7 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
-							"articleId": "link-post-example.xml",
+							"articleId": "Link Post Example.xml",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "Link Post",
 							"portletSetupUseCustomTitle": "true"
@@ -89,7 +89,7 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
-							"articleId": "quote-post-example.xml",
+							"articleId": "Quote Post Example.xml",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "Quote Post",
 							"portletSetupUseCustomTitle": "true"
@@ -98,7 +98,7 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
-							"articleId": "text-post-example.xml",
+							"articleId": "Text Post Example.xml",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "Text Post",
 							"portletSetupUseCustomTitle": "true"
