@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="" name="audio_file" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-documentlibrary" width="">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Audio File]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Choose any .mp3 file]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>
