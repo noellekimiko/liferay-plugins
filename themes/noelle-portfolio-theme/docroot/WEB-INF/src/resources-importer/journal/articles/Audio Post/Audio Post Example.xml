@@ -1,7 +1,16 @@
 <?xml version="1.0"?>
 
 <root available-locales="en_US" default-locale="en_US">
+	<dynamic-element name="date" type="ddm-date" index-type="">
+		<dynamic-content> <![CDATA[1404000400000]]> </dynamic-content>
+	</dynamic-element>
 	<dynamic-element name="audio_file" type="ddm-documentlibrary" index-type="">
 		<dynamic-content> <![CDATA[[$FILE=somewhere_sunny.mp3$]]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="body" type="textarea" index-type="">
+		<dynamic-content> <![CDATA[A relaxing tune.]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="category" type="list" index-type="">
+		<dynamic-content> <![CDATA[other]]> </dynamic-content>
 	</dynamic-element>
 </root>
