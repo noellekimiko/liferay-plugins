@@ -1,17 +1,16 @@
+<?xml version="1.0"?>
+
 <root available-locales="en_US" default-locale="en_US">
-	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
-		<dynamic-content> 6/24/14 </dynamic-content>
+	<dynamic-element name="date" type="ddm-date" index-type="">
+		<dynamic-content> <![CDATA[1403686800000]]> </dynamic-content>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="quote" readOnly="false" repeatable="false" required="true" showLabel="true" type="textarea" width="large">
-		<dynamic-content> "It's kind of fun to do the impossible" </dynamic-content>
+	<dynamic-element name="quote" type="textarea" index-type="">
+		<dynamic-content> <![CDATA["It's kind of fun to do the impossible"]]> </dynamic-content>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="author" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="medium">
-		<dynamic-content> Walt Disney </dynamic-content>
+	<dynamic-element name="author" type="text" index-type="">
+		<dynamic-content> <![CDATA[Walt Disney]]> </dynamic-content>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" multiple="true" name="category" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
-		<dynamic-element name="travel" type="option" value="travel"> </dynamic-element>
-		<dynamic-element name="thoughts" type="option" value="thoughts"> </dynamic-element>
-		<dynamic-element name="other" type="option" value="other"> </dynamic-element>
-		<dynamic-content> thoughts </dynamic-content>
+	<dynamic-element name="category" type="list" index-type="">
+		<dynamic-content> <![CDATA[thoughts]]> </dynamic-content>
 	</dynamic-element>
 </root>
