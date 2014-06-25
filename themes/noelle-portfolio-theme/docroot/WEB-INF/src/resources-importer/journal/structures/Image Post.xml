@@ -14,10 +14,10 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="quote" readOnly="false" repeatable="false" required="true" showLabel="true" type="textarea" width="large">
+	<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="" name="image" readOnly="false" repeatable="true" required="true" showLabel="true" type="ddm-documentlibrary" width="">
 		<meta-data locale="en_US">
 			<entry name="label">
-				<![CDATA[Quote]]>
+				<![CDATA[Image]]>
 			</entry>
 			<entry name="predefinedValue">
 				<![CDATA[]]>
@@ -27,10 +27,10 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="author" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="medium">
+	<dynamic-element dataType="string" indexType="keyword" name="body" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="large">
 		<meta-data locale="en_US">
 			<entry name="label">
-				<![CDATA[Author]]>
+				<![CDATA[Body]]>
 			</entry>
 			<entry name="predefinedValue">
 				<![CDATA[]]>
