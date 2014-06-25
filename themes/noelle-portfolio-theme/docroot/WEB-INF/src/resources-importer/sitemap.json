@@ -66,8 +66,16 @@
 		{
 			"columns": [
 				[
-					"Audio.html",
 					"Travel Carousel.xml",
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Audio Post Example.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Audio Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
 					{
 						"portletId": "56",
 						"portletPreferences": {
