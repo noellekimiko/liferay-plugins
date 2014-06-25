@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <root available-locales="en_US" default-locale="en_US">
 	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
 		<meta-data locale="en_US">
@@ -21,7 +23,7 @@
 				<![CDATA[]]>
 			</entry>
 			<entry name="tip">
-				<![CDATA[]]>
+				<![CDATA[Make sure to begin with "http://"]]>
 			</entry>
 		</meta-data>
 	</dynamic-element>
