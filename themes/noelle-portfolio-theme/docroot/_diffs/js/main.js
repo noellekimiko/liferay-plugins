@@ -38,18 +38,6 @@ AUI().ready(
 			).render();
 		}
 
-		var myCarousel = A.one('#myCarousel');
-
-		if (myCarousel) {
-			new A.Carousel(
-		      {
-		        contentBox: '#myCarousel',
-		        height: 300,
-		        width: 400
-		      }
-		    ).render();
-		}
-
 		var pagination = A.one('div.pagination');
 
 		if (pagination) {
