@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element name="width" type="text" index-type="">
+		<dynamic-content><![CDATA[460]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="height" type="text" index-type="">
+		<dynamic-content><![CDATA[320]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="duration" type="list" index-type="">
+		<dynamic-content><![CDATA[3]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="carousel-item" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=image1.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="carousel-item" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=image2.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="carousel-item" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=image3.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="carousel-item" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=image4.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="carousel-item" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=image5.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="carousel-item" type="document_library" index-type="">
+		<dynamic-content><![CDATA[[$FILE=image6.jpg$]]]></dynamic-content>
+	</dynamic-element>
+</root>
