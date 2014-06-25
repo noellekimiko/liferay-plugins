@@ -1,0 +1,20 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-audio")
+
+#set ($audio_data = $audio_file.getData())
+
+<div id="$content_class"></div>
+
+<script type="text/javascript">
+	AUI().ready(
+		'aui-audio',
+		function(A) {
+			new A.Audio(
+				{
+					boundingBox: '#${content_class}',
+					url: '$audio_data'
+				}
+			).render();
+		}
+	);
+</script>
