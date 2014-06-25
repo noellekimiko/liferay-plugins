@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <root available-locales="en_US" default-locale="en_US">
 	<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" name="date" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-date" width="small">
 		<meta-data locale="en_US">
@@ -12,7 +14,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="image" fieldNamespace="wcm" indexType="keyword" name="image" readOnly="false" repeatable="true" required="true" showLabel="true" type="wcm-image" width="">
+	<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="" name="image" readOnly="false" repeatable="true" required="true" showLabel="true" type="ddm-documentlibrary" width="">
 		<meta-data locale="en_US">
 			<entry name="label">
 				<![CDATA[Image]]>
