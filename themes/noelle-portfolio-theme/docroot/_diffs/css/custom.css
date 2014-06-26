@@ -254,7 +254,6 @@ $dockbarWidth: 67px;
 	/*---------- Up to landscape phone ----------*/
 
 	@media (max-width: 480px) {
-		/* Remove padding from default */
 		body {
 			padding: 0;
 		}
@@ -274,7 +273,6 @@ $dockbarWidth: 67px;
 	/*---------- Landscape phone to desktop/tablet ----------*/
 
 	@media (min-width: 481px) and (max-width: 767px) {
-		/* Remove padding from default */
 		body {
 			padding: 0;
 		}
