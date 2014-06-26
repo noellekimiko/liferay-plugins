@@ -37,11 +37,9 @@ $dockbarWidth: 67px;
 				line-height: 1px;
 			}
 
-			animation: dropHeader 0.3s ease-in;
-
 			-moz-animation: dropHeader 0.3s ease-in;
-
 			-webkit-animation: dropHeader 0.3s ease-in;
+			animation: dropHeader 0.3s ease-in;
 		}
 	}
 
