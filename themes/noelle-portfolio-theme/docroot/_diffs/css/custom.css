@@ -13,8 +13,8 @@ $dockbarWidth: 67px;
 .aui {
 	#wrapper {
 		margin: 0 auto;
-		padding: 0;
 		max-width: 1154px;
+		padding: 0;
 	}
 
 	.tooltip {
@@ -78,8 +78,8 @@ $dockbarWidth: 67px;
 
 	.page-title {
 		color: #FFF;
-		margin-top: 0;
 		margin-bottom: 90px;
+		margin-top: 0;
 		padding-top: 20px;
 		text-align: center;
 
@@ -224,22 +224,22 @@ $dockbarWidth: 67px;
 		}
 
 		&:after {
-			width: 40%;
-			margin-left: 30%;
+			border: 0;
+			border-bottom: 3px solid #eee;
 			content: "";
 			display: block;
 			height: 30px;
-			border: 0;
-			border-bottom: 3px solid #eee;
+			margin-left: 30%;
+			width: 40%;
 		}
 
 		&:before {
-			width: 50%;
-			margin-left: 25%;
+			border-top: 5px solid #eee;
 			content: "";
 			display: block;
 			height: 20px;
-			border-top: 5px solid #eee;
+			margin-left: 25%;
+			width: 50%;
 		}
 	}
 }
