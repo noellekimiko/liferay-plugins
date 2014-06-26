@@ -5,7 +5,7 @@
 		<dynamic-content> <![CDATA[1404500400000]]> </dynamic-content>
 	</dynamic-element>
 	<dynamic-element name="image" type="document_library" index-type="">
-		<dynamic-content><![CDATA[[$FILE=sparklers.png$]]]></dynamic-content>
+		<dynamic-content><![CDATA[[$FILE=sparklers.jpg$]]]></dynamic-content>
 	</dynamic-element>
 	<dynamic-element name="body" type="textarea" index-type="">
 		<dynamic-content> <![CDATA[Celebrating the 4th of July.]]> </dynamic-content>
