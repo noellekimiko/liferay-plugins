@@ -20,7 +20,7 @@
 			</dynamic-element>
 			<dynamic-content><![CDATA[]]></dynamic-content>
 		</dynamic-element>
-		<dynamic-content><![CDATA[[$FILE=carousel_1.png$]]]></dynamic-content>
+		<dynamic-content><![CDATA[[$FILE=carousel_1.jpg$]]]></dynamic-content>
 	</dynamic-element>
 	<dynamic-element name="image" type="document_library" index-type="">
 		<dynamic-element name="link" type="text" index-type="">
@@ -29,7 +29,7 @@
 			</dynamic-element>
 			<dynamic-content><![CDATA[]]></dynamic-content>
 		</dynamic-element>
-		<dynamic-content><![CDATA[[$FILE=carousel_2.png$]]]></dynamic-content>
+		<dynamic-content><![CDATA[[$FILE=carousel_2.jpg$]]]></dynamic-content>
 	</dynamic-element>
 	<dynamic-element name="image" type="document_library" index-type="">
 		<dynamic-element name="link" type="text" index-type="">
@@ -38,6 +38,6 @@
 			</dynamic-element>
 			<dynamic-content><![CDATA[]]></dynamic-content>
 		</dynamic-element>
-		<dynamic-content><![CDATA[[$FILE=carousel_3.png$]]]></dynamic-content>
+		<dynamic-content><![CDATA[[$FILE=carousel_3.jpg$]]]></dynamic-content>
 	</dynamic-element>
 </root>
