@@ -1,14 +1,21 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-link")
 #set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
 
-#set ($renderUrlMax = $request.get("render-url-maximized"))
-#set ($namespace = $request.get("portlet-namespace"))
-#set ($readmore = $request.get("parameters").get("read_more"))
+<style type="text/css">
+	.portlet-content {
+		padding: 0px 10px;
+	}
 
-<h6>
-posted
-$dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale)
-in
-<a href="$category.getData()"> $category.getData() </a>
-</h6>
-<a href="$URL.getData()"> $URL.getData()</a>
-<p>$body.getData()</p>
+	.aui .portlet-content {
+		padding-bottom: 10px;
+	}
+</style>
+
+<div id="$content_class">
+	<h5> posted $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale) in
+		<a href="$category.getData()"> $category.getData() </a>
+	</h5>
+	<a href="$URL.getData()"> $URL.getData()</a>
+	<p>$body.getData()</p>
+</div>
