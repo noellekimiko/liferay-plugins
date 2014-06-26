@@ -268,7 +268,7 @@ $dockbarWidth: 67px;
 			}
 		}
 
-		.site-name {
+		header .site-name {
 			font-size: 25px;
 		}
 	}
@@ -288,7 +288,7 @@ $dockbarWidth: 67px;
 			}
 		}
 
-		.site-name {
+		header .site-name {
 			font-size: 30px;
 		}
 	}
