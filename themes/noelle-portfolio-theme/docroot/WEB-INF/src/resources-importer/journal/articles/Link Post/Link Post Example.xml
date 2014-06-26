@@ -4,11 +4,14 @@
 	<dynamic-element name="date" type="ddm-date" index-type="">
 		<dynamic-content> <![CDATA[1403686800000]]> </dynamic-content>
 	</dynamic-element>
+	<dynamic-element name="URL_label" type="text" index-type="">
+		<dynamic-content> <![CDATA[Liferay]]> </dynamic-content>
+	</dynamic-element>
 	<dynamic-element name="URL" type="text" index-type="">
 		<dynamic-content> <![CDATA[http://www.liferay.com]]> </dynamic-content>
 	</dynamic-element>
 	<dynamic-element name="body" type="textarea" index-type="">
-		<dynamic-content> <![CDATA[Liferay Site]]> </dynamic-content>
+		<dynamic-content> <![CDATA[The above link will lead to the Liferay homepage]]> </dynamic-content>
 	</dynamic-element>
 	<dynamic-element name="category" type="list" index-type="">
 		<dynamic-content> <![CDATA[other]]> </dynamic-content>
