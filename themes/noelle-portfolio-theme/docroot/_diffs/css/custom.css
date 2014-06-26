@@ -334,8 +334,14 @@ $dockbarWidth: 67px;
 		}
 
 		.signed-in {
-			#_145_navAccountControlsNavbarBtn {
+			.btn-navbar {
+				height: 36px;
 				padding: 2px;
+				width: 37px;
+			}
+
+			.icon-pencil, .icon-reorder {
+				line-height: 1.8;
 			}
 
 			.user-avatar-image {
