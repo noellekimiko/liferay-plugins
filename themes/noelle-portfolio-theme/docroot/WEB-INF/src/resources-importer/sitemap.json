@@ -8,7 +8,7 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
-							"articleId": "Jumbo Paragraph.html",
+							"articleId": "Homepage Pagination.xml",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "A big headline to catch some attention",
 							"portletSetupUseCustomTitle": "true"
