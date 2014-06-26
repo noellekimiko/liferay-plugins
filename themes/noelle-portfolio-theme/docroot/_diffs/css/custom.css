@@ -335,6 +335,7 @@ $dockbarWidth: 67px;
 
 		.signed-in {
 			.btn-navbar {
+				box-sizing: border-box;
 				height: 36px;
 				padding: 2px;
 				width: 37px;
