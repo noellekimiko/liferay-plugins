@@ -1,5 +1,6 @@
 @import url(color_schemes/original.css);
 @import "mixins";
+@import "compass/css3";
 @import "compass/css3/transform";
 
 /* ---------- Variables ---------- */
@@ -28,7 +29,6 @@ $dockbarWidth: 67px;
 		background-position: center;
 		height: $bannerHeight;
 		position: relative;
-		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
 		.page-title {
 			span {
@@ -50,7 +50,6 @@ $dockbarWidth: 67px;
 		background-position: center;
 		height: $bannerHeightSmall;
 		position: relative;
-		text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 	}
 
 	.link-to-content {
@@ -666,6 +665,10 @@ $dockbarWidth: 67px;
 }
 
 /* ---------- Extras ---------- */
+
+.banner-large, .banner-small {
+	@include text-shadow(rgba(0, 0, 0, 0.6) 0 0 10px);
+}
 
 @-moz-keyframes dropHeader {
     0% {
