@@ -116,13 +116,13 @@ $dockbarWidth: 67px;
 	}
 
 	.dropdown-menu {
-		> .active > a, > .active > a:hover, > .active > a:focus, > li > a:hover {
+		> .active > a, > .active > a:focus, > .active > a:hover, > li > a:hover {
 			background: #FFF;
 			color: #000;
 		}
 	}
 
-	.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	.navbar .nav > .active > a, .navbar .nav > .active > a:focus, .navbar .nav > .active > a:hover, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
 		background: transparent;
 		color: #FFF;
 	}
