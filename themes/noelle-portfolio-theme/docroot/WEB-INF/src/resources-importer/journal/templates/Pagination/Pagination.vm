@@ -2,20 +2,30 @@
 #set ($content_class = "multiple-items-${content_id}-pages")
 #set ($pagination_class = "multiple-items-${content_id}-pagination")
 
+<style type="text/css">
+	.page-content div {
+		display: none;
+	}
+
+	.page-content div:first-child {
+		display: block;
+	}
+</style>
+
 <div id="$content_class"  class="page-content">
 	#foreach ($item in $page.getSiblings())
-		<div class="page-item">
-			#if ($item.getData())
-				<div> $item.getData() </div>
-			#end
-		</div>
+		#if ($item.getData())
+			<div class="page-item">
+				$item.getData()
+			</div>
+		#end
 	#end
 </div>
 
 <div id="$pagination_class" class="pagination">
 	<ul class="pagination-content">
 		<li><a href="#">Prev</a></li>
-		#foreach ($item in $num_pages.getData())
+		#foreach ($item in $page.getSiblings())
 			<li><a href="#"> $item.getData() </a></li>
 		#end
 		<li><a href="#">Next</a></li>
@@ -30,9 +40,9 @@
 
 			new A.Pagination(
 				{
-					boundingBox: '#${content_class}',
-					circular: false,
-					contentBox: '#${content_class} .page-item',
+					boundingBox: '#${pagination_class}',
+					circular: true,
+					contentBox: '#${pagination_class} .pagination-content',
 					on: {
 						changeRequest: function(event) {
 							var instance = this,
