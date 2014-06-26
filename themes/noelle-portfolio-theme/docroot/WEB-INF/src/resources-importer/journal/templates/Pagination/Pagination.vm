@@ -1,0 +1,54 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-pages")
+#set ($pagination_class = "multiple-items-${content_id}-pagination")
+
+<div id="$content_class"  class="page-content">
+	#foreach ($item in $page.getSiblings())
+		<div class="page-item">
+			#if ($item.getData())
+				<div> $item.getData() </div>
+			#end
+		</div>
+	#end
+</div>
+
+<div id="$pagination_class" class="pagination">
+	<ul class="pagination-content">
+		<li><a href="#">Prev</a></li>
+		#foreach ($item in $num_pages.getData())
+			<li><a href="#"> $item.getData() </a></li>
+		#end
+		<li><a href="#">Next</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	AUI().ready(
+		'aui-pagination',
+		function(A) {
+			var pages = A.all('#${content_class} div');
+
+			new A.Pagination(
+				{
+					boundingBox: '#${content_class}',
+					circular: false,
+					contentBox: '#${content_class} .page-item',
+					on: {
+						changeRequest: function(event) {
+							var instance = this,
+								state = event.state,
+								lastState = event.lastState;
+
+							if (lastState) {
+								pages.item(lastState.page - 1).setStyle('display', 'none');
+							}
+
+							pages.item(state.page - 1).setStyle('display', 'block');
+						}
+					},
+					page: 1
+				}
+			).render();
+		}
+	);
+</script>
