@@ -395,7 +395,7 @@ $dockbarWidth: 67px;
 							text-shadow: none;
 						}
 
-						:hover {
+						&:hover {
 							color: #FFF;
 						}
 					}
@@ -405,13 +405,13 @@ $dockbarWidth: 67px;
 			.dropdown-menu, .dropdown-submenu {
 				> li {
 					> a {
-						:hover, :focus {
+						&:hover, &:focus {
 							background: transparent;
 						}
 					}
 				}
 
-				:hover, :focus {
+				&:hover, &:focus {
 					background: transparent;
 				}
 			}
