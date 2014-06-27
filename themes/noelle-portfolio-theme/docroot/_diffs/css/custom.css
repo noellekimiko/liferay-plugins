@@ -351,18 +351,15 @@ $dockbarWidth: 67px;
 			}
 		}
 
+		.nav-collapse.open {
+			left: auto;
+			right: 1%;
+		}
+
 		.signed-out {
 			#_145_navAddControlsNavbarBtn {
 				display: none;
 			}
-		}
-
-		#_145_navAccountControlsNavbarCollapse {
-			right: 55px;
-		}
-
-		#_145_navAddControlsNavbarCollapse {
-			right: 0;
 		}
 
 		.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
