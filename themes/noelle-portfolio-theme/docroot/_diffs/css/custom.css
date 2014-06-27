@@ -391,7 +391,7 @@ $dockbarWidth: 67px;
 
 						a {
 							box-shadow: none;
-							color: #999999;
+							color: #999;
 							text-shadow: none;
 						}
 
@@ -589,7 +589,7 @@ $dockbarWidth: 67px;
 					> a {
 						background: transparent;
 						box-shadow: none;
-						color: #999999;
+						color: #999;
 						line-height: 20px;
 						padding: 15px 10px;
 						text-decoration: none;
@@ -633,7 +633,7 @@ $dockbarWidth: 67px;
 				.active a, .active a:focus, .hover a, .lfr-nav-item  {
 					background: transparent;
 					box-shadow: none;
-					color: #999999;
+					color: #999;
 				}
 			}
 		}
