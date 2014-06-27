@@ -626,7 +626,7 @@ $dockbarWidth: 67px;
 					color: #FFF;
 				}
 
-				.active a, .active a:focus, .hover a, .lfr-nav-item  {
+				.active a, .active a:focus, .hover a, .lfr-nav-item {
 					background: transparent;
 					box-shadow: none;
 					color: #999;
