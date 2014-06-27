@@ -36,10 +36,6 @@ $dockbarWidth: 67px;
 				font-size: 100px;
 				line-height: 1px;
 			}
-
-			-moz-animation: dropHeader 0.3s ease-in;
-			-webkit-animation: dropHeader 0.3s ease-in;
-			animation: dropHeader 0.3s ease-in;
 		}
 	}
 
@@ -662,6 +658,12 @@ $dockbarWidth: 67px;
 
 .banner-large, .banner-small {
 	@include text-shadow(rgba(0, 0, 0, 0.6) 0 0 10px);
+}
+
+.banner-large .page-title {
+	-moz-animation: dropHeader 0.3s ease-in;
+	-webkit-animation: dropHeader 0.3s ease-in;
+	animation: dropHeader 0.3s ease-in;
 }
 
 @-moz-keyframes dropHeader {
