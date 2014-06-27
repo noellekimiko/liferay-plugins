@@ -607,17 +607,13 @@ $dockbarWidth: 67px;
 						margin: 0 auto;
 						padding: 0;
 
-						&:after,
-						&:before {
+						&:after, &:before {
 							display: none;
 						}
 					}
 				}
 
-				li.dropdown.active,
-				li.dropdown.hover,
-				li.dropdown.open,
-				li.dropdown.open.active {
+				li.dropdown.active, li.dropdown.hover, li.dropdown.open, li.dropdown.open.active {
 					> .dropdown-toggle {
 						background: transparent;
 						color: #FFF;
