@@ -356,10 +356,8 @@ $dockbarWidth: 67px;
 			right: 1%;
 		}
 
-		.signed-out {
-			#_145_navAddControlsNavbarBtn {
-				display: none;
-			}
+		.signed-out .portlet-dockbar a:nth-child(2) {
+			display: none;
 		}
 
 		.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
