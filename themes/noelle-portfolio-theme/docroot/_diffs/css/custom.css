@@ -60,6 +60,21 @@ $dockbarWidth: 67px;
 		line-height: 1.6;
 	}
 
+	table {
+		width: 100%;
+		word-wrap: break-word;
+	}
+
+	th, td {
+		border: 1px solid #DDD;
+		padding: 8px;
+		text-align: left;
+	}
+
+	th {
+		background: #EEE;
+	}
+
 	.tooltip {
 		display: none;
 	}
