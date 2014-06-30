@@ -26,9 +26,7 @@
 	<script>
 		#include ("$javascript_folder/arctext.js")
 	</script>
-
 </head>
-
 
 #if ($is_first_parent)
 	<body class="$css_class homepage">
@@ -39,7 +37,6 @@
 $theme.include($body_top_include)
 
 #dockbar()
-
 
 <div class="container-fluid" id="wrapper">
 	#if ($is_first_parent)
@@ -58,13 +55,11 @@ $theme.include($body_top_include)
 				#end
 
 				<h1 class="page-title">
-
 					<a class="link-to-homepage" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
 						<span>
 							$the_title
 						</span>
 					</a>
-
 				</h1>
 
 				<script>
@@ -74,7 +69,6 @@ $theme.include($body_top_include)
 				<h2 class="link-to-content">
 					<a href="#content">See More</a>
 				</h2>
-
 			</div>
 
 	#else
@@ -96,7 +90,6 @@ $theme.include($body_top_include)
 					<span>$the_title</span>
 				</h2>
 			</div>
-
 	#end
 
 			#if ($has_navigation || $is_signed_in)
@@ -105,7 +98,6 @@ $theme.include($body_top_include)
 		</header>
 
 	<div id="content">
-
 		#if ($selectable)
 			$theme.include($content_include)
 		#else
@@ -118,7 +110,6 @@ $theme.include($body_top_include)
 	</div>
 
 	<footer id="footer" role="contentinfo">
-
 		#if($theme.getSetting("display-slogan-footer") == true)
 	        <div class="footer-left">
 	        	<h3> $site_name </h3>
@@ -128,7 +119,6 @@ $theme.include($body_top_include)
 				</p>
 			</div>
 		#end
-
 
 		#if($has_navigation and ($theme.getSetting("display-navigation-footer") == true))
 			<div class="footer-right">
@@ -146,10 +136,7 @@ $theme.include($body_top_include)
 		<p class="powered-by">
         #language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</p>
-
-
 	</footer>
-
 </div>
 
 $theme.include($body_bottom_include)
