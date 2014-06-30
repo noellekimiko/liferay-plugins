@@ -196,6 +196,7 @@ $dockbarWidth: 67px;
 		border-bottom: 5px solid #EEE;
 		margin-bottom: 40px;
 		padding-bottom: 30px;
+		padding-top: 0;
 	}
 
 	.homepage #column-1 .portlet-boundary:first-child {
