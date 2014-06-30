@@ -24,6 +24,11 @@ body.original {
 	margin: 10px 0;
 }
 
+.original ol, .original ul {
+	margin-left: 0;
+	padding-left: 40px;
+}
+
 .original footer {
 	color: #7B7B7B;
 	font-family: Open Sans, Arial, Helvetica, sans-serif;
