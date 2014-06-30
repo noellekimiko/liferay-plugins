@@ -137,6 +137,12 @@ $dockbarWidth: 67px;
 		padding: 50px 20px 10px;
 	}
 
+	dd {
+		line-height: 1.4;
+		margin: 4px 0 0;
+		padding: 0 0 .5em 0;
+	}
+
 	/* ---------- Footer ---------- */
 
 	footer {
