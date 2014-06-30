@@ -154,6 +154,7 @@ $dockbarWidth: 67px;
 
 	footer {
 		background: #222;
+		font-family: Open Sans, Arial, Helvetica, sans-serif;
 		left: 0;
 		padding: 10px 20px;
 		position: absolute;
