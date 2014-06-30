@@ -111,11 +111,11 @@ $theme.include($body_top_include)
 
 	<footer id="footer" role="contentinfo">
 		#if($theme.getSetting("display-slogan-footer") == true)
-	        <div class="footer-left">
-	        	<h3> $site_name </h3>
+			<div class="footer-left">
+				<h3> $site_name </h3>
 
-	        	<p class="footer-slogan">
-			    	$theme.getSetting("slogan")
+				<p class="footer-slogan">
+					$theme.getSetting("slogan")
 				</p>
 			</div>
 		#end
@@ -134,7 +134,7 @@ $theme.include($body_top_include)
 		#end
 
 		<p class="powered-by">
-        #language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+		#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</p>
 	</footer>
 </div>
