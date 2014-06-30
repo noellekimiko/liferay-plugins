@@ -667,26 +667,26 @@ $dockbarWidth: 67px;
 }
 
 @-moz-keyframes dropHeader {
-    0% {
-        -moz-transform: translateY(-40px);
-    }
-    100% {
-        -moz-transform: translateY(0);
-    }
+	0% {
+		-moz-transform: translateY(-40px);
+	}
+	100% {
+		-moz-transform: translateY(0);
+	}
 }
 @-webkit-keyframes dropHeader {
-    0% {
-        -webkit-transform: translateY(-40px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-    }
+	0% {
+		-webkit-transform: translateY(-40px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
 }
 @keyframes dropHeader {
-    0% {
-        transform: translateY(-40px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
