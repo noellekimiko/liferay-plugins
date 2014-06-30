@@ -15,11 +15,5 @@
 			<setting configurable="true" key="display-slogan-footer" type="checkbox" value="true" />
 			<setting configurable="true" key="display-navigation-footer" type="checkbox" value="true" />
 		</settings>
-		<color-scheme id="01" name="Original">
-			<css-class>original</css-class>
-			<color-scheme-images-path>
-				${images-path}/color_schemes/${css-class}
-			</color-scheme-images-path>
-		</color-scheme>
 	</theme>
 </look-and-feel>
