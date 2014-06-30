@@ -18,6 +18,14 @@ $dockbarWidth: 67px;
 		padding: 0;
 	}
 
+	a {
+		color: #428BCA;
+
+		&:focus, &:hover {
+			color: #2A6496;
+		}
+	}
+
 	body {
 		background-color: #FFF;
 		color: #282828;
