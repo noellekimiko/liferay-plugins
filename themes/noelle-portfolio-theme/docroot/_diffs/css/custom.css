@@ -189,6 +189,7 @@ $dockbarWidth: 67px;
 
 	.portlet-title {
 		font-size: 32px;
+		margin: 0;
 	}
 
 	.portlet-content {
