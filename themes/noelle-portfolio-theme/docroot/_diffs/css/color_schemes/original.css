@@ -7,15 +7,6 @@ body.original {
 	color: #428BCA;
 }
 
-.original ol, .original ul {
-	margin-left: 0;
-	padding-left: 40px;
-}
-
-.original li {
-	line-height: 1.6;
-}
-
 .original footer {
 	color: #7B7B7B;
 
