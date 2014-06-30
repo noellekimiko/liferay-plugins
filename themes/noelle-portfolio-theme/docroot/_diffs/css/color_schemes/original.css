@@ -29,6 +29,10 @@ body.original {
 	padding-left: 40px;
 }
 
+.original li {
+	line-height: 1.6;
+}
+
 .original footer {
 	color: #7B7B7B;
 	font-family: Open Sans, Arial, Helvetica, sans-serif;
