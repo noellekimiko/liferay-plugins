@@ -16,6 +16,14 @@ body.original {
 	line-height: 1.1;
 }
 
+.original h1, .original h2, .original h3 {
+	margin: 20px 0 10px;
+}
+
+.original h4, .original h5, .original h6 {
+	margin: 10px 0;
+}
+
 .original footer {
 	color: #7B7B7B;
 	font-family: Open Sans, Arial, Helvetica, sans-serif;
