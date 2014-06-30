@@ -127,7 +127,7 @@
 		dir		: 1,	// 1: curve is down, -1: curve is up.
 		rotate	: true,	// if true each letter will be rotated.
 		fitText	: false // if you wanna try out the fitText plugin (http://fittextjs.com/) set this to true. Don't forget the wrapper should be fluid.
-    };
+	};
 
 	$.Arctext.prototype 	= {
 		_init 				: function( options ) {
