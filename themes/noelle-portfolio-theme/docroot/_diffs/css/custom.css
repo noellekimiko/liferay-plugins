@@ -18,6 +18,10 @@ $dockbarWidth: 67px;
 		padding: 0;
 	}
 
+	a {
+		color: #428BCA;
+	}
+
 	body {
 		background-color: #FFF;
 		color: #282828;
