@@ -20,6 +20,10 @@ $dockbarWidth: 67px;
 
 	a {
 		color: #428BCA;
+
+		&:focus, &:hover {
+			color: #2A6496;
+		}
 	}
 
 	body {
