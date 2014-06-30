@@ -24,10 +24,6 @@ $dockbarWidth: 67px;
 		line-height: 1.6;
 	}
 
-	.tooltip {
-		display: none;
-	}
-
 	h1, h2, h3, h4, h5, h6 {
 		font-family: Raleway, Arial, Helvetica, sans-serif;
 		font-weight: normal;
@@ -40,6 +36,23 @@ $dockbarWidth: 67px;
 
 	h4, h5, h6 {
 		margin: 10px 0;
+	}
+
+	dd {
+		line-height: 1.4;
+		margin: 4px 0 0;
+		padding: 0 0 .5em 0;
+	}
+
+	label {
+		display: inline-block;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.6;
+	}
+
+	.tooltip {
+		display: none;
 	}
 
 	/* ---------- Banner ---------- */
@@ -164,19 +177,6 @@ $dockbarWidth: 67px;
 		li {
 			line-height: 1.6;
 		}
-	}
-
-	dd {
-		line-height: 1.4;
-		margin: 4px 0 0;
-		padding: 0 0 .5em 0;
-	}
-
-	label {
-		display: inline-block;
-		font-size: 16px;
-		font-weight: bold;
-		line-height: 1.6;
 	}
 
 	/* ---------- Footer ---------- */
