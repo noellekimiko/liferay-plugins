@@ -17,6 +17,10 @@ $dockbarWidth: 67px;
 		padding: 0;
 	}
 
+	.tooltip {
+		display: none;
+	}
+
 	a {
 		color: #428BCA;
 
@@ -31,20 +35,6 @@ $dockbarWidth: 67px;
 		font-family: Open Sans, Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		line-height: 1.6;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-family: Raleway, Arial, Helvetica, sans-serif;
-		font-weight: normal;
-		line-height: 1.1;
-	}
-
-	h1, h2, h3 {
-		margin: 20px 0 10px;
-	}
-
-	h4, h5, h6 {
-		margin: 10px 0;
 	}
 
 	blockquote {
@@ -63,6 +53,20 @@ $dockbarWidth: 67px;
 		line-height: 1.4;
 		margin: 4px 0 0;
 		padding: 0 0 .5em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Raleway, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		line-height: 1.1;
+	}
+
+	h1, h2, h3 {
+		margin: 20px 0 10px;
+	}
+
+	h4, h5, h6 {
+		margin: 10px 0;
 	}
 
 	label {
@@ -85,10 +89,6 @@ $dockbarWidth: 67px;
 
 	th {
 		background: #EEE;
-	}
-
-	.tooltip {
-		display: none;
 	}
 
 	/* ---------- Banner ---------- */
