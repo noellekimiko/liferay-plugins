@@ -13,6 +13,7 @@ body.original {
 .original h1, .original h2, .original h3, .original h4, .original h5, .original h6 {
 	font-family: Raleway, Arial, Helvetica, sans-serif;
 	font-weight: normal;
+	line-height: 1.1;
 }
 
 .original footer {
