@@ -1,0 +1,69 @@
+{
+	"layoutTemplateId": "1_2_columns_ii",
+
+	"publicPages": [
+		{
+			"columns": [
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Jumbo Paragraph.html",
+							"groupId": "${groupId}",
+							"portletSetupShowBorders": "true",
+							"portletSetupTitle_en_US": "A big headline to catch some attention",
+							"portletSetupUseCustomTitle": "true"
+						}
+					}
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Welcome.html",
+							"groupId": "${groupId}",
+							"portletSetupShowBorders": "true",
+							"portletSetupTitle_en_US": "Welcome",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "HTML Example.html",
+							"groupId": "${groupId}",
+							"portletSetupShowBorders": "true",
+							"portletSetupTitle_en_US": "HTML Example",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "CSS Elements.html",
+							"groupId": "${groupId}",
+							"portletSetupShowBorders": "true",
+							"portletSetupTitle_en_US": "CSS Elements",
+							"portletSetupUseCustomTitle": "true"
+						}
+					}
+				],
+				[
+					{
+						"portletId": "58",
+						"portletPreferences": {
+							"portletSetupShowBorders": "true",
+							"portletSetupUseCustomTitle": "false"
+						}
+					}
+				]
+			],
+			"friendlyURL": "/home",
+			"nameMap": {
+				"en_US": "Welcome",
+				"fr_CA": "Bienvenue"
+			},
+			"title": "Welcome"
+		}
+	]
+}
