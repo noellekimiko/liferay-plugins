@@ -45,7 +45,7 @@ $dockbarWidth: 67px;
 	body {
 		background-color: #FFF;
 		color: #282828;
-		font-family: Open Sans, Arial, Helvetica, sans-serif;
+		font-family: "Open Sans", Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		line-height: 1.6;
 	}
@@ -129,7 +129,7 @@ $dockbarWidth: 67px;
 	}
 
 	.link-to-content {
-		font-family: Open Sans, Arial, Helvetica, sans-serif;
+		font-family: "Open Sans", Arial, Helvetica, sans-serif;
 		font-size: 18px;
 		margin: 20px auto;
 		text-align: center;
@@ -233,7 +233,7 @@ $dockbarWidth: 67px;
 	footer {
 		background: #222;
 		color: #7B7B7B;
-		font-family: Open Sans, Arial, Helvetica, sans-serif;
+		font-family: "Open Sans", Arial, Helvetica, sans-serif;
 		left: 0;
 		padding: 10px 20px;
 		position: absolute;
