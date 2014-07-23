@@ -1,0 +1,31 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-link")
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+
+<style type="text/css">
+	.portlet-content {
+		padding: 0px 10px;
+	}
+
+	.aui .portlet-content {
+		padding-bottom: 10px;
+	}
+
+	.quote {
+		text-align: center;
+	}
+
+	.quote-author {
+		text-indent: 30%;
+	}
+</style>
+
+<div id="$content_class">
+	<h5> posted $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale) in
+		<a href="$category.getData()"> $category.getData() </a>
+	</h5>
+
+	<h1 class="quote">$quote.getData()</h1>
+
+	<p class="quote-author"> &mdash; $author.getData()</p>
+</div>

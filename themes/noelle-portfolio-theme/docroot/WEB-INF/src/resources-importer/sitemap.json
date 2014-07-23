@@ -1,0 +1,281 @@
+{
+	"layoutTemplateId": "1_2_columns_ii",
+	"publicPages": [
+		{
+			"title": "Welcome",
+			"nameMap": {
+				"en_US": "Welcome",
+				"fr_CA": "Bienvenue"
+			},
+			"friendlyURL": "/home",
+			"columns": [
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Homepage Pagination.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "A big headline to catch some attention",
+							"portletSetupUseCustomTitle": "true"
+						}
+					}
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Welcome.html",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Welcome",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "HTML Example.html",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "HTML Example",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "CSS Elements.html",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "CSS Elements",
+							"portletSetupUseCustomTitle": "true"
+						}
+					}
+				],
+				[
+					{
+						"portletId": "58"
+					},
+					{
+						"portletId": "39",
+						"portletPreferences": {
+							"portletSetupUseCustomTitle": "false"
+						}
+					}
+				]
+			]
+		},
+		{
+			"title": "Media",
+			"name": "Media",
+			"friendlyURL": "/media",
+			"layoutTemplateId": "1_column",
+			"columns": [
+				[
+					"Travel Carousel.xml",
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Audio Post Example.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Audio Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Image Post Example.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Image Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Link Post Example.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Link Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Quote Post Example.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Quote Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Text Post Example.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Text Post",
+							"portletSetupUseCustomTitle": "true"
+						}
+					}
+				]
+			]
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "47"
+					}
+				],
+				[
+					{
+						"portletId": "58"
+					}
+				]
+			],
+			"friendlyURL": "/community",
+			"layoutTemplateId": "2_columns_iii",
+			"layouts": [
+				{
+					"columns": [
+						[
+							{
+								"portletId": "36"
+							}
+						]
+					],
+
+					"friendlyURL": "/wiki",
+					"layoutTemplateId": "1_column",
+					"nameMap": {
+						"en_US": "Wiki"
+					},
+					"title": "Wiki"
+				},
+				{
+					"columns": [
+						[
+							{
+								"portletId": "19"
+							}
+						]
+					],
+
+					"friendlyURL": "/messageboard",
+					"layoutTemplateId": "1_column",
+					"name": "Message Board",
+					"title": "Message Board"
+				},
+			],
+			"name": "Community",
+			"title": "Community"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "1_WAR_randombibleverseportlet"
+					},
+					{
+						"portletId": "1_WAR_youtubeportlet"
+					}
+				],
+				[
+					{
+						"portletId": "1_WAR_twitterportlet"
+					}
+				]
+			],
+			"friendlyURL": "/portlets",
+			"layoutTemplateId": "2_columns_iii",
+			"layouts": [
+				{
+					"columns": [
+						[
+							{
+								"portletId": "97"
+							}
+						]
+					],
+					"friendlyURL": "/quicknote",
+					"layoutTemplateId": "1_column",
+					"name": "Quick Note",
+					"title": "Quick Note"
+				},
+				{
+					"columns": [
+						[
+							{
+								"portletId": "16"
+							}
+						]
+					],
+					"friendlyURL": "/currencyconverter",
+					"layoutTemplateId": "1_column",
+					"name": "Currency Converter",
+					"title": "Currency Converter"
+				}
+			],
+			"name": "Portlets",
+			"title": "Portlets"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "71"
+					}
+				],
+				[
+					{
+						"portletId": "58"
+					}
+				]
+			],
+			"friendlyURL": "/categorized",
+			"layoutTemplateId": "2_columns_iii",
+			"layouts": [
+				{
+					"columns": [
+						[
+							{
+								"portletId": "58"
+							}
+						]
+					],
+					"friendlyURL": "/travel",
+					"layoutTemplateId": "1_column",
+					"name": "Travel",
+					"title": "Travel"
+				},
+				{
+					"columns": [
+						[
+							{
+								"portletId": "58"
+							}
+						]
+					],
+					"friendlyURL": "/thoughts",
+					"layoutTemplateId": "1_column",
+					"name": "Thoughts",
+					"title": "Thoughts"
+				},
+				{
+					"columns": [
+						[
+							{
+								"portletId": "58"
+							}
+						]
+					],
+					"friendlyURL": "/other",
+					"layoutTemplateId": "1_column",
+					"name": "Other",
+					"title": "Other"
+				}
+			],
+			"name": "Categorized Posts",
+			"title": "Categorized Posts",
+			"hidden": "true"
+		}
+	]
+}

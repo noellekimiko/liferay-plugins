@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element name="date" type="ddm-date" index-type="">
+		<dynamic-content> <![CDATA[1403686800000]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="quote" type="textarea" index-type="">
+		<dynamic-content> <![CDATA["It's kind of fun to do the impossible"]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="author" type="text" index-type="">
+		<dynamic-content> <![CDATA[Walt Disney]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="category" type="list" index-type="">
+		<dynamic-content> <![CDATA[thoughts]]> </dynamic-content>
+	</dynamic-element>
+</root>

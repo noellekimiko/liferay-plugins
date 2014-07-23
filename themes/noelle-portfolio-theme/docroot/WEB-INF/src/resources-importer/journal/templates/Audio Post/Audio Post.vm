@@ -1,0 +1,37 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-audio")
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+#set ($audio_data = $audio_file.getData())
+
+<style type="text/css">
+	// This will style every portlet-content on the page. Try to narrow the scope.
+	#$content_class .portlet-content {
+		padding: 0px 10px;
+	}
+
+	.aui #$content_class .portlet-content {
+		padding-bottom: 10px;
+	}
+</style>
+
+<div id="$content_class">
+	<h5> posted $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale) in
+		<a href="$category.getData()"> $category.getData() </a>
+	</h5>
+
+	<p>$body.getData()</p>
+</div>
+
+<script type="text/javascript">
+	AUI().ready(
+		'aui-audio',
+		function(A) {
+			new A.Audio(
+				{
+					boundingBox: '#${content_class}',
+					url: '$audio_data'
+				}
+			).render();
+		}
+	);
+</script>

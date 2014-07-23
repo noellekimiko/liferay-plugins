@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element name="date" type="ddm-date" width="small">
+		<dynamic-content> <![CDATA[1403686800000]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="body" type="textarea" width="large">
+		<dynamic-content> <![CDATA[You can make basic text posts like this one.]]> </dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="category" type="list" width="">
+		<dynamic-content> <![CDATA[other]]> </dynamic-content>
+	</dynamic-element>
+</root>

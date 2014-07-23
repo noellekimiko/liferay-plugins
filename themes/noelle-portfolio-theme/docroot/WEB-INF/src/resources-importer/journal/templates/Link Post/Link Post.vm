@@ -1,0 +1,49 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-link")
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+
+<style type="text/css">
+	#${content_class} .portlet-content {
+		padding: 0px 10px;
+	}
+
+	.aui #${content_class} .portlet-content {
+		padding-bottom: 10px;
+	}
+
+	div .link-post-url {
+		background: rgba(0,0,0, 0.4);
+		display: block;
+		margin-right: 0;
+		padding: 20px;
+		text-align: center;
+	}
+
+	div .link-post-url h1 {
+		color: #FFF;
+	}
+
+	div .link-post-url:focus, div .link-post-url:hover {
+		text-decoration: none;
+	}
+</style>
+
+<div id="$content_class">
+	<h5> posted $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale) in
+		<a href="$category.getData()"> $category.getData() </a>
+	</h5>
+
+	<a href="$URL.getData()" class="link-post-url">
+		<div>
+			#if ($URL_label.data != "")
+				<h1> $URL_label.getData() </hl>
+
+				<h4>$URL.getData()</h4>
+			#else
+				<h4> $URL.getData() </h4>
+			#end
+		</div>
+	</a>
+
+	<p>$body.getData()</p>
+</div>

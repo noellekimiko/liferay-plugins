@@ -1,0 +1,29 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-image")
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+
+<style type="text/css">
+	#${content_class} .portlet-content {
+		padding: 0px 10px;
+	}
+
+	.aui #${content_class} .portlet-content {
+		padding-bottom: 10px;
+	}
+</style>
+
+<div id="$content_class">
+	<h5> posted $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale) in
+		<a href="$category.getData()"> $category.getData() </a>
+	</h5>
+
+	<p>
+	#if (!$image.getSiblings().isEmpty())
+		#foreach ($cur_image in $image.getSiblings())
+			<img alt="Image" src="$cur_image.getData()" />
+		#end
+	#end
+	</p>
+
+	<p>$body.getData()</p>
+</div>

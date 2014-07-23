@@ -1,0 +1,66 @@
+#set ($content_id = $reserved-article-id.getData())
+#set ($content_class = "multiple-items-${content_id}-pages")
+#set ($pagination_class = "multiple-items-${content_id}-pagination")
+
+<style type="text/css">
+	.page-content div {
+		display: none;
+	}
+
+	.page-content div:first-child {
+		display: block;
+	}
+</style>
+
+<div id="$content_class"  class="page-content">
+	#foreach ($item in $page.getSiblings())
+		#if ($item.getData())
+			<div class="page-item">
+				$item.getData()
+			</div>
+		#end
+	#end
+</div>
+
+<div id="$pagination_class" class="pagination">
+	<ul class="pagination-content">
+		<li><a href="#">Prev</a></li>
+
+		#foreach ($item in $page.getSiblings())
+			<li><a href="#"> $item.getData() </a></li>
+		#end
+
+		<li><a href="#">Next</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	AUI().ready(
+		'aui-pagination',
+		function(A) {
+			var pages = A.all('#${content_class} div');
+
+			new A.Pagination(
+				{
+					boundingBox: '#${pagination_class}',
+					circular: true,
+					contentBox: '#${pagination_class} .pagination-content',
+					on: {
+						changeRequest: function(event) {
+							var instance = this,
+								state = event.state,
+								lastState = event.lastState;
+
+							if (lastState) {
+								pages.item(lastState.page - 1).setStyle('display', 'none');
+							}
+
+							pages.item(state.page - 1).setStyle('display', 'block');
+						}
+					},
+					page: 1
+				}
+			).render();
+		}
+	);
+</script>

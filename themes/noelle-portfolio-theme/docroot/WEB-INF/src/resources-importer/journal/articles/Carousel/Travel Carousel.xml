@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element name="width" type="text" index-type="">
+		<dynamic-content><![CDATA[960]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="height" type="text" index-type="">
+		<dynamic-content><![CDATA[260]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="duration" type="list" index-type="">
+		<dynamic-content><![CDATA[6]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="controls" type="boolean" index-type="">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="image" type="document_library" index-type="">
+		<dynamic-element name="link" type="text" index-type="">
+			<dynamic-element name="url-location" type="text" index-type="">
+				<dynamic-content><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=carousel_1.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="image" type="document_library" index-type="">
+		<dynamic-element name="link" type="text" index-type="">
+			<dynamic-element name="url-location" type="text" index-type="">
+				<dynamic-content><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=carousel_2.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="image" type="document_library" index-type="">
+		<dynamic-element name="link" type="text" index-type="">
+			<dynamic-element name="url-location" type="text" index-type="">
+				<dynamic-content><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=carousel_3.jpg$]]]></dynamic-content>
+	</dynamic-element>
+</root>
