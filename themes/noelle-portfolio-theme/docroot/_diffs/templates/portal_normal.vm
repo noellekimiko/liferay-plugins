@@ -39,21 +39,21 @@ $theme.include($body_top_include)
 #dockbar()
 
 <div class="container-fluid" id="wrapper">
-	#if ($is_first_parent)
-		<header class="banner-large" id="banner" role="banner">
-			<div id="heading">
-				#if ($show_site_name)
-					<h1 class="site-title">
-						<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-							<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-						</a>
+	<header class="#if ($is_first_parent) banner-large #else banner-small #end" id="banner" role="banner">
+		<div id="heading">
+			#if ($show_site_name)
+				<h1 class="site-title">
+					<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+					</a>
 
-						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-							$site_name
-						</span>
-					</h1>
-				#end
+					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+						$site_name
+					</span>
+				</h1>
+			#end
 
+			#if ($is_first_parent)
 				<h1 class="page-title">
 					<a class="link-to-homepage" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
 						<span>
@@ -69,33 +69,17 @@ $theme.include($body_top_include)
 				<h2 class="link-to-content">
 					<a href="#content">See More</a>
 				</h2>
-			</div>
-
-	#else
-		<header class="banner-small" id="banner" role="banner">
-			<div id="heading">
-				#if ($show_site_name)
-					<h1 class="site-title">
-						<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-							<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-						</a>
-
-						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-							$site_name
-						</span>
-					</h1>
-				#end
-
+			#else
 				<h2 class="page-title">
 					<span>$the_title</span>
 				</h2>
-			</div>
-	#end
-
-			#if ($has_navigation || $is_signed_in)
-				#parse ("$full_templates_path/navigation.vm")
 			#end
-		</header>
+		</div>
+
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
 
 	<div id="content">
 		#if ($selectable)
