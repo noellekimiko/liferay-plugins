@@ -2,6 +2,12 @@
 	"layoutTemplateId": "1_2_columns_ii",
 	"publicPages": [
 		{
+			"title": "Welcome",
+			"nameMap": {
+				"en_US": "Welcome",
+				"fr_CA": "Bienvenue"
+			},
+			"friendlyURL": "/home",
 			"columns": [
 				[
 					{
@@ -54,15 +60,13 @@
 						}
 					}
 				]
-			],
-			"friendlyURL": "/home",
-			"nameMap": {
-				"en_US": "Welcome",
-				"fr_CA": "Bienvenue"
-			},
-			"title": "Welcome"
+			]
 		},
 		{
+			"title": "Media",
+			"name": "Media",
+			"friendlyURL": "/media",
+			"layoutTemplateId": "1_column",
 			"columns": [
 				[
 					"Travel Carousel.xml",
@@ -112,11 +116,7 @@
 						}
 					}
 				]
-			],
-			"friendlyURL": "/media",
-			"layoutTemplateId": "1_column",
-			"name": "Media",
-			"title": "Media"
+			]
 		},
 		{
 			"columns": [
