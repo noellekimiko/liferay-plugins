@@ -55,24 +55,18 @@ $theme.include($body_top_include)
 
 			#if ($is_first_parent)
 				<h1 class="page-title">
-					<a class="link-to-homepage" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-						<span>
-							$the_title
-						</span>
-					</a>
+					<a class="link-to-homepage" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">$the_title</a>
 				</h1>
 
 				<script>
-					$('.page-title span').arctext();
+					$('.page-title').arctext();
 				</script>
 
 				<h2 class="link-to-content">
 					<a href="#content">See More</a>
 				</h2>
 			#else
-				<h2 class="page-title">
-					<span>$the_title</span>
-				</h2>
+				<h2 class="page-title">$the_title</h2>
 			#end
 		</div>
 

@@ -113,11 +113,9 @@ $dockbarWidth: 67px;
 		position: relative;
 
 		.page-title {
-			span {
-				color: #FFF;
-				font-size: 100px;
-				line-height: 1px;
-			}
+			color: #FFF;
+			font-size: 100px;
+			line-height: 1px;
 		}
 	}
 
@@ -153,14 +151,11 @@ $dockbarWidth: 67px;
 
 	.page-title {
 		color: #FFF;
+		font-family: Megrim, Arial, Helvetica, sans-serif;
 		margin-bottom: 90px;
 		margin-top: 0;
 		padding-top: 20px;
 		text-align: center;
-
-		span {
-			font-family: Megrim, Arial, Helvetica, sans-serif;
-		}
 	}
 
 	.site-title {
@@ -344,11 +339,9 @@ $dockbarWidth: 67px;
 			padding: 0;
 		}
 
-		.banner-large {
-			.page-title span {
-				font-size: 40px;
-				line-height: 40px;
-			}
+		.banner-large .page-title {
+			font-size: 40px;
+			line-height: 40px;
 		}
 
 		header .site-name {
@@ -363,11 +356,9 @@ $dockbarWidth: 67px;
 			padding: 0;
 		}
 
-		.banner-large {
-			.page-title span {
-				font-size: 70px;
-				line-height: 70px;
-			}
+		.banner-large .page-title {
+			font-size: 70px;
+			line-height: 70px;
 		}
 
 		header .site-name {
@@ -718,23 +709,15 @@ $dockbarWidth: 67px;
 
 		/* ---------- Banner ---------- */
 
-		.banner-large {
-			.page-title {
-				padding: 50px auto;
-
-				span {
-					font-size: 120px;
-					line-height: 120px;
-				}
-			}
+		.banner-large .page-title {
+			padding: 50px auto;
+			font-size: 120px;
+			line-height: 120px;
 		}
 
-		.banner-small {
-			.page-title {
-				span {
-					font-size: 60px;
-					line-height: 60px;
-				}
+		.banner-small .page-title {
+			font-size: 60px;
+			line-height: 60px;
 			}
 		}
 	}
