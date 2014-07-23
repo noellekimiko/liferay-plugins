@@ -3,11 +3,11 @@
 #set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
 
 <style type="text/css">
-	.portlet-content {
+	#${content_class} .portlet-content {
 		padding: 0px 10px;
 	}
 
-	.aui .portlet-content {
+	.aui #${content_class} .portlet-content {
 		padding-bottom: 10px;
 	}
 </style>

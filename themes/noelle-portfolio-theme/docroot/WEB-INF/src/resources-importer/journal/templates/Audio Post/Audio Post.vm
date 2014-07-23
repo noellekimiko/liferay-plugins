@@ -4,11 +4,12 @@
 #set ($audio_data = $audio_file.getData())
 
 <style type="text/css">
-	.portlet-content {
+	// This will style every portlet-content on the page. Try to narrow the scope.
+	#$content_class .portlet-content {
 		padding: 0px 10px;
 	}
 
-	.aui .portlet-content {
+	.aui #$content_class .portlet-content {
 		padding-bottom: 10px;
 	}
 </style>
