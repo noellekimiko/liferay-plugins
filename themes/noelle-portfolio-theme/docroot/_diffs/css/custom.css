@@ -52,7 +52,7 @@ $dockbarWidth: 67px;
 	dd {
 		line-height: 1.4;
 		margin: 4px 0 0;
-		padding: 0 0 .5em 0;
+		padding: 0 0 0.5em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -265,6 +265,7 @@ $dockbarWidth: 67px;
 			text-decoration: none;
 		}
 	}
+
 	/* ---------- Portlet Styling ---------- */
 
 	.portlet-title {
@@ -300,7 +301,7 @@ $dockbarWidth: 67px;
 
 		&:after {
 			border: 0;
-			border-bottom: 3px solid #eee;
+			border-bottom: 3px solid #EEE;
 			content: "";
 			display: block;
 			height: 30px;
@@ -309,7 +310,7 @@ $dockbarWidth: 67px;
 		}
 
 		&:before {
-			border-top: 5px solid #eee;
+			border-top: 5px solid #EEE;
 			content: "";
 			display: block;
 			height: 20px;

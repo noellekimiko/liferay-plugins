@@ -32,15 +32,18 @@
 	<h5> posted $dateUtil.getDate($date_DateObj, "dd MMM yyyy", $locale) in
 		<a href="$category.getData()"> $category.getData() </a>
 	</h5>
+
 	<a href="$URL.getData()" class="link-post-url">
 		<div>
 			#if ($URL_label.data != "")
 				<h1> $URL_label.getData() </hl>
+
 				<h4>$URL.getData()</h4>
 			#else
 				<h4> $URL.getData() </h4>
 			#end
 		</div>
 	</a>
+
 	<p>$body.getData()</p>
 </div>

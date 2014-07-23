@@ -20,9 +20,7 @@
 	<p>
 	#if (!$image.getSiblings().isEmpty())
 		#foreach ($cur_image in $image.getSiblings())
-
-		<img alt="Image" src="$cur_image.getData()" />
-
+			<img alt="Image" src="$cur_image.getData()" />
 		#end
 	#end
 	</p>

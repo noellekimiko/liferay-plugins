@@ -26,5 +26,6 @@
 	</h5>
 
 	<h1 class="quote">$quote.getData()</h1>
+
 	<p class="quote-author"> &mdash; $author.getData()</p>
 </div>

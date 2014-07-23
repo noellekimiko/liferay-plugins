@@ -5,5 +5,6 @@
 #set ($show_site_name = $getterUtil.getBoolean($layout.layoutSet.getSettingsProperty("showSiteName"), $show_site_name_default))
 
 ## ---------- Folder Shortcuts ---------- ##
+
 #set ($images_folder = "$full_templates_path/../images")
 #set ($javascript_folder = "$full_templates_path/../js")

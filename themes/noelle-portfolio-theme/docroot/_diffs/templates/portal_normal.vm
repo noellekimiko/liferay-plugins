@@ -63,7 +63,7 @@ $theme.include($body_top_include)
 				</h1>
 
 				<script>
-					$( '.page-title span' ).arctext();
+					$('.page-title span').arctext();
 				</script>
 
 				<h2 class="link-to-content">
@@ -110,7 +110,7 @@ $theme.include($body_top_include)
 	</div>
 
 	<footer id="footer" role="contentinfo">
-		#if($theme.getSetting("display-slogan-footer") == true)
+		#if ($theme.getSetting("display-slogan-footer") == true)
 			<div class="footer-left">
 				<h3> $site_name </h3>
 
@@ -120,9 +120,10 @@ $theme.include($body_top_include)
 			</div>
 		#end
 
-		#if($has_navigation and ($theme.getSetting("display-navigation-footer") == true))
+		#if ($has_navigation and ($theme.getSetting("display-navigation-footer") == true))
 			<div class="footer-right">
 				<h3>Site Pages</h3>
+
 				<ul>
 					#foreach ($nav_item in $nav_items)
 						<a href=$nav_item.getTarget()>
@@ -134,7 +135,7 @@ $theme.include($body_top_include)
 		#end
 
 		<p class="powered-by">
-		#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</p>
 	</footer>
 </div>

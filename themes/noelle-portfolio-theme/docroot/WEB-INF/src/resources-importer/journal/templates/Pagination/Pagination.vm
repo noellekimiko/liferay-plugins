@@ -25,9 +25,11 @@
 <div id="$pagination_class" class="pagination">
 	<ul class="pagination-content">
 		<li><a href="#">Prev</a></li>
+
 		#foreach ($item in $page.getSiblings())
 			<li><a href="#"> $item.getData() </a></li>
 		#end
+
 		<li><a href="#">Next</a></li>
 	</ul>
 </div>
