@@ -26,6 +26,20 @@
 	<script>
 		#include ("$javascript_folder/arctext.js")
 	</script>
+
+	<script>
+		window.onscroll = pastHeader;
+		function pastHeader() {
+			var bannerHeight = $('#banner').height();
+			if($(this).scrollTop() >= bannerHeight) {
+				$('body').addClass('dockbar-dark');
+			}
+			else {
+				$('body').removeClass('dockbar-dark');
+			}
+		}
+	</script>
+
 </head>
 
 #if ($is_first_parent)
