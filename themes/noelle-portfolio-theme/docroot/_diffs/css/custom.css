@@ -202,12 +202,13 @@ $dockbarWidth: 67px;
 		color: #FFF;
 	}
 
-	/* ---------- Navigation ---------- */
-
 	.dockbar.navbar-static-top {
 		position: fixed;
 		z-index: 301;
 	}
+
+	/* ---------- Navigation ---------- */
+
 
 	/* ---------- Content ---------- */
 
