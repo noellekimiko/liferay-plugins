@@ -106,6 +106,10 @@ $dockbarWidth: 67px;
 
 	/* ---------- Banner ---------- */
 
+	#heading {
+		padding-top: 65px;
+	}
+
 	.banner-large {
 		background: url(../images/custom/banner.jpg) no-repeat;
 		background-position: center;
@@ -161,7 +165,7 @@ $dockbarWidth: 67px;
 	.site-title {
 		color: #FFF;
 		display: inline-block;
-		margin: 62px 0 0 $dockbarWidth;
+		margin: 0 0 0 $dockbarWidth;
 		padding: 5px 10px;
 	}
 
