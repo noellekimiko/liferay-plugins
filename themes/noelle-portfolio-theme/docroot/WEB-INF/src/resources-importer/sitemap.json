@@ -13,7 +13,7 @@
 					{
 						"portletId": "56",
 						"portletPreferences": {
-							"articleId": "Homepage Pagination.xml",
+							"articleId": "Jumbotron With Pagination.xml",
 							"groupId": "${groupId}",
 							"portletSetupTitle_en_US": "A big headline to catch some attention",
 							"portletSetupUseCustomTitle": "true"
@@ -70,6 +70,15 @@
 			"columns": [
 				[
 					"Travel Carousel.xml",
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Simple Pagination.xml",
+							"groupId": "${groupId}",
+							"portletSetupTitle_en_US": "Pagination",
+							"portletSetupUseCustomTitle": "true"
+						}
+					},
 					{
 						"portletId": "56",
 						"portletPreferences": {
