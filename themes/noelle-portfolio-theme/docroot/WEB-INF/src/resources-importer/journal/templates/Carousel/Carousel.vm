@@ -21,9 +21,15 @@
 		width: ${width.getData()}px;
 	}
 
-	#if ($controls.data)
+	#if (!$controls.data)
 		#${content_class} menu {
 			display: none;
+		}
+	#else
+		#${content_class} menu {
+			left: 20px;
+			position: absolute;
+			right: auto;
 		}
 	#end
 </style>
