@@ -281,6 +281,10 @@ $dockbarWidth: 67px;
 		margin: 0;
 	}
 
+	.portlet-title img {
+		display: none;
+	}
+
 	.portlet-content {
 		border-bottom: 5px solid #EEE;
 		margin-bottom: 40px;
