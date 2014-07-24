@@ -223,6 +223,14 @@ $dockbarWidth: 67px;
 		}
 	}
 
+	.btn {
+		background: #999;
+
+		&:hover {
+			background: #AAA;
+		}
+	}
+
 	/* ---------- Footer ---------- */
 
 	footer {
