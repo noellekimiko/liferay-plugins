@@ -214,6 +214,15 @@ $dockbarWidth: 67px;
 		margin-top: 0;
 	}
 
+	.modify-pages .delete-tab {
+		color: #FFF;
+		text-shadow: none;
+
+		&:hover {
+			color: #F00;
+		}
+	}
+
 	/* ---------- Content ---------- */
 
 	#content {
