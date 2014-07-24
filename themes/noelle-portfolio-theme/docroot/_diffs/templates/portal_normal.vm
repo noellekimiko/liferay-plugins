@@ -40,6 +40,21 @@
 		}
 	</script>
 
+	<script>
+		window.onload = alignFooter;
+		window.onresize = alignFooter;
+		function alignFooter() {
+			var wrapperHeight = $('#wrapper').height();
+			var footerHeight = $('#footer').height();
+			if((wrapperHeight + footerHeight) <= window.innerHeight) {
+				$('footer').addClass('affix-footer');
+			}
+			else {
+				$('footer').removeClass('affix-footer');
+			}
+		}
+	</script>
+
 </head>
 
 #if ($is_first_parent)

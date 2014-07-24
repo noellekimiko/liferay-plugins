@@ -260,6 +260,10 @@ $dockbarWidth: 67px;
 		}
 	}
 
+	.affix-footer {
+		bottom: 0;
+	}
+
 	.footer-left {
 		float: left;
 		width: 60%;
