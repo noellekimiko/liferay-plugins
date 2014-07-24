@@ -326,6 +326,16 @@ $dockbarWidth: 67px;
 			width: 50%;
 		}
 	}
+
+	#portlet_58 {
+		text-align: center;
+
+		input {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 
 /* ---------- Responsiveness ---------- */
