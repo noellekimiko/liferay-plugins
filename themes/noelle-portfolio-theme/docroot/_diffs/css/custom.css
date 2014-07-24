@@ -5,7 +5,7 @@
 /* ---------- Variables ---------- */
 
 $bannerHeight: 771px;
-$bannerHeightSmall: 257px;
+$bannerHeightSmall: 350px;
 $dockbarWidth: 67px;
 
 /* ---------- Base styles ---------- */
@@ -109,24 +109,24 @@ $dockbarWidth: 67px;
 		padding-top: 65px;
 	}
 
+	.banner-large, .banner-small {
+		background-image: url(../images/custom/banner.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	.banner-large {
-		background: url(../images/custom/banner.jpg) no-repeat;
-		background-position: center;
 		height: $bannerHeight;
-		position: relative;
 
 		.page-title {
 			color: #FFF;
 			font-size: 100px;
-			line-height: 1px;
 		}
 	}
 
 	.banner-small {
-		background: url(../images/custom/small-banner.jpg) no-repeat;
-		background-position: center;
 		height: $bannerHeightSmall;
-		position: relative;
 	}
 
 	.link-to-content {
