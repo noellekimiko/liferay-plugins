@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="string" indexType="keyword" name="page" readOnly="false" repeatable="true" required="true" showLabel="true" type="textarea" width="small">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Page]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="boolean" indexType="" name="pagination" readOnly="false" repeatable="false" required="false" showLabel="true" type="checkbox" width="">
+		<meta-data locale="en_US">
+			<entry name="label"><![CDATA[Use Pagination]]></entry>
+			<entry name="predefinedValue"><![CDATA[false]]></entry>
+			<entry name="tip"><![CDATA[If using multiple pages above, check this box to show them on their own page. Otherwise, it will display on one page.]]></entry>
+		</meta-data>
+	</dynamic-element>
+</root>

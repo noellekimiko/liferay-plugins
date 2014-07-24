@@ -319,7 +319,7 @@ $dockbarWidth: 67px;
 		padding-top: 0;
 	}
 
-	.homepage #column-1 .portlet-boundary:first-child {
+	.jumbotron {
 		padding: 20px 60px 40px;
 		text-align: center;
 
