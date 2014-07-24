@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
+	$('a[href^="#"]').on('click', function (event) {
 		e.preventDefault();
 
 		var target = this.hash,
