@@ -197,7 +197,7 @@ $dockbarWidth: 67px;
 		}
 	}
 
-	.navbar .nav > .active > a, .navbar .nav > .active > a:focus, .navbar .nav > .active > a:hover, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	.dockbar .nav > .active > a, .dockbar .nav > .active > a:focus, .dockbar .nav > .active > a:hover, .dockbar .nav > li > a:focus, .dockbar .nav > li > a:hover, .dockbar .nav li.dropdown.active > .dropdown-toggle, .dockbar .nav li.dropdown.open > .dropdown-toggle, .dockbar .nav li.dropdown.open.active > .dropdown-toggle {
 		background: transparent;
 		color: #FFF;
 	}
