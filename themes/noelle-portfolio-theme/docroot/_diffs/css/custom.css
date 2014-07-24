@@ -529,10 +529,6 @@ $dockbarWidth: 67px;
 				}
 			}
 
-			.dockbar-dark .site-navigation .navbar-inner {
-				background: rgba(0, 0, 0, 0.85);
-			}
-
 			.dropdown-menu, .dropdown-submenu {
 				> li {
 					> a {
@@ -554,6 +550,10 @@ $dockbarWidth: 67px;
 			.navbar-inner {
 				display: block;
 			}
+		}
+
+		.dockbar-dark .site-navigation .navbar-inner {
+			background: rgba(0, 0, 0, 0.85);
 		}
 	}
 
