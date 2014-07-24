@@ -13,7 +13,6 @@ $dockbarWidth: 67px;
 .aui {
 	#wrapper {
 		margin: 0 auto;
-		max-width: 1154px;
 		padding: 0;
 
 		@include respond-to(phone, tablet) {
@@ -189,7 +188,6 @@ $dockbarWidth: 67px;
 	.portlet-dockbar .navbar-inner .container {
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 1156px;
 	}
 
 	.dropdown-menu {
