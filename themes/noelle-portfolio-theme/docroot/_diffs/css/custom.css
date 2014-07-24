@@ -203,12 +203,16 @@ $dockbarWidth: 67px;
 	}
 
 	.dockbar.navbar-static-top {
+		margin-top: 0;
 		position: fixed;
 		z-index: 301;
 	}
 
 	/* ---------- Navigation ---------- */
 
+	.site-navigation.navbar {
+		margin-top: 0;
+	}
 
 	/* ---------- Content ---------- */
 
@@ -232,6 +236,10 @@ $dockbarWidth: 67px;
 		&:hover {
 			background: #AAA;
 		}
+	}
+
+	.navbar {
+		margin-top: 5px;
 	}
 
 	select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
