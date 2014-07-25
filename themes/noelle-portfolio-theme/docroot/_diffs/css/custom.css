@@ -270,15 +270,6 @@ $dockbarWidth: 67px;
 				}
 			}
 
-			.nav-account-controls > li a, .nav-add-controls > li a {
-				@media (max-width: 979px) {
-					& {
-						color: #999;
-						text-shadow: none;
-					}
-				}
-			}
-
 			.site-administration-menu {
 				li a {
 					color: #999;
@@ -289,6 +280,11 @@ $dockbarWidth: 67px;
 					color: #FFF;
 				}
 			}
+		}
+
+		.nav-account-controls li a, .nav-add-controls > li a {
+			color: #999;
+			text-shadow: none;
 		}
 
 		.nav-account-controls {
@@ -302,9 +298,7 @@ $dockbarWidth: 67px;
 			li > a {
 				@media (min-width: 980px) {
 					& {
-						color: #999;
 						padding: 14px;
-						text-shadow: none;
 					}
 				}
 			}
@@ -364,15 +358,6 @@ $dockbarWidth: 67px;
 						margin: 10px auto;
 						padding: 3px;
 						width: 41px;
-					}
-				}
-
-				a {
-					@media (min-width: 980px) {
-						& {
-							color: #999;
-							text-shadow: none;
-						}
 					}
 				}
 			}
