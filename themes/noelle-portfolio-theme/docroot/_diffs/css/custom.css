@@ -624,9 +624,9 @@ $dockbarWidth: 67px;
 		}
 
 		.navbar-inner {
-			background: rgba(0, 0, 0, 0.6);
 			@media (max-width: 979px) {
 				& {
+					background: rgba(0, 0, 0, 0.6);
 					border: none;
 					box-shadow: none;
 					display: none;
@@ -718,7 +718,11 @@ $dockbarWidth: 67px;
 	}
 
 	.dockbar-dark .site-navigation .navbar-inner {
-		background: rgba(0, 0, 0, 0.85);
+		@media (max-width: 979px) {
+			& {
+				background: rgba(0, 0, 0, 0.85);
+			}
+		}
 	}
 
 	.modify-pages .delete-tab {
