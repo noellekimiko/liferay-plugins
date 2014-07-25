@@ -194,7 +194,7 @@ $dockbarWidth: 67px;
 		padding: 5px 10px;
 	}
 
-	.site-name {
+	header .site-name {
 		@media (max-width: 480px) {
 			& {
 				font-size: 25px;
