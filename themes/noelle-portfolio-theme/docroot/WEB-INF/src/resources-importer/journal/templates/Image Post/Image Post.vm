@@ -1,14 +1,12 @@
 #set ($content_id = $reserved-article-id.getData())
 #set ($content_class = "multiple-items-${content_id}-image")
+#set ($namespace = $request.get("portlet-namespace"))
+#set ($portlet_id = "p_p_id${namespace}")
 #set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
 
 <style type="text/css">
-	#${content_class} .portlet-content {
-		padding: 0px 10px;
-	}
-
-	.aui #${content_class} .portlet-content {
-		padding-bottom: 10px;
+	#${portlet_id} .portlet-content {
+		padding: 0 10px 10px;
 	}
 </style>
 

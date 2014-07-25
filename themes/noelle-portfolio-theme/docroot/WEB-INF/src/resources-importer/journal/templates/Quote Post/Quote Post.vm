@@ -1,21 +1,19 @@
 #set ($content_id = $reserved-article-id.getData())
 #set ($content_class = "multiple-items-${content_id}-link")
+#set ($namespace = $request.get("portlet-namespace"))
+#set ($portlet_id = "p_p_id${namespace}")
 #set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
 
 <style type="text/css">
-	.portlet-content {
-		padding: 0px 10px;
+	#${portlet_id} .portlet-content {
+		padding: 0 10px 10px;
 	}
 
-	.aui .portlet-content {
-		padding-bottom: 10px;
-	}
-
-	.quote {
+	#${content_class} .quote {
 		text-align: center;
 	}
 
-	.quote-author {
+	#${content_class} .quote-author {
 		text-indent: 30%;
 	}
 </style>

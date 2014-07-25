@@ -1,13 +1,15 @@
 #set ($content_id = $reserved-article-id.getData())
 #set ($content_class = "multiple-items-${content_id}-carousel")
+#set ($namespace = $request.get("portlet-namespace"))
+#set ($portlet_id = "p_p_id${namespace}")
 
 <style type="text/css">
-	.carousel {
+	#${portlet_id} .carousel {
 		max-width: ${width.getData()}px;
 		overflow: hidden;
 	}
 
-	#${content_class} {
+	 #${content_class} {
 		height: ${height.getData()}px;
 		position: relative;
 		width: ${width.getData()}px;

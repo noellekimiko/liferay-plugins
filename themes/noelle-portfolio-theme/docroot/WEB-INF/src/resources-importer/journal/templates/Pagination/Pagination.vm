@@ -1,15 +1,22 @@
 #set ($content_id = $reserved-article-id.getData())
 #set ($content_class = "multiple-items-${content_id}-pages")
 #set ($pagination_class = "multiple-items-${content_id}-pagination")
+#set ($namespace = $request.get("portlet-namespace"))
+#set ($portlet_id = "p_p_id${namespace}")
 
 <style type="text/css">
-	.page-content div {
+	#${portlet_id} .portlet-content {
+		padding: 0 10px 10px;
+	}
+
+	#${content_class} div {
 		display: none;
 	}
 
-	.page-content div:first-child {
+	#${content_class} div:first-child {
 		display: block;
 	}
+
 	.aui #${pagination_class} ul.pagination-content {
 		padding-left: 0;
 	}

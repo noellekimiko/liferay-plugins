@@ -1,17 +1,15 @@
 #set ($content_id = $reserved-article-id.getData())
 #set ($content_class = "multiple-items-${content_id}-link")
+#set ($namespace = $request.get("portlet-namespace"))
+#set ($portlet_id = "p_p_id${namespace}")
 #set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
 
 <style type="text/css">
-	#${content_class} .portlet-content {
-		padding: 0px 10px;
+	#${portlet_id} .portlet-content {
+		padding: 0 10px 10px;
 	}
 
-	.aui #${content_class} .portlet-content {
-		padding-bottom: 10px;
-	}
-
-	div .link-post-url {
+	#${content_class} .link-post-url {
 		background: rgba(0,0,0, 0.4);
 		display: block;
 		margin-right: 0;
@@ -19,11 +17,11 @@
 		text-align: center;
 	}
 
-	div .link-post-url h1 {
+	#${content_class} .link-post-url h1 {
 		color: #FFF;
 	}
 
-	div .link-post-url:focus, div .link-post-url:hover {
+	#${content_class} .link-post-url:focus, #${content_class} .link-post-url:hover {
 		text-decoration: none;
 	}
 </style>

@@ -6,6 +6,10 @@
 
 #if ($getterUtil.getBoolean($pagination.getData()))
 	<style type="text/css">
+		#${portlet_id} .portlet-content {
+			padding: 0 10px 10px;
+		}
+
 		#${content_class} div {
 			display: none;
 		}
