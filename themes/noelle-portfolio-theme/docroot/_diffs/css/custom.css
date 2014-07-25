@@ -157,11 +157,28 @@ $dockbarWidth: 67px;
 					line-height: 70px;
 				}
 			}
+
+			@media (min-width: 980px) {
+				& {
+					padding: 50px auto;
+					font-size: 120px;
+					line-height: 120px;
+				}
+			}
 		}
 	}
 
 	.banner-small {
 		height: $bannerHeightSmall;
+
+		.page-title {
+			@media (min-width: 980px) {
+				& {
+					font-size: 60px;
+					line-height: 60px;
+				}
+			}
+		}
 	}
 
 	.link-to-content {
@@ -997,27 +1014,6 @@ $dockbarWidth: 67px;
 
 		.opens-new-window-accessible {
 			display: none;
-		}
-	}
-}
-
-/* ---------- Responsiveness ---------- */
-
-.aui {
-
-	@media (min-width: 980px) {
-
-		/* ---------- Banner ---------- */
-
-		.banner-large .page-title {
-			padding: 50px auto;
-			font-size: 120px;
-			line-height: 120px;
-		}
-
-		.banner-small .page-title {
-			font-size: 60px;
-			line-height: 60px;
 		}
 	}
 }
