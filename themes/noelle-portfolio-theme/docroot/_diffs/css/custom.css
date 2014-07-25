@@ -369,7 +369,7 @@ $dockbarWidth: 67px;
 		}
 	}
 
-	#portlet_58 {
+	.portlet-login {
 		text-align: center;
 
 		input {
