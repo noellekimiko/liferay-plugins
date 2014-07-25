@@ -634,6 +634,95 @@ $dockbarWidth: 67px;
 				}
 			}
 
+			@media (min-width: 980px) {
+				& {
+					background: transparent;
+					border: 0;
+					border-radius: 0;
+					box-shadow: none;
+					float: left;
+					position: fixed;
+					top: 0;
+					width: auto;
+					z-index: 301;
+				}
+			}
+
+			.active a:hover, .selected a {
+				@media (min-width: 980px) {
+					& {
+						background: transparent;
+						box-shadow: none;
+						color: #FFF;
+					}
+				}
+			}
+
+			.active a, .active a:focus, .hover a, .lfr-nav-item {
+				@media (min-width: 980px) {
+					& {
+						background: transparent;
+						box-shadow: none;
+						color: #999;
+					}
+				}
+			}
+
+			li {
+				> a {
+					@media (min-width: 980px) {
+						& {
+							background: transparent;
+							box-shadow: none;
+							color: #999;
+							line-height: 20px;
+							padding: 15px 10px;
+							text-decoration: none;
+							text-shadow: none;
+						}
+					}
+
+					&:hover {
+						@media (min-width: 980px) {
+							& {
+								color: #FFF;
+							}
+						}
+					}
+				}
+
+				> .dropdown-menu {
+					@media (min-width: 980px) {
+						& {
+							background: rgba(0, 0, 0, 0.6);
+							border: 0;
+							border-radius: 0;
+							margin: 0 auto;
+							padding: 0;
+						}
+					}
+
+					&:after, &:before {
+						@media (min-width: 980px) {
+							& {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+
+			li.dropdown.active, li.dropdown.hover, li.dropdown.open, li.dropdown.open.active {
+				> .dropdown-toggle {
+					@media (min-width: 980px) {
+						& {
+							background: transparent;
+							color: #FFF;
+						}
+					}
+				}
+			}
+
 			.nav-collapse {
 				@media (max-width: 979px) {
 					& {
@@ -721,6 +810,14 @@ $dockbarWidth: 67px;
 		@media (max-width: 979px) {
 			& {
 				background: rgba(0, 0, 0, 0.85);
+			}
+		}
+
+		li > .dropdown-menu {
+			@media (min-width: 980px) {
+				& {
+					background: rgba(0, 0, 0, 0.85);
+				}
 			}
 		}
 	}
@@ -908,73 +1005,7 @@ $dockbarWidth: 67px;
 
 .aui {
 
-
-		/* ---------- Navigation ---------- */
 	@media (min-width: 980px) {
-		.site-navigation {
-			.navbar-inner {
-				background: transparent;
-				border: 0;
-				border-radius: 0;
-				box-shadow: none;
-				float: left;
-				position: fixed;
-				top: 0;
-				width: auto;
-				z-index: 301;
-
-				li {
-					> a {
-						background: transparent;
-						box-shadow: none;
-						color: #999;
-						line-height: 20px;
-						padding: 15px 10px;
-						text-decoration: none;
-						text-shadow: none;
-
-						&:hover {
-							color: #FFF;
-						}
-					}
-
-					> .dropdown-menu {
-						background: rgba(0, 0, 0, 0.6);
-						border: 0;
-						border-radius: 0;
-						margin: 0 auto;
-						padding: 0;
-
-						&:after, &:before {
-							display: none;
-						}
-					}
-				}
-
-				li.dropdown.active, li.dropdown.hover, li.dropdown.open, li.dropdown.open.active {
-					> .dropdown-toggle {
-						background: transparent;
-						color: #FFF;
-					}
-				}
-
-				.active a:hover, .selected a {
-					background: transparent;
-					box-shadow: none;
-					color: #FFF;
-				}
-
-				.active a, .active a:focus, .hover a, .lfr-nav-item {
-					background: transparent;
-					box-shadow: none;
-					color: #999;
-				}
-			}
-		}
-
-		.dockbar-dark .site-navigation .navbar-inner li > .dropdown-menu {
-			background: rgba(0, 0, 0, 0.85);
-		}
 
 		/* ---------- Banner ---------- */
 
