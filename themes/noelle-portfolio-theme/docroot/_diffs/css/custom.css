@@ -29,6 +29,15 @@ $dockbarWidth: 67px;
 		}
 	}
 
+	.signed-in #content {
+		@media (min-width: 980px) {
+			& {
+				padding-left: $dockbarWidth;
+				padding-right: $dockbarWidth;
+			}
+		}
+	}
+
 	.tooltip {
 		display: none;
 	}
@@ -217,11 +226,25 @@ $dockbarWidth: 67px;
 			}
 		}
 
+		.dockbar {
+			@media (min-width: 980px) {
+				& {
+					border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+				}
+			}
+		}
+
 		.navbar-inner {
 			background: rgba(0, 0, 0, 0.6);
 			border: 0;
 			box-shadow: none;
 			min-height: 49px;
+
+			@media (min-width: 980px) {
+				& {
+					padding: 0;
+				}
+			}
 
 			.btn-navbar {
 				@media (max-width: 979px) {
@@ -268,6 +291,116 @@ $dockbarWidth: 67px;
 			}
 		}
 
+		.nav-account-controls {
+			@media (min-width: 980px) {
+				& {
+					background: transparent;
+					margin: 0;
+				}
+			}
+
+			li > a {
+				@media (min-width: 980px) {
+					& {
+						color: #999;
+						padding: 14px;
+						text-shadow: none;
+					}
+				}
+			}
+
+			li > .dropdown-menu {
+				&:after, &:before {
+					@media (min-width: 980px) {
+						& {
+							display: none;
+						}
+					}
+				}
+			}
+
+			.sign-in > a {
+				@media (min-width: 980px) {
+					& {
+						padding-top: 15px;
+					}
+				}
+			}
+		}
+
+		.nav-add-controls {
+			@media (min-width: 980px) {
+				& {
+					left: 10px;
+					position: absolute;
+					top: 60px;
+				}
+			}
+
+			a {
+				@media (min-width: 980px) {
+					& {
+						white-space: nowrap;
+					}
+				}
+			}
+
+			a:hover {
+				.nav-item-label {
+					@media (min-width: 980px) {
+						& {
+							display: inline;
+						}
+					}
+				}
+			}
+
+			li {
+				@media (min-width: 980px) {
+					& {
+						background: rgba(0, 0, 0, 0.6);
+						border-radius: 5px;
+						clear: left;
+						margin: 10px auto;
+						padding: 3px;
+						width: 41px;
+					}
+				}
+
+				a {
+					@media (min-width: 980px) {
+						& {
+							color: #999;
+							text-shadow: none;
+						}
+					}
+				}
+			}
+
+			li > a:focus, li > a:hover {
+				@media (min-width: 980px) {
+					& {
+						color: #FFF;
+					}
+				}
+			}
+
+			.nav-item-label {
+				@media (min-width: 980px) {
+					& {
+						background: rgba(0, 0, 0, 0.6);
+						border-radius: 5px;
+						color: #FFF;
+						display: none;
+						left: 20px;
+						padding: 10px;
+						position: relative;
+						text-shadow: none;
+					}
+				}
+			}
+		}
+
 		.user-avatar img {
 			@media (max-width: 979px) {
 				& {
@@ -277,12 +410,11 @@ $dockbarWidth: 67px;
 		}
 	}
 
-	.dropdown-menu {
-		top: 50px;
-
-		> .active > a, > .active > a:focus, > .active > a:hover, > li > a:hover {
-			background: #FFF;
-			color: #000;
+	.divider-vertical {
+		@media (min-width: 980px) {
+			& {
+				display: none;
+			}
 		}
 	}
 
@@ -298,12 +430,129 @@ $dockbarWidth: 67px;
 	}
 
 	.dockbar-dark {
+		.dockbar {
+			@media (min-width: 980px) {
+				& {
+					border-bottom: 1px solid rgba(0, 0, 0, 0.85);
+				}
+			}
+		}
+
 		.portlet-dockbar .navbar-inner {
 			background: rgba(0, 0, 0, 0.85);
 		}
 
 		.nav-account-controls, .nav-add-controls {
 			background: rgba(0, 0, 0, 0.85);
+		}
+
+		.nav-add-controls {
+			li {
+				@media (min-width: 980px) {
+					& {
+						background: rgba(0, 0, 0, 0.85);
+					}
+				}
+			}
+
+			.nav-item-label {
+				@media (min-width: 980px) {
+					& {
+						background: rgba(0, 0, 0, 0.85);
+					}
+				}
+			}
+		}
+	}
+
+	.dropdown-menu {
+		top: 50px;
+		@media (min-width: 980px) {
+			& {
+				background: rgba(0, 0, 0, 0.6);
+				border: none;
+				border-radius: 0;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		> .active > a, > .active > a:focus, > .active > a:hover, > li > a:hover {
+			background: #FFF;
+			color: #000;
+		}
+
+		&:after, &:before {
+			@media (min-width: 980px) {
+				& {
+					display: none;
+				}
+			}
+		}
+
+		li > a {
+			@media (min-width: 980px) {
+				& {
+					color: #999;
+				}
+			}
+		}
+
+		li a:hover, li a:focus {
+			@media (min-width: 980px) {
+				& {
+					background: transparent;
+					color: #FFF;
+				}
+			}
+		}
+	}
+
+	.dockbar-dark .dropdown-menu {
+		@media (min-width: 980px) {
+			& {
+				background: rgba(0, 0, 0, 0.85);
+			}
+		}
+	}
+
+	.lfr-has-add-content {
+		.nav-add-controls {
+			@media (min-width: 980px) {
+				& {
+					left: 360px;
+				}
+			}
+		}
+	}
+
+	.lfr-has-device-preview {
+		.nav-add-controls {
+			@media (min-width: 980px) {
+				& {
+					left: 230px;
+				}
+			}
+		}
+	}
+
+	.lfr-has-edit-layout {
+		.nav-add-controls {
+			@media (min-width: 980px) {
+				& {
+					left: 470px;
+				}
+			}
+		}
+	}
+
+	.lfr-has-add-content, .lfr-has-device-preview, .lfr-has-edit-layout {
+		.nav-account-controls {
+			@media (min-width: 980px) {
+				& {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -666,173 +915,9 @@ $dockbarWidth: 67px;
 
 .aui {
 
-	/*---------- Desktop and up ----------*/
-
-	@media (min-width: 980px) {
-
-		/* ---------- Base Styles ---------- */
-
-		.signed-in #content {
-			padding-left: $dockbarWidth;
-			padding-right: $dockbarWidth;
-		}
-
-		/* ---------- Dockbar ---------- */
-
-		.portlet-dockbar {
-			.dockbar {
-				border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-			}
-
-			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
-				border: 0;
-				box-shadow: none;
-				padding: 0;
-			}
-
-			.nav-account-controls {
-				background: transparent;
-				margin: 0;
-
-				li > a {
-					color: #999;
-					padding: 14px;
-					text-shadow: none;
-				}
-
-				li > .dropdown-menu {
-					&:after, &:before {
-						display: none;
-					}
-				}
-
-				.sign-in > a {
-					padding-top: 15px;
-				}
-			}
-
-			.nav-add-controls {
-				left: 10px;
-				position: absolute;
-				top: 60px;
-
-				a {
-					white-space: nowrap;
-				}
-
-				a:hover {
-					.nav-item-label {
-						display: inline;
-					}
-				}
-
-				li {
-					background: rgba(0, 0, 0, 0.6);
-					border-radius: 5px;
-					clear: left;
-					margin: 10px auto;
-					padding: 3px;
-					width: 41px;
-
-					a {
-						color: #999;
-						text-shadow: none;
-					}
-				}
-
-				li > a:focus, li > a:hover {
-					color: #FFF;
-				}
-
-				.nav-item-label {
-					background: rgba(0, 0, 0, 0.6);
-					border-radius: 5px;
-					color: #FFF;
-					display: none;
-					left: 20px;
-					padding: 10px;
-					position: relative;
-					text-shadow: none;
-				}
-			}
-		}
-
-		.dockbar-dark .portlet-dockbar {
-			.dockbar {
-				border-bottom: 1px solid rgba(0, 0, 0, 0.85);
-			}
-
-			.navbar-inner {
-				background: rgba(0, 0, 0, 0.85);
-			}
-
-			.nav-add-controls {
-				li {
-					background: rgba(0, 0, 0, 0.85);
-				}
-
-				.nav-item-label {
-					background: rgba(0, 0, 0, 0.85);
-				}
-			}
-		}
-
-		.dropdown-menu {
-			background: rgba(0, 0, 0, 0.6);
-			border: none;
-			border-radius: 0;
-			margin: 0;
-			padding: 0;
-
-			&:after, &:before {
-				display: none;
-			}
-
-			li > a {
-				color: #999;
-			}
-
-			li a:hover, li a:focus {
-				background: transparent;
-				color: #FFF;
-			}
-		}
-
-		.dockbar-dark .dropdown-menu {
-			background: rgba(0, 0, 0, 0.85);
-		}
-
-		.divider-vertical {
-			display: none;
-		}
-
-		.lfr-has-add-content {
-			.nav-add-controls {
-				left: 360px;
-			}
-		}
-
-		.lfr-has-device-preview {
-			.nav-add-controls {
-				left: 230px;
-			}
-		}
-
-		.lfr-has-edit-layout {
-			.nav-add-controls {
-				left: 470px;
-			}
-		}
-
-		.lfr-has-add-content, .lfr-has-device-preview, .lfr-has-edit-layout {
-			.nav-account-controls {
-				display: none;
-			}
-		}
 
 		/* ---------- Navigation ---------- */
-
+	@media (min-width: 980px) {
 		.site-navigation {
 			.navbar-inner {
 				background: transparent;
