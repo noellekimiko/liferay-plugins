@@ -376,6 +376,113 @@ $dockbarWidth: 67px;
 		margin-top: 0;
 	}
 
+	.site-navigation {
+		@media (max-width: 979px) {
+			& {
+				position: fixed;
+				right: 0;
+				top: 50px;
+			}
+		}
+
+		.navbar-inner {
+			background: rgba(0, 0, 0, 0.6);
+			@media (max-width: 979px) {
+				& {
+					border: none;
+					box-shadow: none;
+					display: none;
+					padding: 0;
+				}
+			}
+
+			.nav-collapse {
+				@media (max-width: 979px) {
+					& {
+						height: auto;
+					}
+				}
+
+				.nav > li > a:hover, .nav > li > a:focus, .dropdown-menu a:hover, .dropdown-menu a:focus {
+					@media (max-width: 979px) {
+						& {
+							background: transparent;
+							color: #FFF;
+						}
+					}
+				}
+
+				li {
+					@media (max-width: 979px) {
+						& {
+							background: transparent;
+						}
+					}
+
+					a {
+						@media (max-width: 979px) {
+							& {
+								box-shadow: none;
+								color: #999;
+								text-shadow: none;
+							}
+						}
+					}
+
+					&:hover {
+						@media (max-width: 979px) {
+							& {
+								color: #FFF;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.dropdown-menu, .dropdown-submenu {
+			> li {
+				> a {
+					&:hover, &:focus {
+						@media (max-width: 979px) {
+							& {
+								background: transparent;
+							}
+						}
+					}
+				}
+			}
+
+			&:hover, &:focus {
+				@media (max-width: 979px) {
+					& {
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+
+	.site-navigation.open {
+		@media (max-width: 979px) {
+			& {
+				z-index: 301;
+			}
+		}
+
+		.navbar-inner {
+			@media (max-width: 979px) {
+				& {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.dockbar-dark .site-navigation .navbar-inner {
+		background: rgba(0, 0, 0, 0.85);
+	}
+
 	.modify-pages .delete-tab {
 		color: #FFF;
 		text-shadow: none;
@@ -558,74 +665,6 @@ $dockbarWidth: 67px;
 /* ---------- Responsiveness ---------- */
 
 .aui {
-
-	/*---------- Tablet to desktop ----------*/
-
-		/* ---------- Navigation ---------- */
-@media (max-width: 979px) {
-		.site-navigation {
-			position: fixed;
-			right: 0;
-			top: 50px;
-
-			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
-				border: none;
-				box-shadow: none;
-				display: none;
-				padding: 0;
-
-				.nav-collapse {
-					.nav > li > a:hover, .nav > li > a:focus, .dropdown-menu a:hover, .dropdown-menu a:focus {
-						background: transparent;
-						color: #FFF;
-					}
-
-					height: auto;
-
-					li {
-						background: transparent;
-
-						a {
-							box-shadow: none;
-							color: #999;
-							text-shadow: none;
-						}
-
-						&:hover {
-							color: #FFF;
-						}
-					}
-				}
-			}
-
-			.dropdown-menu, .dropdown-submenu {
-				> li {
-					> a {
-						&:hover, &:focus {
-							background: transparent;
-						}
-					}
-				}
-
-				&:hover, &:focus {
-					background: transparent;
-				}
-			}
-		}
-
-		.site-navigation.open {
-			z-index: 301;
-
-			.navbar-inner {
-				display: block;
-			}
-		}
-
-		.dockbar-dark .site-navigation .navbar-inner {
-			background: rgba(0, 0, 0, 0.85);
-		}
-	}
 
 	/*---------- Desktop and up ----------*/
 
