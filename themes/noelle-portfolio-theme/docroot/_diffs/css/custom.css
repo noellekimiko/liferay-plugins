@@ -53,6 +53,12 @@ $dockbarWidth: 67px;
 				padding: 0;
 			}
 		}
+
+		@media (min-width: 481px) and (max-width: 767px) {
+			& {
+				padding: 0;
+			}
+		}
 	}
 
 	blockquote {
@@ -135,6 +141,13 @@ $dockbarWidth: 67px;
 					line-height: 40px;
 				}
 			}
+
+			@media (min-width: 481px) and (max-width: 767px) {
+				& {
+					font-size: 70px;
+					line-height: 70px;
+				}
+			}
 		}
 	}
 
@@ -185,6 +198,12 @@ $dockbarWidth: 67px;
 		@media (max-width: 480px) {
 			& {
 				font-size: 25px;
+			}
+		}
+
+		@media (min-width: 481px) and (max-width: 767px) {
+			& {
+				font-size: 30px;
 			}
 		}
 	}
@@ -419,24 +438,6 @@ $dockbarWidth: 67px;
 /* ---------- Responsiveness ---------- */
 
 .aui {
-
-	/*---------- Landscape phone to desktop/tablet ----------*/
-
-	@media (min-width: 481px) and (max-width: 767px) {
-		body {
-			padding: 0;
-		}
-
-		.banner-large .page-title {
-			font-size: 70px;
-			line-height: 70px;
-		}
-
-		header .site-name {
-			font-size: 30px;
-		}
-	}
-
 
 	/*---------- Tablet to desktop ----------*/
 
