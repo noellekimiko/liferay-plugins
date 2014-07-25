@@ -56,10 +56,14 @@
 			function sizeHeader() {
 				var window_width = window.innerWidth;
 				var window_height = window.innerHeight;
-				if ( (window_width < 599) && $( 'header' ).hasClass( 'banner-large' )) {
-					$( '.banner-large' ).css( 'height', 350 );
-				} else if ($( 'header' ).hasClass( 'banner-large' )){
-					$( '.banner-large' ).css( 'height', window_height );
+				if ($( 'header' ).hasClass( 'banner-large' )) {
+					if (window_width < 480) {
+						$( '.banner-large' ).css( 'height', 350 );
+					} else if (window_width < 767){
+						$( '.banner-large' ).css( 'height', 550 );
+					} else {
+						$( '.banner-large' ).css( 'height', window_height );
+					}
 				}
 			}
 
