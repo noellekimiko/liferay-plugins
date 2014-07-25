@@ -160,7 +160,7 @@ $dockbarWidth: 67px;
 
 			@media (min-width: 980px) {
 				& {
-					padding: 50px auto;
+					padding-bottom: 50px;
 					font-size: 120px;
 					line-height: 120px;
 				}
