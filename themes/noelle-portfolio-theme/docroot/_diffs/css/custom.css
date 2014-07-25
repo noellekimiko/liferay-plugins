@@ -428,7 +428,11 @@ $dockbarWidth: 67px;
 		}
 
 		.nav-account-controls, .nav-add-controls {
-			background: rgba(0, 0, 0, 0.85);
+			@media (max-width: 979px) {
+				& {
+					background: rgba(0, 0, 0, 0.85);
+				}
+			}
 		}
 
 		.nav-add-controls {
