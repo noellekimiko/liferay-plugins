@@ -210,21 +210,6 @@ $dockbarWidth: 67px;
 
 	/* ---------- Dockbar ---------- */
 
-	.dockbar > .navbar-inner {
-		min-height: 49px;
-	}
-
-	.dockbar .navbar-inner .site-administration-menu {
-		li a {
-			color: #999;
-		}
-
-		li a:hover {
-			background: transparent;
-			color: #FFF;
-		}
-	}
-
 	.portlet-dockbar {
 		@media (max-width: 979px) {
 			& {
@@ -233,13 +218,10 @@ $dockbarWidth: 67px;
 		}
 
 		.navbar-inner {
-			@media (max-width: 979px) {
-				& {
-					background: rgba(0, 0, 0, 0.6);
-					border: 0;
-					box-shadow: none;
-				}
-			}
+			background: rgba(0, 0, 0, 0.6);
+			border: 0;
+			box-shadow: none;
+			min-height: 49px;
 
 			.btn-navbar {
 				@media (max-width: 979px) {
@@ -273,6 +255,25 @@ $dockbarWidth: 67px;
 					}
 				}
 			}
+
+			.site-administration-menu {
+				li a {
+					color: #999;
+				}
+
+				li a:hover {
+					background: transparent;
+					color: #FFF;
+				}
+			}
+		}
+
+		.user-avatar img {
+			@media (max-width: 979px) {
+				& {
+					height: auto;
+				}
+			}
 		}
 	}
 
@@ -296,39 +297,37 @@ $dockbarWidth: 67px;
 		z-index: 301;
 	}
 
+	.dockbar-dark {
+		.portlet-dockbar .navbar-inner {
+			background: rgba(0, 0, 0, 0.85);
+		}
+
+		.nav-account-controls, .nav-add-controls {
+			background: rgba(0, 0, 0, 0.85);
+		}
+	}
 
 	.nav-account-controls, .nav-add-controls {
 		@media (max-width: 979px) {
 			& {
 				background: rgba(0, 0, 0, 0.6);
-				float: right;
 			}
 		}
 	}
 
-	.dockbar-dark {
-		.portlet-dockbar .navbar-inner {
-			@media (max-width: 979px) {
-				& {
-					background: rgba(0, 0, 0, 0.85);
-				}
-			}
-		}
-
-		.nav-account-controls, .nav-add-controls {
-			@media (max-width: 979px) {
-				& {
-					background: rgba(0, 0, 0, 0.85);
-					float: right;
-				}
-			}
-		}
-	}
-
-	.dockbar .user-avatar img {
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
 		@media (max-width: 979px) {
 			& {
-				height: auto;
+				font-weight: normal;
+			}
+		}
+	}
+
+	.nav-collapse.open {
+		@media (max-width: 979px) {
+			& {
+				left: auto;
+				right: 1%;
 			}
 		}
 	}
@@ -363,27 +362,10 @@ $dockbarWidth: 67px;
 		}
 	}
 
-	.nav-collapse.open {
-		@media (max-width: 979px) {
-			& {
-				left: auto;
-				right: 1%;
-			}
-		}
-	}
-
 	.signed-out .portlet-dockbar a:nth-child(2) {
 		@media (max-width: 979px) {
 			& {
 				display: none;
-			}
-		}
-	}
-
-	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-		@media (max-width: 979px) {
-			& {
-				font-weight: normal;
 			}
 		}
 	}
