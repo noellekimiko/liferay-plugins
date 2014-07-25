@@ -128,6 +128,10 @@
 			]
 		},
 		{
+			"title": "Community",
+			"name": "Community",
+			"friendlyURL": "/community",
+			"layoutTemplateId": "2_columns_iii",
 			"columns": [
 				[
 					{
@@ -140,44 +144,42 @@
 					}
 				]
 			],
-			"friendlyURL": "/community",
-			"layoutTemplateId": "2_columns_iii",
 			"layouts": [
 				{
+					"title": "Wiki",
+					"nameMap": {
+						"en_US": "Wiki"
+					},
+					"friendlyURL": "/wiki",
+					"layoutTemplateId": "1_column",
 					"columns": [
 						[
 							{
 								"portletId": "36"
 							}
 						]
-					],
-
-					"friendlyURL": "/wiki",
-					"layoutTemplateId": "1_column",
-					"nameMap": {
-						"en_US": "Wiki"
-					},
-					"title": "Wiki"
+					]
 				},
 				{
+					"title": "Message Board",
+					"name": "Message Board",
+					"friendlyURL": "/messageboard",
+					"layoutTemplateId": "1_column",
 					"columns": [
 						[
 							{
 								"portletId": "19"
 							}
 						]
-					],
-
-					"friendlyURL": "/messageboard",
-					"layoutTemplateId": "1_column",
-					"name": "Message Board",
-					"title": "Message Board"
-				},
-			],
-			"name": "Community",
-			"title": "Community"
+					]
+				}
+			]
 		},
 		{
+			"title": "Portlets",
+			"name": "Portlets",
+			"friendlyURL": "/portlets",
+			"layoutTemplateId": "2_columns_iii",
 			"columns": [
 				[
 					{
@@ -193,40 +195,41 @@
 					}
 				]
 			],
-			"friendlyURL": "/portlets",
-			"layoutTemplateId": "2_columns_iii",
 			"layouts": [
 				{
+					"title": "Quick Note",
+					"name": "Quick Note",
+					"friendlyURL": "/quicknote",
+					"layoutTemplateId": "1_column",
 					"columns": [
 						[
 							{
 								"portletId": "97"
 							}
 						]
-					],
-					"friendlyURL": "/quicknote",
-					"layoutTemplateId": "1_column",
-					"name": "Quick Note",
-					"title": "Quick Note"
+					]
 				},
 				{
+					"title": "Currency Converter",
+					"name": "Currency Converter",
+					"friendlyURL": "/currencyconverter",
+					"layoutTemplateId": "1_column",
 					"columns": [
 						[
 							{
 								"portletId": "16"
 							}
 						]
-					],
-					"friendlyURL": "/currencyconverter",
-					"layoutTemplateId": "1_column",
-					"name": "Currency Converter",
-					"title": "Currency Converter"
+					]
 				}
-			],
-			"name": "Portlets",
-			"title": "Portlets"
+			]
 		},
 		{
+			"title": "Categorized Posts",
+			"name": "Categorized Posts",
+			"hidden": "true",
+			"friendlyURL": "/categorized",
+			"layoutTemplateId": "2_columns_iii",
 			"columns": [
 				[
 					{
@@ -239,52 +242,47 @@
 					}
 				]
 			],
-			"friendlyURL": "/categorized",
-			"layoutTemplateId": "2_columns_iii",
 			"layouts": [
 				{
-					"columns": [
-						[
-							{
-								"portletId": "58"
-							}
-						]
-					],
+					"title": "Travel",
+					"name": "Travel",
 					"friendlyURL": "/travel",
 					"layoutTemplateId": "1_column",
-					"name": "Travel",
-					"title": "Travel"
-				},
-				{
 					"columns": [
 						[
 							{
 								"portletId": "58"
 							}
 						]
-					],
+					]
+				},
+				{
+					"title": "Thoughts",
+					"name": "Thoughts",
 					"friendlyURL": "/thoughts",
 					"layoutTemplateId": "1_column",
-					"name": "Thoughts",
-					"title": "Thoughts"
-				},
-				{
 					"columns": [
 						[
 							{
 								"portletId": "58"
 							}
 						]
-					],
+					]
+				},
+				{
+					"title": "Other",
+					"name": "Other",
 					"friendlyURL": "/other",
 					"layoutTemplateId": "1_column",
-					"name": "Other",
-					"title": "Other"
+					"columns": [
+						[
+							{
+								"portletId": "58"
+							}
+						]
+					]
 				}
-			],
-			"name": "Categorized Posts",
-			"title": "Categorized Posts",
-			"hidden": "true"
+			]
 		}
 	]
 }
