@@ -225,9 +225,55 @@ $dockbarWidth: 67px;
 		}
 	}
 
-	.portlet-dockbar .navbar-inner .container {
-		margin-left: auto;
-		margin-right: auto;
+	.portlet-dockbar {
+		@media (max-width: 979px) {
+			& {
+				left: 0;
+			}
+		}
+
+		.navbar-inner {
+			@media (max-width: 979px) {
+				& {
+					background: rgba(0, 0, 0, 0.6);
+					border: 0;
+					box-shadow: none;
+				}
+			}
+
+			.btn-navbar {
+				@media (max-width: 979px) {
+					& {
+						background: rgba(255, 255, 255, 0.2);
+						margin: 7px;
+					}
+				}
+			}
+
+			.container {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.nav-collapse.open {
+				@media (max-width: 979px) {
+					& {
+						position: absolute;
+						top: 50px;
+						z-index: 301;
+					}
+				}
+			}
+
+			.nav-account-controls > li a, .nav-add-controls > li a {
+				@media (max-width: 979px) {
+					& {
+						color: #999;
+						text-shadow: none;
+					}
+				}
+			}
+		}
 	}
 
 	.dropdown-menu {
@@ -248,6 +294,98 @@ $dockbarWidth: 67px;
 		margin-top: 0;
 		position: fixed;
 		z-index: 301;
+	}
+
+
+	.nav-account-controls, .nav-add-controls {
+		@media (max-width: 979px) {
+			& {
+				background: rgba(0, 0, 0, 0.6);
+				float: right;
+			}
+		}
+	}
+
+	.dockbar-dark {
+		.portlet-dockbar .navbar-inner {
+			@media (max-width: 979px) {
+				& {
+					background: rgba(0, 0, 0, 0.85);
+				}
+			}
+		}
+
+		.nav-account-controls, .nav-add-controls {
+			@media (max-width: 979px) {
+				& {
+					background: rgba(0, 0, 0, 0.85);
+					float: right;
+				}
+			}
+		}
+	}
+
+	.dockbar .user-avatar img {
+		@media (max-width: 979px) {
+			& {
+				height: auto;
+			}
+		}
+	}
+
+	.signed-in {
+		.btn-navbar {
+			@media (max-width: 979px) {
+				& {
+					box-sizing: border-box;
+					height: 36px;
+					padding: 2px;
+					width: 37px;
+				}
+			}
+		}
+
+		.icon-pencil, .icon-reorder {
+			@media (max-width: 979px) {
+				& {
+					line-height: 1.8;
+				}
+			}
+		}
+
+		.user-avatar-image {
+			@media (max-width: 979px) {
+				& {
+					height: 30px;
+					width: 31px;
+				}
+			}
+		}
+	}
+
+	.nav-collapse.open {
+		@media (max-width: 979px) {
+			& {
+				left: auto;
+				right: 1%;
+			}
+		}
+	}
+
+	.signed-out .portlet-dockbar a:nth-child(2) {
+		@media (max-width: 979px) {
+			& {
+				display: none;
+			}
+		}
+	}
+
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		@media (max-width: 979px) {
+			& {
+				font-weight: normal;
+			}
+		}
 	}
 
 	/* ---------- Navigation ---------- */
@@ -441,89 +579,8 @@ $dockbarWidth: 67px;
 
 	/*---------- Tablet to desktop ----------*/
 
-	@media (max-width: 979px) {
-
-		/* ---------- Dockbar ---------- */
-
-		.portlet-dockbar {
-			left: 0;
-
-			.navbar-inner {
-				background: rgba(0, 0, 0, 0.6);
-				border: 0;
-				box-shadow: none;
-
-				.btn-navbar {
-					background: rgba(255, 255, 255, 0.2);
-					margin: 7px;
-				}
-
-				.nav-collapse.open {
-					position: absolute;
-					top: 50px;
-					z-index: 301;
-				}
-			}
-
-			.nav-account-controls > li, .nav-add-controls > li {
-				a {
-					color: #999;
-					text-shadow: none;
-				}
-			}
-		}
-
-		.dockbar-dark .portlet-dockbar .navbar-inner {
-			background: rgba(0, 0, 0, 0.85);
-		}
-
-		.dockbar .user-avatar img {
-			height: auto;
-		}
-
-		.nav-account-controls, .nav-add-controls {
-			background: rgba(0, 0, 0, 0.6);
-			float: right;
-		}
-
-		.dockbar-dark .nav-account-controls, .dockbar-dark .nav-add-controls {
-			background: rgba(0, 0, 0, 0.85);
-			float: right;
-		}
-
-		.signed-in {
-			.btn-navbar {
-				box-sizing: border-box;
-				height: 36px;
-				padding: 2px;
-				width: 37px;
-			}
-
-			.icon-pencil, .icon-reorder {
-				line-height: 1.8;
-			}
-
-			.user-avatar-image {
-				height: 30px;
-				width: 31px;
-			}
-		}
-
-		.nav-collapse.open {
-			left: auto;
-			right: 1%;
-		}
-
-		.signed-out .portlet-dockbar a:nth-child(2) {
-			display: none;
-		}
-
-		.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-			font-weight: normal;
-		}
-
 		/* ---------- Navigation ---------- */
-
+@media (max-width: 979px) {
 		.site-navigation {
 			position: fixed;
 			right: 0;
