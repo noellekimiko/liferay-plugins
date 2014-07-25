@@ -191,6 +191,8 @@ $dockbarWidth: 67px;
 	}
 
 	.dropdown-menu {
+		top: 50px;
+
 		> .active > a, > .active > a:focus, > .active > a:hover, > li > a:hover {
 			background: #FFF;
 			color: #000;
