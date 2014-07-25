@@ -41,32 +41,37 @@
 	</script>
 
 	<script>
-		window.onload = alignFooter;
-		window.onresize = alignFooter;
-		function alignFooter() {
-			var wrapperHeight = $('#wrapper').height();
-			var footerHeight = $('#footer').height();
-			if((wrapperHeight + footerHeight) <= window.innerHeight) {
-				$('footer').addClass('affix-footer');
+		( function( $ ) {
+			function alignFooter() {
+				var wrapperHeight = $('#wrapper').height();
+				var footerHeight = $('#footer').height();
+				if((wrapperHeight + footerHeight) <= window.innerHeight) {
+					$('footer').addClass('affix-footer');
+				}
+				else {
+					$('footer').removeClass('affix-footer');
+				}
 			}
-			else {
-				$('footer').removeClass('affix-footer');
+
+			function sizeHeader() {
+				var window_width = window.innerWidth;
+				var window_height = window.innerHeight;
+				if ( (window_width < 599) && $( 'header' ).hasClass( 'banner-large' )) {
+					$( '.banner-large' ).css( 'height', 350 );
+				} else if ($( 'header' ).hasClass( 'banner-large' )){
+					$( '.banner-large' ).css( 'height', window_height );
+				}
 			}
-		}
-	</script>
 
-	<script>
-	window.onresize = function() {
-		var window_width = window.innerWidth;
-		var window_height = window.innerHeight;
-		if ( (window_width < 599) && $( 'header' ).hasClass( 'banner-large' )) {
-			$( '.banner-large' ).css( 'height', 350 );
-		} else if ($( 'header' ).hasClass( 'banner-large' )){
-			$( '.banner-large' ).css( 'height', window_height );
-		}
-	};
-	</script>
+			function start() {
+				alignFooter();
+				sizeHeader();
+			}
 
+			window.onload = start;
+			window.onresize = start;
+		} )( jQuery );
+	</script>
 </head>
 
 #if ($is_first_parent)
