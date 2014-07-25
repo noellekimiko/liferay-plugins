@@ -198,6 +198,12 @@ $dockbarWidth: 67px;
 				text-decoration: none;
 			}
 		}
+
+		@media (max-width: 480px) {
+			& {
+				display: none;
+			}
+		}
 	}
 
 	.logo {
