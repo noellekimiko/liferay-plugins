@@ -963,6 +963,20 @@ $dockbarWidth: 67px;
 		padding: 20px 60px 40px;
 		text-align: center;
 
+		@media (max-width: 480px) {
+			& {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		@media (min-width: 481px) and (max-width: 767px)  {
+			& {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
 		.portlet-title-text {
 			font-size: 40px;
 		}
