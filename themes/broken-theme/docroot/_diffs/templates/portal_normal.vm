@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 #parse ($init)
 
 <html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
