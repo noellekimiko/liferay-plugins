@@ -154,7 +154,7 @@ $theme.include($body_top_include)
 
 				<ul>
 					#foreach ($nav_item in $nav_items)
-						<a href=$nav_item.getTarget()>
+						<a href="$nav_item.getURL()">
 							<li class="footer-link"> $nav_item.getName()</li>
 						</a>
 					#end
