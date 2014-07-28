@@ -13,7 +13,7 @@
 
 	<script src="http://cdn.alloyui.com/2.5.0/aui/aui-min.js"></script>
 
-	<link href="http://cdn.alloyui.com/2.5.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+	<link href="http://cdn.alloyui.com/2.5.0/aui-css/css/bootstrap.min.css" rel="stylesheet">
 
 	$theme.include($top_head_include)
 
