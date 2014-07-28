@@ -260,7 +260,6 @@ $dockbarWidth: 67px;
 		.navbar-inner {
 			background: rgba(0, 0, 0, 0.6);
 			border: 0;
-			box-shadow: none;
 			min-height: 49px;
 
 			@media (min-width: 980px) {
@@ -651,7 +650,6 @@ $dockbarWidth: 67px;
 				& {
 					background: rgba(0, 0, 0, 0.6);
 					border: none;
-					box-shadow: none;
 					display: none;
 					padding: 0;
 				}
@@ -662,7 +660,6 @@ $dockbarWidth: 67px;
 					background: transparent;
 					border: 0;
 					border-radius: 0;
-					box-shadow: none;
 					float: left;
 					position: fixed;
 					top: 0;
@@ -675,7 +672,6 @@ $dockbarWidth: 67px;
 				@media (min-width: 980px) {
 					& {
 						background: transparent;
-						box-shadow: none;
 						color: #FFF;
 					}
 				}
@@ -685,7 +681,6 @@ $dockbarWidth: 67px;
 				@media (min-width: 980px) {
 					& {
 						background: transparent;
-						box-shadow: none;
 						color: #999;
 					}
 				}
@@ -696,7 +691,6 @@ $dockbarWidth: 67px;
 					@media (min-width: 980px) {
 						& {
 							background: transparent;
-							box-shadow: none;
 							color: #999;
 							line-height: 20px;
 							padding: 15px 10px;
@@ -772,7 +766,6 @@ $dockbarWidth: 67px;
 					a {
 						@media (max-width: 979px) {
 							& {
-								box-shadow: none;
 								color: #999;
 								text-shadow: none;
 							}
@@ -1048,6 +1041,50 @@ $dockbarWidth: 67px;
 	-moz-animation: dropHeader 0.3s ease-in;
 	-webkit-animation: dropHeader 0.3s ease-in;
 	animation: dropHeader 0.3s ease-in;
+}
+
+.aui {
+	.portlet-dockbar .navbar-inner {
+		@include box-shadow(none);
+	}
+
+	.site-navigation .navbar-inner {
+		@include box-shadow(none);
+
+		.active a:hover, .selected a {
+			@media (min-width: 980px) {
+				& {
+					@include box-shadow(none);
+				}
+			}
+		}
+
+		.active a, .active a:focus, .hover a, .lfr-nav-item {
+			@media (min-width: 980px) {
+				& {
+					@include box-shadow(none);
+				}
+			}
+		}
+
+		li {
+			> a {
+				@media (min-width: 980px) {
+					& {
+						@include box-shadow(none);
+					}
+				}
+			}
+		}
+
+		.nav-collapse li a {
+			@media (max-width: 979px) {
+				& {
+					@include box-shadow(none);
+				}
+			}
+		}
+	}
 }
 
 @-moz-keyframes dropHeader {
