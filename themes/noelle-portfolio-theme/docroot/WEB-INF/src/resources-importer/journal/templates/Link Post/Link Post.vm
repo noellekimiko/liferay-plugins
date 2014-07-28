@@ -34,7 +34,7 @@
 	<a href="$URL.getData()" class="link-post-url">
 		<div>
 			#if ($URL_label.data != "")
-				<h1> $URL_label.getData() </hl>
+				<h1> $URL_label.getData() </h1>
 
 				<h4>$URL.getData()</h4>
 			#else
