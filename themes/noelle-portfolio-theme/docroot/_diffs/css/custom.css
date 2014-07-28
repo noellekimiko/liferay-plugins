@@ -1027,6 +1027,18 @@ $dockbarWidth: 67px;
 	}
 }
 
+/* ---------- Browser Fixes ---------- */
+
+.ie9 {
+	.portlet-dockbar .navbar-inner {
+		filter: none;
+	}
+
+	.site-navigation .navbar-inner {
+		filter: none;
+	}
+}
+
 /* ---------- Extras ---------- */
 
 .banner-large, .banner-small {
