@@ -418,6 +418,10 @@ $dockbarOpenGradientStart: #0EA6F9;
 		}
 	}
 
+	.portlet-borderless-bar .portlet-options a, .portlet-borderless-bar .portlet-options.open a {
+		background-image: url(../images/portlet/options_borderless.png);
+	}
+
 	.lfr-configurator-visibility .portlet-topper {
 		background-color: #A9A9A9;
 	}
