@@ -4,6 +4,8 @@
 @import url(color_schemes/common.css);
 @import url(color_schemes/dark.css);
 @import url(color_schemes/light.css);
+@import url(color_schemes/green.css);
+@import url(color_schemes/orange.css);
 
 $dockbarGradientEnd: #1273C7;
 $dockbarGradientStart: #118ADE;
