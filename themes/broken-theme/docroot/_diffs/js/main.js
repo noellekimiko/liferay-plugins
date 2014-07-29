@@ -43,5 +43,11 @@ AUI().ready(
 			event.preventDefault();
 			modal.show();
 		};
+
+		A.getBody().delegate('click', openSiteInDialog, '#powered-by-link');
+
+		var openSiteInDialog = function(event) {
+			Liferay.Util.openInDialog(event, event.currentTarget);
+		}
 	}
 );
