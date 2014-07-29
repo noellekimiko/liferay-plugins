@@ -1,5 +1,5 @@
 AUI().ready(
-	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal',
+	'liferay-hudcrumbs', 'liferay-navigation-interaction', 'liferay-sign-in-modal', 'aui-modal',
 	function(A) {
 		var navigation = A.one('#navigation');
 
@@ -25,5 +25,23 @@ AUI().ready(
 		if (signIn && signIn.getData('redirect') !== 'true') {
 			signIn.plug(Liferay.SignInModal);
 		}
+
+		A.getBody().delegate('click', modalShow, '.breadcrumb');
+
+		var modal = new A.Modal(
+			{
+				bodyContent: 'Sign in Here',
+				centered: true,
+				headerContent: '<h3>Sign In</h3>',
+				modal: true,
+				render: '#modal-sign-in',
+				visible: false
+			}
+		).render();
+
+		var modalShow = function(event) {
+			event.preventDefault();
+			modal.show();
+		};
 	}
 );

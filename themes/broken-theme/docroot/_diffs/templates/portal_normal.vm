@@ -51,6 +51,10 @@ $theme.include($body_top_include)
 			#breadcrumbs()
 		</nav>
 
+		<div class="yui3-skin-sam">
+			<div id="modal-sign-in"></div>
+		</div>
+
 		#if ($selectable)
 			$theme.include($content_include)
 		#else
