@@ -776,6 +776,7 @@
 
 					.accordion-toggle {
 						background: #F2F2F2 url(../images/arrows/13_right.png) no-repeat 100% -20px;
+						line-height: 20px;
 					}
 				}
 
