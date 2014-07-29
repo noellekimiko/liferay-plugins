@@ -319,10 +319,6 @@ $dockbarOpenGradientStart: #0EA6F9;
 				}
 			}
 
-			* {
-				display: none;
-			}
-
 			> li > a {
 				padding: 4px 15px 5px;
 
