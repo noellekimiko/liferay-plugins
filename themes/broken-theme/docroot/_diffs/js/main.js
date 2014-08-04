@@ -13,20 +13,18 @@ AUI().ready(
 			siteBreadcrumbs.plug(A.Hudcrumbs);
 		}
 
-		A.getBody().delegate('click', eventHandler, 'a.logo');
-
-		var eventHandler = function(event) {
-			event.preventDefault();
-			alert(event.currentTarget.attr('title'));
-		};
-
 		var signIn = A.one('li.sign-in a');
 
 		if (signIn && signIn.getData('redirect') !== 'true') {
 			signIn.plug(Liferay.SignInModal);
 		}
 
-		A.getBody().delegate('click', modalShow, '.breadcrumb');
+		var eventHandler = function(event) {
+			event.preventDefault();
+			alert(event.currentTarget.attr('title'));
+		};
+
+		A.getBody().delegate('click', eventHandler, 'a.logo');
 
 		var modal = new A.Modal(
 			{
@@ -44,10 +42,12 @@ AUI().ready(
 			modal.show();
 		};
 
-		A.getBody().delegate('click', openSiteInDialog, '#powered-by-link');
+		A.getBody().delegate('click', modalShow, '.breadcrumb');
 
 		var openSiteInDialog = function(event) {
 			Liferay.Util.openInDialog(event, event.currentTarget);
 		}
+
+		A.getBody().delegate('click', openSiteInDialog, '#powered-by-link');
 	}
 );
