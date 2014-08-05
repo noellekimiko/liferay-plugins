@@ -28,7 +28,7 @@ AUI().ready(
 
 		var modal = new A.Modal(
 			{
-				bodyContent: 'Sign in Here',
+				bodyContent: '<form> <label class="control-label" for="emailModal"> Email Address </label> <input class="field clearable" type="text" id="emailModal" name="emailModal" value="@liferay.com"><br> <label class="control-label" for="passwordModal"> Password </label> <input class="field" type="password" name="passwordModal" id="passwordModal"><br> <button class="btn btn-default" type="submit"> Sign In </button> </form>',
 				centered: true,
 				headerContent: '<h3>Sign In</h3>',
 				modal: true,
