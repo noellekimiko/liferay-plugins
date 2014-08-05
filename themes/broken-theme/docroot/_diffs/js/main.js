@@ -42,7 +42,11 @@ AUI().ready(
 			modal.show();
 		};
 
-		A.getBody().delegate('click', modalShow, '.breadcrumb');
+		var signedOut = A.one('.signed-out');
+
+		if (signedOut) {
+			A.getBody().delegate('click', modalShow, '.breadcrumb');
+		}
 
 		var openSiteInDialog = function(event) {
 			Liferay.Util.openInDialog(event, event.currentTarget);
