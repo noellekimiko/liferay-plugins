@@ -61,12 +61,12 @@ PortletURL portletURL = renderResponse.createRenderURL();
 	<div>
 		<c:if test="<%= GadgetPermission.contains(permissionChecker, themeDisplay.getScopeGroupId(), ActionKeys.PUBLISH_GADGET) %>">
 			<span>
-				<input onClick="location.href = '<portlet:renderURL><portlet:param name="mvcPath" value="/admin/edit_gadget.jsp" /><portlet:param name="redirect" value="<%= currentURL %>" /></portlet:renderURL>';" type="button" value="<liferay-ui:message key="publish-gadget" />" />
+				<input onClick="location.href = '<portlet:renderURL><portlet:param name="mvcPath" value="/admin/edit_gadget.jsp" /><portlet:param name="redirect" value="<%= currentURL %>" /></portlet:renderURL>';" type="button" value="<liferay-ui:message key="publish-gadget" />" class="btn" />
 			</span>
 		</c:if>
 
 		<span>
-			<input onClick="location.href = '<portlet:actionURL name="refreshGadgets"><portlet:param name="redirect" value="<%= currentURL %>" /></portlet:actionURL>';" type="button" value="<liferay-ui:message key="refresh-gadgets" />" />
+			<input onClick="location.href = '<portlet:actionURL name="refreshGadgets"><portlet:param name="redirect" value="<%= currentURL %>" /></portlet:actionURL>';" type="button" value="<liferay-ui:message key="refresh-gadgets" />" class="btn" />
 		</span>
 	</div>
 
