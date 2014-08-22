@@ -24,13 +24,13 @@
 		</aui:validator>
 	</aui:input>
 	<aui:button-row>
-		<aui:button onClick="renderResponse.getNamespace() + 'getContent();'" type="submit" />
+		<aui:button onClick='<%= "portlet08_getContent();" %>' type="submit" />
 		<aui:button value="reset" />
 	</aui:button-row>
 </aui:form>
 
 <aui:script>
-	function <portlet:namespace />getContent() {
+	function portlet08_getContent() {
 		return window.<portlet:namespace />editor.getHTML();
 	}
 </aui:script>
