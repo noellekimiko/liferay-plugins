@@ -14,6 +14,7 @@
  */
 %>
 
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
 
 <h1> AlloyUI - Form Validator </h1>
@@ -40,36 +41,31 @@
 	<button class="btn" type="reset">Reset</button>
 </form>
 
-<aui:script>
-	YUI().use (
-		'aui-button',
-		'aui-form-validator',
-		function(Y) {
-			new Y.FormValidator (
-				{
-					boundingBox: '#portlet05_form',
-					rules: {
-						portlet05_date: {
-							date: true,
-							required: true
-						},
-						portlet05_email: {
-							email: true,
-							required: true
-						},
-						portlet05_name: {
-							alpha: true,
-							required: true
-						}
-					},
-					on: {
-						submit: function(event) {
-							Y.one('#portlet05_success').show();
-							event.validator.formEvent.halt();
-						}
-					}
+<aui:script use="aui-button,aui-form-validator">
+	new A.FormValidator(
+		{
+			boundingBox: '#portlet05_form',
+			rules: {
+				portlet05_email: {
+					email: true,
+					required: true
+				},
+				portlet05_name: {
+					alpha: true,
+					required: true
+				},
+				portlet05_date: {
+					date: true,
+					required: true
 				}
-			);
+			},
+			on: {
+				submit: function(event) {
+					A.one('#portlet05_success').show();
+
+					event.validator.formEvent.halt();
+				}
+			}
 		}
 	);
 </aui:script>

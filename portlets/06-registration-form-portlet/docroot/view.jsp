@@ -14,6 +14,7 @@
  */
 %>
 
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
 
 <h1> AlloyUI - Registration Form </h1>
@@ -79,196 +80,203 @@
 	</form>
 </div>
 
-<aui:script>
-YUI().use (
-	'aui-button',
-	'aui-char-counter',
-	'aui-datepicker',
-	'aui-form-validator',
-	'aui-image-cropper',
-	'aui-pagination',
-	'aui-progressbar',
-	function(Y) {
-		var formValidator = [];
-		var forms = Y.all('.portlet06_form');
-		var pages = Y.all('.portlet06_page');
-		var output = Y.one('#portlet06_output');
+<aui:script use="aui-button,aui-char-counter,aui-datepicker,aui-form-validator,aui-image-cropper,aui-pagination,aui-progressbar">
+	// Create variables
 
-		var updateProgress = function() {
-			var validForms = 0;
+	var formValidator = [];
 
-			for (var i = 0; i < formValidator.length; i++) {
-				formValidator[i].validate();
+	// Update progress bar
 
-				if(!formValidator[i].hasErrors()) {
-					validForms++;
+	var updateProgress = function() {
+		var validForms = 0;
+
+		for (var i = 0; i < formValidator.length; i++) {
+			formValidator[i].validate();
+
+			if (!formValidator[i].hasErrors()) {
+				validForms++;
+			}
+		}
+
+		var ratio = Math.round(validForms/formValidator.length * 100);
+
+		progressBar.set('value', ratio);
+	};
+
+	// Create progress bar
+
+	var progressBar = new A.ProgressBar(
+		{
+			boundingBox: '#portlet06_progressBar',
+			label: '0%',
+			on: {
+				complete: function(event) {
+					this.set('label', 'Complete!');
+				},
+				valueChange: function(event) {
+					this.set('label', event.newVal + '%');
 				}
-			}
+			},
+			value: 0,
+			width: 700
+		}
+	).render();
 
-			var ratio = Math.round(validForms/formValidator.length * 100);
+	// Grab pages
+	var pages = A.all('.portlet06_page');
 
-			progressBar.set('value', ratio);
-		};
+	// Create paginator
 
-		var progressBar = new Y.ProgressBar(
-			{
-				boundingBox: '#portlet06_progressBar',
-				label: '0%',
-				on: {
-					complete: function(event) {
-						this.set('label', 'Complete!');
-					},
-					valueChange: function(event) {
-						this.set('label', event.newVal + '%');
-					}
-				},
-				value: 0,
-				width: 700
-			}
-		).render();
+	new A.Pagination(
+		{
+			after: {
+				changeRequest: function(event) {
+					if (event.state.page === 2 && !imgCropper.rendered) {
+						imgCropper.render();
 
-		new Y.Pagination(
-			{
-				after: {
-					changeRequest: function(event) {
-						if (event.state.page === 2 && !imgCropper.rendered) {
-							imgCropper.render();
-
-							imgCropper.rendered = true;
-						}
-					}
-				},
-				boundingBox: '#portlet06_pagination',
-				circular: false,
-				contentBox: '#portlet06_pagination .pagination-content',
-				on: {
-					changeRequest: function(event) {
-						var lastState = event.lastState,
-							state = event.state;
-
-						if(lastState) {
-							pages.item(lastState.page - 1).hide();
-
-							updateProgress();
-						}
-
-						pages.item(state.page - 1).show();
-					}
-				},
-				page: 1
-			}
-		).render();
-
-		formValidator[0] = new Y.FormValidator(
-			{
-				boundingBox: '#portlet06_form1',
-				rules: {
-					portlet06_email: {
-						email: true,
-						required: true
-					},
-					portlet06_name: {
-						alpha: true,
-						required: true
+						imgCropper.rendered = true;
 					}
 				}
-			}
-		);
+			},
+			boundingBox: '#portlet06_pagination',
+			circular: false,
+			contentBox: '#portlet06_pagination .pagination-content',
+			on: {
+				changeRequest: function(event) {
+					var lastState = event.lastState,
+						state = event.state;
 
-		formValidator[1] = new Y.FormValidator(
-			{
-				boundingBox: '#portlet06_form2',
-				fieldStrings: {
-					portlet06_charInput: 'Words must be between 1 and 160 characters.'
-				},
-				rules: {
-					portlet06_charInput: {
-						rangeLength: [1, 160],
-						required: true
-					}
-				}
-			}
-		);
+					if (lastState) {
+						pages.item(lastState.page - 1).hide();
 
-		new Y.Button(
-			{
-				on: {
-					click: function() {
 						updateProgress();
+					}
 
-						var validForms = 0;
+					pages.item(state.page - 1).show();
+				}
+			},
+			page: 1
+		}
+	).render();
 
-						var formValidatorLength = formValidator.length;
+	// Initialize form validator and fields
 
-						for (var i = 0; i < formValidatorLength; i++) {
-							if (!formValidator[i].hasErrors()) {
-								validForms++;
-							}
+	formValidator[0] = new A.FormValidator(
+		{
+			boundingBox: '#portlet06_form1',
+			rules: {
+				portlet06_email: {
+					email: true,
+					required: true
+				},
+				portlet06_name: {
+					alpha: true,
+					required: true
+				}
+			}
+		}
+	);
+
+	formValidator[1] = new A.FormValidator(
+		{
+			boundingBox: '#portlet06_form2',
+			rules: {
+				portlet06_charInput: {
+					rangeLength: [1, 160],
+					required: true
+				}
+			}
+		}
+	);
+
+	// Initialize datepicker
+
+	new A.DatePicker(
+		{
+			popover: {
+				zIndex: 1
+			},
+			trigger: '#portlet06_date'
+		}
+	);
+
+	// Initialize char counter
+
+	new A.CharCounter(
+		{
+			counter: '#portlet06_counter',
+			input: '#portlet06_charInput',
+			maxLength: 160
+		}
+	);
+
+	// Initialize image cropper
+
+	var imgCropper = new A.ImageCropper(
+		{
+			srcNode: '#portlet06_image'
+		}
+	);
+
+	// Initialize AUI button
+
+	new A.Button(
+		{
+			on: {
+				click: function() {
+					updateProgress();
+
+					var validForms = 0;
+
+					var formValidatorLength = formValidator.length;
+
+					for (var i = 0; i < formValidatorLength; i++) {
+						if (!formValidator[i].hasErrors()) {
+							validForms++;
 						}
-
-						if (validForms != formValidatorLength) {
-							validForms = 0;
-						}
-
-						generateOutput(validForms);
 					}
-				},
-				srcNode: '#portlet06_submitBtn'
-			}
-		).render();
 
-		var generateOutput = function(valid) {
-			var messageNode = Y.one('#portlet06_message');
-			var outputNode = Y.one('#portlet06_output');
-
-			var cssClass = valid ? "text-success" : "text-error";
-			var messageString = valid ? "All forms are complete!" : "Please fill out the entire form!";
-
-			var message = Y.Node.create("<div class='" + cssClass + "'>" + messageString + "</div>");
-
-			messageNode.setHTML(message);
-
-			outputNode.show();
-		};
-
-		new Y.Button(
-			{
-				on: {
-					click: function() {
-						location.reload();
+					if (validForms != formValidatorLength) {
+						validForms = 0;
 					}
-				},
-				srcNode: '#portlet06_resetBtn'
-			}
-		).render();
 
-		new Y.DatePicker(
-			{
-				on: {
-					selectionChange: function(event) {
-						console.log(event.newSelection)
-					}
-				},
-				popover: {
-					zIndex: 1
-				},
-				trigger: '#portlet06_date'
-			}
-		);
+					generateOutput(validForms);
+				}
+			},
+			srcNode: '#portlet06_submitBtn'
+		}
+	).render();
 
-		var charCounter = new Y.CharCounter(
-			{
-				counter: '#portlet06_counter',
-				input: '#portlet06_charInput',
-				maxLength: 160
-			}
-		);
+	// Initialize AUI button
 
-		var imgCropper = new Y.ImageCropper(
-			{
-				srcNode: '#portlet06_image'
-			}
-		);
-	}
-);
+	new A.Button(
+		{
+			on: {
+				click: function() {
+					location.reload();
+				}
+			},
+			srcNode: '#portlet06_resetBtn'
+		}
+	).render();
+
+	// Grab output element
+
+	var output = A.one('#portlet06_output');
+
+	// Create generated output
+
+	var generateOutput = function(valid) {
+		var messageNode = A.one('#portlet06_message');
+		var outputNode = A.one('#portlet06_output');
+
+		var cssClass = valid ? "text-success" : "text-error";
+		var messageString = valid ? "All forms are complete!" : "Please fill out the entire form!";
+
+		var message = A.Node.create("<div class='" + cssClass + "'>" + messageString + "</div>");
+
+		messageNode.setHTML(message);
+
+		outputNode.show();
+	};
 </aui:script>

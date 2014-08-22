@@ -14,23 +14,19 @@
  */
 %>
 
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
 
 <h1> AlloyUI - Char Counter </h1>
 <input id="portlet03_charInput" type="text">
 <span id="portlet03_counter"></span> character(s) remaining
 
-<aui:script>
-	YUI().use(
-		'aui-char-counter',
-		function(Y) {
-			new Y.CharCounter(
-				{
-					counter: '#portlet03_counter',
-					input: '#portlet03_charInput',
-					maxLength: 10
-				}
-			);
+<aui:script use="aui-char-counter">
+	new A.CharCounter(
+		{
+			counter: '#portlet03_counter',
+			input: '#portlet03_charInput',
+			maxLength: 10
 		}
 	);
 </aui:script>

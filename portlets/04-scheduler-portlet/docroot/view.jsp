@@ -14,6 +14,7 @@
  */
 %>
 
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
 
 <h1> AlloyUI - Scheduler </h1>
@@ -22,41 +23,35 @@
 	<div id="portlet04_myScheduler"></div>
 </div>
 
-<aui:script>
-	YUI().use(
-		'aui-scheduler',
-		function(Y) {
-			var events = [
-				{
-					content: 'Fourth of July Picnic',
-					endDate: new Date(2014, 6, 4, 18),
-					startDate: new Date(2014, 6, 4, 13)
-				},
-				{
-					content: 'Tracey\'s birthday',
-					endDate: new Date(2014, 6, 6, 23, 59),
-					startDate: new Date(2014, 6, 6, 0)
-				}
-			];
+<aui:script use="aui-scheduler">
+	var events = [
+		{
+			content: 'Symposium Workshop',
+			endDate: new Date(2014, 9, 19, 18),
+			startDate: new Date(2014, 9, 19, 16)
+		},
+		{
+			content: 'Symposium Workshop',
+			endDate: new Date(2014, 9, 20, 15),
+			startDate: new Date(2014, 9, 20, 14)
+		}
+	];
 
-			var dayView = new Y.SchedulerDayView();
-			var weekView = new Y.SchedulerWeekView();
-			var monthView = new Y.SchedulerMonthView();
-			var agendaView = new Y.SchedulerAgendaView();
+	var agendaView = new A.SchedulerAgendaView();
+	var dayView = new A.SchedulerDayView();
+	var monthView = new A.SchedulerMonthView();
+	var weekView = new A.SchedulerWeekView();
 
-			var eventRecorder = new Y.SchedulerEventRecorder();
+	var eventRecorder = new A.SchedulerEventRecorder();
 
-			new Y.Scheduler(
-				{
-					activeView: monthView,
-					boundingBox: '#portlet04_myScheduler',
-					date: new Date(2014, 6, 3),
-					eventRecorder: eventRecorder,
-					items: events,
-					render: true,
-					views: [dayView, weekView, monthView, agendaView]
-				}
-			);
+	new A.Scheduler(
+		{
+			boundingBox: '#portlet04_scheduler',
+			date: new Date(2014, 9, 19),
+			eventRecorder: eventRecorder,
+			items: events,
+			render: true,
+			views: [dayView, weekView, monthView, agendaView]
 		}
 	);
 </aui:script>
